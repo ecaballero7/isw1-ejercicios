@@ -1,2 +1,2 @@
 # isw1-ejercicios
-Ejercicios de Ingenieria de Sofware I 
+Ingenieria de Software I - 2do Cuatrimestre 2020 (A distancia)
