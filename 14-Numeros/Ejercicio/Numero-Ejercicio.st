@@ -364,25 +364,37 @@ Numero subclass: #Entero
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:13'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:03:54'!
 * aMultiplier 
+	
+	(aMultiplier isKindOf: Fraccion) ifTrue: [^ "num:"(self * aMultiplier numerator  ) / "den:"aMultiplier denominator].
 	
 	^self class with: value * aMultiplier integerValue
 	! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:13'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 16:58:46'!
 + anAdder 
+	"
+	a + b/c = (a*c + b*1) / 1* c	
+	"
+
+	(anAdder isKindOf: Fraccion) ifTrue: [^ "num:"((self * anAdder denominator ) + anAdder numerator ) / "den:"anAdder denominator].
+
 	
 	^self class with: value + anAdder integerValue
 ! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'NR 9/23/2018 23:40:37'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:18:29'!
 - aSubtrahend 
+
+	(aSubtrahend isKindOf: Fraccion) ifTrue: [^ "num:"((self * aSubtrahend denominator ) - aSubtrahend numerator ) / "den:"aSubtrahend denominator].	
 	
 	^ self class with: value - aSubtrahend integerValue.! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:14'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:08:16'!
 / aDivisor 
+	
+	(aDivisor isKindOf: Fraccion) ifTrue: [^ self * (aDivisor denominator / aDivisor numerator)].
 	
 	^Fraccion with: self over: aDivisor! !
 
@@ -483,26 +495,35 @@ Numero subclass: #Fraccion
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:14'!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:04:50'!
 * aMultiplier 
 	
+	(aMultiplier isKindOf: Entero) ifTrue: [^ "num:"(numerator * aMultiplier ) / "den:" denominator].
+
 	^(numerator * aMultiplier numerator) / (denominator * aMultiplier denominator)
 	! !
 
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:14'!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:01:09'!
 + anAdder 
 	
 	| newNumerator newDenominator |
 	
+	(anAdder isKindOf: Entero) ifTrue: [^ "num:"((denominator * anAdder ) + numerator ) / "den:" denominator].
+
 	newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
 	newDenominator := denominator * anAdder denominator.
 	
 	^newNumerator / newDenominator ! !
 
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'NR 9/23/2018 23:43:50'!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:29:02'!
 - aSubtrahend 
 	
 	| newNumerator newDenominator |
+	"
+	6/5 - 1 = (6*1) - 5 / 
+	"
+	
+	(aSubtrahend isKindOf: Entero) ifTrue: [^ "num:"(numerator - (denominator * aSubtrahend ) ) / "den:"denominator].	
 	
 	newNumerator := (numerator * aSubtrahend denominator) - (denominator * aSubtrahend numerator).
 	newDenominator := denominator * aSubtrahend denominator.
@@ -510,9 +531,11 @@ Numero subclass: #Fraccion
 	^newNumerator / newDenominator 
 ! !
 
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 23:14'!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/27/2020 17:15:56'!
 / aDivisor 
 	
+	(aDivisor isKindOf: Entero) ifTrue: [^  numerator / (denominator * aDivisor) ].
+
 	^(numerator * aDivisor denominator) / (denominator * aDivisor numerator)! !
 
 
