@@ -5,13 +5,6 @@ TestCase subclass: #NumeroTest
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!NumeroTest methodsFor: 'tests' stamp: 'ERMC 9/29/2020 16:47:16'!
-test00RompoClass
-	|numero|
-	numero := Racional.
-	
-	self assert: numero equals: numero.! !
-
 !NumeroTest methodsFor: 'tests' stamp: 'HernanWilkinson 5/7/2016 20:11'!
 test01isCeroReturnsTrueWhenAskToZero
 
@@ -529,6 +522,12 @@ isZero
 	^value = 0! !
 
 
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:28:43'!
+addEntero: sumando 
+
+	^self class with: (value + sumando integerValue).
+! !
+
 !Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:54:07'!
 addFraccion: sumando
 
@@ -569,16 +568,6 @@ substractFromFraccion: aSubtrahend
 	^ ( aSubtrahend numerator - (aSubtrahend denominator * self )   ) / aSubtrahend denominator.
 ! !
 
-
-!Entero methodsFor: 'category-name' stamp: 'ERMC 9/28/2020 20:28:43'!
-addEntero: sumando 
-
-	^self class with: (value + sumando integerValue).
-! !
-substractFrom:
-	** ERROR  -  THIS METHOD IS MISSING ** 
-
-  
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Entero class' category: 'Numero-Exercise'!
@@ -800,11 +789,3 @@ with: aDividend over: aDivisor
 
 	^self new initializeWith: numerator over: denominator
 	! !
-
-
-!classDefinition: #Racional category: 'Numero-Exercise'!
-Numero subclass: #Racional
-	instanceVariableNames: 'numerator denominator'
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'Numero-Exercise'!
