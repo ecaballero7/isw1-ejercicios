@@ -5,6 +5,13 @@ TestCase subclass: #NumeroTest
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
+!NumeroTest methodsFor: 'tests' stamp: 'ERMC 9/29/2020 16:47:16'!
+test00RompoClass
+	|numero|
+	numero := Racional.
+	
+	self assert: numero equals: numero.! !
+
 !NumeroTest methodsFor: 'tests' stamp: 'HernanWilkinson 5/7/2016 20:11'!
 test01isCeroReturnsTrueWhenAskToZero
 
@@ -340,6 +347,47 @@ isZero
 
 	self subclassResponsibility ! !
 
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:41:34'!
+addEntero
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:41:41'!
+addFraccion
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:42:03'!
+divideFromEntero
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:41:56'!
+divideFromFraccion
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:42:14'!
+multiplyEntero
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:42:18'!
+multiplyFraccion
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:41:22'!
+substractFromEntero
+
+	self subclassResponsibility ! !
+
+!Numero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:40:46'!
+substractFromFraccion
+
+	self subclassResponsibility ! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Numero class' category: 'Numero-Exercise'!
@@ -388,7 +436,7 @@ Numero subclass: #Entero
 	^ anAdder addEntero: self.
 	! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:44:23'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/29/2020 16:36:05'!
 - aSubtrahend 
 	"
 	(aSubtrahend isKindOf: Fraccion) ifTrue: [^((self * aSubtrahend denominator ) - aSubtrahend numerator ) / aSubtrahend denominator].	
@@ -396,9 +444,9 @@ Numero subclass: #Entero
 	^ self class with: value - aSubtrahend integerValue.
 	"
 	
-	^ aSubtrahend substractFrom: self.! !
+	^ aSubtrahend substractFromEntero: self.! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:49:24'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/29/2020 16:35:29'!
 / aDivisor 
 	
 	"
@@ -407,35 +455,12 @@ Numero subclass: #Entero
 	^Fraccion with: self over: aDivisor
 	"
 	
-	^ aDivisor divideFrom: self.! !
+	^ aDivisor divideFromEntero: self.! !
 
 !Entero methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 21:55'!
 // aDivisor 
 	
 	^self class with: value // aDivisor integerValue! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:28:43'!
-addEntero: sumando 
-
-	^self class with: (value + sumando integerValue).
-! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:54:07'!
-addFraccion: sumando
-
-	^ ((sumando denominator * self ) + sumando numerator ) / sumando denominator.
-! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:49:14'!
-divideFrom: aDivisor 
-	
-	^Fraccion with: aDivisor over: self.
-	! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 21:05:33'!
-divideFromFraccion: aDivisor 
-	
-	^  aDivisor numerator / (self * aDivisor denominator).! !
 
 !Entero methodsFor: 'arithmetic operations' stamp: 'HAW 9/24/2018 08:47:50'!
 fibonacci
@@ -455,29 +480,6 @@ fibonacci
 greatestCommonDivisorWith: anEntero 
 	
 	^self class with: (value gcd: anEntero integerValue)! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:34:37'!
-multiplyEntero: aMultiplier
-	
-	^self class with: value * aMultiplier integerValue
-! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:57:59'!
-multiplyFraccion: aMultiplier 
-	
-	^ (aMultiplier numerator * self) / aMultiplier denominator.! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:44:10'!
-substractFrom: aSubtrahend 
-
-	^ self class with: aSubtrahend integerValue - value.
-! !
-
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 21:57:41'!
-substractFromFraccion: aSubtrahend
-
-	^ ( aSubtrahend numerator - (aSubtrahend denominator * self )   ) / aSubtrahend denominator.
-! !
 
 
 !Entero methodsFor: 'comparing' stamp: 'HernanWilkinson 5/7/2016 21:01'!
@@ -526,6 +528,57 @@ isZero
 	
 	^value = 0! !
 
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:54:07'!
+addFraccion: sumando
+
+	^ ((sumando denominator * self ) + sumando numerator ) / sumando denominator.
+! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:35:04'!
+divideFromEntero: aDivisor 
+	
+	^Fraccion with: aDivisor over: self.
+	! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 21:05:33'!
+divideFromFraccion: aDivisor 
+	
+	^  aDivisor numerator / (self * aDivisor denominator).! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:34:37'!
+multiplyEntero: aMultiplier
+	
+	^self class with: value * aMultiplier integerValue
+! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:57:59'!
+multiplyFraccion: aMultiplier 
+	
+	^ (aMultiplier numerator * self) / aMultiplier denominator.! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:35:49'!
+substractFromEntero: aSubtrahend 
+
+	^ self class with: aSubtrahend integerValue - value.
+! !
+
+!Entero methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 21:57:41'!
+substractFromFraccion: aSubtrahend
+
+	^ ( aSubtrahend numerator - (aSubtrahend denominator * self )   ) / aSubtrahend denominator.
+! !
+
+
+!Entero methodsFor: 'category-name' stamp: 'ERMC 9/28/2020 20:28:43'!
+addEntero: sumando 
+
+	^self class with: (value + sumando integerValue).
+! !
+substractFrom:
+	** ERROR  -  THIS METHOD IS MISSING ** 
+
+  
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Entero class' category: 'Numero-Exercise'!
@@ -604,66 +657,6 @@ Numero subclass: #Fraccion
 	
 	^ aDivisor divideFromFraccion: self.! !
 
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:29:06'!
-addEntero: sumando
-	"
-	aca va la parte del if de entero ->aNumber: fraccion
-	"
-	^ ( (sumando * denominator ) + numerator ) / denominator.! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:53:37'!
-addFraccion: sumando
-	
-	| newNumerator newDenominator |
-	
-	newNumerator := (numerator * sumando denominator) + (denominator * sumando numerator).
-	newDenominator := denominator * sumando denominator.
-	
-	^newNumerator / newDenominator 
-	! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:49:34'!
-divideFrom: aDivisor
-
-	^ aDivisor * ( denominator / numerator).
-! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 21:05:03'!
-divideFromFraccion: aDivisor 
-
-	^(denominator * aDivisor numerator) / (numerator * aDivisor denominator)
-! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:35:10'!
-multiplyEntero: aMultiplier
-
-	^ (numerator * aMultiplier  ) / denominator.
-	! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:57:29'!
-multiplyFraccion: aMultiplier 
-
-	^(numerator * aMultiplier numerator) / (denominator * aMultiplier denominator)
-	! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 20:44:33'!
-substractFrom: aSubtrahend
-
-	^((aSubtrahend * denominator ) - numerator ) / denominator.	
-
-	! !
-
-!Fraccion methodsFor: 'arithmetic operations' stamp: 'ERMC 9/28/2020 21:57:10'!
-substractFromFraccion: aSubtrahend 
-
-	| newNumerator newDenominator |
-	
-	newNumerator := (denominator * aSubtrahend numerator) - (numerator * aSubtrahend denominator).
-	newDenominator := denominator * aSubtrahend denominator.
-	
-	^newNumerator / newDenominator 
-! !
-
 
 !Fraccion methodsFor: 'comparing' stamp: 'HernanWilkinson 5/7/2016 20:42'!
 = anObject
@@ -722,6 +715,67 @@ printOn: aStream
 		nextPut: $/;
 		print: denominator ! !
 
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:29:06'!
+addEntero: sumando
+	"
+	aca va la parte del if de entero ->aNumber: fraccion
+	"
+	^ ( (sumando * denominator ) + numerator ) / denominator.! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:53:37'!
+addFraccion: sumando
+	
+	| newNumerator newDenominator |
+	
+	newNumerator := (numerator * sumando denominator) + (denominator * sumando numerator).
+	newDenominator := denominator * sumando denominator.
+	
+	^newNumerator / newDenominator 
+	! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:36:27'!
+divideFromEntero: aDivisor
+
+	^ aDivisor * ( denominator / numerator).
+! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 21:05:03'!
+divideFromFraccion: aDivisor 
+
+	^(denominator * aDivisor numerator) / (numerator * aDivisor denominator)
+! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:35:10'!
+multiplyEntero: aMultiplier
+
+	^ (numerator * aMultiplier  ) / denominator.
+	! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 20:57:29'!
+multiplyFraccion: aMultiplier 
+
+	^(numerator * aMultiplier numerator) / (denominator * aMultiplier denominator)
+	! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/29/2020 16:37:25'!
+substractFromEntero: aSubtrahend
+
+	^((aSubtrahend * denominator ) - numerator ) / denominator.	
+
+	! !
+
+!Fraccion methodsFor: 'operaciones auxiliares - private' stamp: 'ERMC 9/28/2020 21:57:10'!
+substractFromFraccion: aSubtrahend 
+
+	| newNumerator newDenominator |
+	
+	newNumerator := (denominator * aSubtrahend numerator) - (numerator * aSubtrahend denominator).
+	newDenominator := denominator * aSubtrahend denominator.
+	
+	^newNumerator / newDenominator 
+! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Fraccion class' category: 'Numero-Exercise'!
@@ -746,3 +800,11 @@ with: aDividend over: aDivisor
 
 	^self new initializeWith: numerator over: denominator
 	! !
+
+
+!classDefinition: #Racional category: 'Numero-Exercise'!
+Numero subclass: #Racional
+	instanceVariableNames: 'numerator denominator'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numero-Exercise'!
