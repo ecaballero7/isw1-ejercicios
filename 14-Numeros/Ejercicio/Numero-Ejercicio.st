@@ -455,9 +455,9 @@ Numero subclass: #Entero
 	
 	^self class with: value // aDivisor integerValue! !
 
-!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/29/2020 19:30:53'!
+!Entero methodsFor: 'arithmetic operations' stamp: 'ERMC 9/30/2020 18:35:58'!
 fibonacci
-
+"
 	| one two |
 	
 	one := Entero with: 1.
@@ -467,7 +467,8 @@ fibonacci
 	(self isZero or: [self isOne]) ifTrue: [^one].
 	
 	^ (self - one) fibonacci + (self - two) fibonacci
-! !
+"
+	^ self subclassResponsibility ! !
 
 !Entero methodsFor: 'arithmetic operations' stamp: 'HernanWilkinson 5/7/2016 21:00'!
 greatestCommonDivisorWith: anEntero 
@@ -583,13 +584,20 @@ Entero class
 negativeFibonacciErrorDescription
 	^ ' Fibonacci no está definido aquí para Enteros Negativos'! !
 
-!Entero class methodsFor: 'instance creation' stamp: 'HernanWilkinson 5/7/2016 22:53'!
+!Entero class methodsFor: 'instance creation' stamp: 'ERMC 9/30/2020 18:43:34'!
 with: aValue 
 	
 	"Esta verificacion esta puesta por si se equivocan y quieren crear un Entero pasando otra cosa que un Integer - Hernan"
 	aValue isInteger ifFalse: [  self error: 'aValue debe ser anInteger' ].
 	
-	^self new initalizeWith: aValue! !
+"	^self new initalizeWith: aValue"
+
+	(aValue < 0) ifTrue:[^Negative new initializeWith: aValue].
+	(aValue = 0) ifTrue:[^Zero new].
+	(aValue = 1) ifTrue:[^One new].
+	(aValue > 1) ifTrue:[^Positive new initializeWith: aValue].
+	
+	! !
 
 
 !classDefinition: #Negative category: 'Numero-Exercise'!
@@ -599,10 +607,33 @@ Entero subclass: #Negative
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Negative methodsFor: 'as yet unclassified' stamp: 'ERMC 9/29/2020 17:25:10'!
-xxx
+!Negative methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:28:20'!
+fibonacci
 
 	^ self error: Entero negativeFibonacciErrorDescription! !
+
+!Negative methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:21'!
+initializeWith: aValue 
+	
+	value := aValue! !
+
+
+!classDefinition: #One category: 'Numero-Exercise'!
+Entero subclass: #One
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numero-Exercise'!
+
+!One methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:32:30'!
+fibonacci
+	
+	^ Entero with: 1. ! !
+
+!One methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:13'!
+initialize
+	
+	value := 1! !
 
 
 !classDefinition: #Positive category: 'Numero-Exercise'!
@@ -612,10 +643,22 @@ Entero subclass: #Positive
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Positive methodsFor: 'as yet unclassified' stamp: 'ERMC 9/29/2020 17:27:00'!
-xxx
+!Positive methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:38:31'!
+fibonacci
+
+	| one two |
+	
+	one := Entero with: 1.
+	two := Entero with: 2.
+	
+	^ (self - one) fibonacci + (self - two) fibonacci.
 
 	! !
+
+!Positive methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:01'!
+initializeWith: aValue 
+	
+	value := aValue! !
 
 
 !classDefinition: #Zero category: 'Numero-Exercise'!
@@ -625,8 +668,16 @@ Entero subclass: #Zero
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Zero methodsFor: 'as yet unclassified' stamp: 'ERMC 9/29/2020 17:27:14'!
-xxx
+!Zero methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:31:49'!
+fibonacci
+
+	^ Entero with: 1. 
+! !
+
+!Zero methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:32'!
+initialize
+	
+	value := 0
 ! !
 
 
