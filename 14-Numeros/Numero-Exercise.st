@@ -584,13 +584,13 @@ Entero class
 negativeFibonacciErrorDescription
 	^ ' Fibonacci no está definido aquí para Enteros Negativos'! !
 
-!Entero class methodsFor: 'instance creation' stamp: 'ERMC 9/30/2020 18:43:34'!
+!Entero class methodsFor: 'instance creation' stamp: 'ERMC 9/30/2020 19:17:07'!
 with: aValue 
 	
 	"Esta verificacion esta puesta por si se equivocan y quieren crear un Entero pasando otra cosa que un Integer - Hernan"
 	aValue isInteger ifFalse: [  self error: 'aValue debe ser anInteger' ].
 	
-"	^self new initalizeWith: aValue"
+	"^self new initalizeWith: aValue"
 
 	(aValue < 0) ifTrue:[^Negative new initializeWith: aValue].
 	(aValue = 0) ifTrue:[^Zero new].
@@ -607,15 +607,50 @@ Entero subclass: #Negative
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Negative methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:28:20'!
-fibonacci
+!Negative methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:06:36'!
+denominadorDe: aDivisor
 
-	^ self error: Entero negativeFibonacciErrorDescription! !
+	 ^self negated! !
 
-!Negative methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:21'!
+!Negative methodsFor: 'utils - private' stamp: 'ERMC 9/30/2020 18:53:21'!
 initializeWith: aValue 
 	
 	value := aValue! !
+
+!Negative methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:06:43'!
+numeradorDe: aDivdend
+
+	 ^aDivdend negated! !
+
+!Negative methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:52:08'!
+puedoSerDividendoCon: aDivisor
+	
+	
+	| denominator greatestCommonDivisor numerator |
+	aDivisor isNegative ifTrue:[ ^self negated / aDivisor negated].
+
+	greatestCommonDivisor := self greatestCommonDivisorWith: aDivisor. 
+	numerator := self // greatestCommonDivisor.
+	denominator := aDivisor // greatestCommonDivisor.
+
+	denominator isOne ifTrue: [ ^numerator ].
+
+	^Fraccion new initializeWith: numerator over: denominator! !
+
+!Negative methodsFor: 'utils - private' stamp: 'ERMC 9/30/2020 19:54:33'!
+puedoSerDivisorCon: aDividend
+	
+	aDividend  puedoSerDividendoCon: self. 
+
+
+
+! !
+
+
+!Negative methodsFor: 'operaciones' stamp: 'ERMC 9/30/2020 18:28:20'!
+fibonacci
+
+	^ self error: Entero negativeFibonacciErrorDescription! !
 
 
 !classDefinition: #One category: 'Numero-Exercise'!
@@ -625,12 +660,56 @@ Entero subclass: #One
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!One methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:32:30'!
+!One methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:19:42'!
+denominadorDe: aDivisor
+	
+	^ aDivisor .
+
+
+
+! !
+
+!One methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 12:59:37'!
+numeradorDe: aDividend
+	
+	^ self.
+
+
+
+! !
+
+!One methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:51:56'!
+puedoSerDividendoCon: aDivisor
+	
+	
+	| denominator greatestCommonDivisor numerator |
+	aDivisor isNegative ifTrue:[ ^self negated / aDivisor negated].
+
+	greatestCommonDivisor := self greatestCommonDivisorWith: aDivisor. 
+	numerator := self // greatestCommonDivisor.
+	denominator := aDivisor // greatestCommonDivisor.
+
+	denominator isOne ifTrue: [ ^numerator ].
+
+	^Fraccion new initializeWith: numerator over: denominator! !
+
+!One methodsFor: 'utils - private' stamp: 'ERMC 9/30/2020 19:54:11'!
+puedoSerDivisorCon: aDividend
+	
+	aDividend  puedoSerDividendoCon: self. 
+
+
+
+! !
+
+
+!One methodsFor: 'operaciones' stamp: 'ERMC 9/30/2020 18:32:30'!
 fibonacci
 	
 	^ Entero with: 1. ! !
 
-!One methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:13'!
+
+!One methodsFor: 'initialization' stamp: 'ERMC 9/30/2020 18:53:13'!
 initialize
 	
 	value := 1! !
@@ -643,7 +722,58 @@ Entero subclass: #Positive
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Positive methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:38:31'!
+!Positive methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:02:30'!
+denominadorDe: aDivisor
+	
+	| greatestCommonDivisor |
+	
+	greatestCommonDivisor := self greatestCommonDivisorWith: aDivisor . 
+	
+	^ aDivisor // greatestCommonDivisor.
+	
+
+
+! !
+
+!Positive methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:01:58'!
+numeradorDe: aDividend
+	
+	| greatestCommonDivisor |
+	
+	greatestCommonDivisor := self greatestCommonDivisorWith: aDividend . 
+	
+	^ aDividend // greatestCommonDivisor.
+	
+
+
+! !
+
+!Positive methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:51:44'!
+puedoSerDividendoCon: aDivisor
+	
+	
+	| denominator greatestCommonDivisor numerator |
+	aDivisor isNegative ifTrue:[ ^self negated / aDivisor negated].
+
+	greatestCommonDivisor := self greatestCommonDivisorWith: aDivisor. 
+	numerator := self // greatestCommonDivisor.
+	denominator := aDivisor // greatestCommonDivisor.
+
+	denominator isOne ifTrue: [ ^numerator ].
+
+	^Fraccion new initializeWith: numerator over: denominator! !
+
+!Positive methodsFor: 'utils - private' stamp: 'ERMC 9/30/2020 19:49:22'!
+puedoSerDivisorCon: aDividend
+	
+	aDividend  puedoSerDividendoCon: self. 
+
+
+
+! !
+
+
+!Positive methodsFor: 'operaciones' stamp: 'ERMC 9/30/2020 18:38:31'!
 fibonacci
 
 	| one two |
@@ -655,7 +785,8 @@ fibonacci
 
 	! !
 
-!Positive methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:01'!
+
+!Positive methodsFor: 'initialization' stamp: 'ERMC 9/30/2020 18:53:01'!
 initializeWith: aValue 
 	
 	value := aValue! !
@@ -668,17 +799,44 @@ Entero subclass: #Zero
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
-!Zero methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:31:49'!
+!Zero methodsFor: 'operaciones' stamp: 'ERMC 9/30/2020 18:31:49'!
 fibonacci
 
 	^ Entero with: 1. 
 ! !
 
-!Zero methodsFor: 'as yet unclassified' stamp: 'ERMC 9/30/2020 18:53:32'!
+
+!Zero methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 12:51:05'!
+denominadorDe: aDividend
+
+	 self error: self canNotDivideByZeroErrorDescription! !
+
+!Zero methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 12:53:24'!
+numeradorDe: aDivisor
+
+	^ self! !
+
+!Zero methodsFor: 'utils - private' stamp: 'ERMC 10/1/2020 13:45:33'!
+puedoSerDividendoCon: aDivisor
+	 ^self.! !
+
+!Zero methodsFor: 'utils - private' stamp: 'ERMC 9/30/2020 19:36:31'!
+puedoSerDivisorCon: aDividend
+
+	 self error: self canNotDivideByZeroErrorDescription! !
+
+
+!Zero methodsFor: 'initialization' stamp: 'ERMC 9/30/2020 18:53:32'!
 initialize
 	
 	value := 0
 ! !
+
+
+!Zero methodsFor: 'error description' stamp: 'ERMC 9/30/2020 19:20:15'!
+canNotDivideByZeroErrorDescription
+
+	^'No se puede dividir por cero!!'! !
 
 
 !classDefinition: #Fraccion category: 'Numero-Exercise'!
@@ -865,15 +1023,21 @@ substractFromFraccion: minuendo
 Fraccion class
 	instanceVariableNames: ''!
 
-!Fraccion class methodsFor: 'intance creation' stamp: 'NR 9/23/2018 23:45:19'!
+!Fraccion class methodsFor: 'intance creation' stamp: 'ERMC 10/1/2020 13:58:09'!
 with: aDividend over: aDivisor
 
-	| greatestCommonDivisor numerator denominator |
+	"aDivisor puedoSerDivisorCon: aDividend."
+
+
+	"Intentamos sacar los ifs de aca pero no encontramos una forma de volver a llamar correctamente initializeWith: over: de Fraccion una vez que ya habiamos salido de esta clase. Dejamos la jerarquia polimorfica que creamos para que vean hasta donde avanzamos"
+	
+	| numerator denominator greatestCommonDivisor |
 	
 	aDivisor isZero ifTrue: [ self error: self canNotDivideByZeroErrorDescription ].
 	aDividend isZero ifTrue: [ ^aDividend ].
 	
 	aDivisor isNegative ifTrue:[ ^aDividend negated / aDivisor negated].
+	
 	
 	greatestCommonDivisor := aDividend greatestCommonDivisorWith: aDivisor. 
 	numerator := aDividend // greatestCommonDivisor.
@@ -881,5 +1045,5 @@ with: aDividend over: aDivisor
 	
 	denominator isOne ifTrue: [ ^numerator ].
 
-	^self new initializeWith: numerator over: denominator
+	^self new initializeWith: numerator over: denominator.
 	! !
