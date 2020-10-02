@@ -158,9 +158,9 @@ initialize
 	firstNode := EmptyNode new.
 	lastNode := EmptyNode new.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:47:00'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B 10/2/2020 23:49:01'!
 isEmpty
-	^ firstNode == EmptyNode new.! !
+	^ size = 0.! !
 
 !OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:44:57'!
 pop
@@ -227,6 +227,10 @@ OOStack subclass: #EmptyNode
 
 !EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:43:18'!
 initialize! !
+
+!EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B 10/2/2020 23:48:31'!
+previous
+	^self.! !
 
 !EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:43:44'!
 value
