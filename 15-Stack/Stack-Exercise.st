@@ -147,10 +147,34 @@ TestCase subclass: #SentenceFinderByPrefixTest
 
 !classDefinition: #OOStack category: #'Stack-Exercise'!
 Object subclass: #OOStack
-	instanceVariableNames: ''
+	instanceVariableNames: 'firstNode lastNode'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
+
+!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 20:48:06'!
+isEmpty
+	^ firstNode = nil.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:21:57'!
+pop
+	|node|
+	node := lastNode.
+	lastNode := lastNode previous.
+	(lastNode = nil) ifTrue: [firstNode := nil].
+	^ node value.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:15:33'!
+push: aString 
+	|node|
+	node := Node with: aString previous: lastNode.
+	(self isEmpty) ifTrue: [firstNode := node].
+	lastNode := node.
+	! !
+
+!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:23:07'!
+top
+	^ lastNode value.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -162,6 +186,40 @@ OOStack class
 stackEmptyErrorDescription
 	
 	^ 'Stack is empty!!'! !
+
+
+!classDefinition: #Node category: #'Stack-Exercise'!
+OOStack subclass: #Node
+	instanceVariableNames: 'value previous'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!Node methodsFor: 'as yet unclassified' stamp: 'G.I.B. 10/2/2020 21:08:34'!
+initializeWith: aValue previous: aNode
+	value := aValue.
+	previous := aNode.
+! !
+
+!Node methodsFor: 'as yet unclassified' stamp: 'G.I.B. 10/2/2020 21:11:17'!
+previous
+	^previous.
+! !
+
+!Node methodsFor: 'as yet unclassified' stamp: 'G.I.B. 10/2/2020 21:22:06'!
+value
+	^value.
+! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'Node class' category: #'Stack-Exercise'!
+Node class
+	instanceVariableNames: ''!
+
+!Node class methodsFor: 'as yet unclassified' stamp: 'G.I.B. 10/2/2020 21:08:08'!
+with: aValue previous: aNode
+	^self new initializeWith: aValue previous: aNode.! !
 
 
 !classDefinition: #SentenceFinderByPrefix category: #'Stack-Exercise'!
