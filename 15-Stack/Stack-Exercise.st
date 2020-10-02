@@ -172,13 +172,13 @@ pop
 	(lastNode = EmptyNode new) ifTrue: [firstNode := EmptyNode new].
 	^ node value.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:45:06'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B 10/2/2020 23:52:34'!
 push: aString
 	|node|
 	size := size+1.
 	node := Node with: aString previous: lastNode.
-	(firstNode = EmptyNode new) ifTrue: [firstNode := node].
-	"firstNode xxx: node."
+	"(firstNode = EmptyNode new) ifTrue: [firstNode := node]."
+	firstNode updateFirst: node.
 	lastNode := node.
 	! !
 
@@ -193,6 +193,10 @@ top
 	^ lastNode value.
 "
 	^lastNode value.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B 10/2/2020 23:53:01'!
+updateFirst: aNode
+	self subclassResponsibility.! !
 
 !OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:18:47'!
 value
@@ -232,6 +236,10 @@ initialize! !
 previous
 	^self.! !
 
+!EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B 10/2/2020 23:53:12'!
+updateFirst: aNode
+	firstNode := aNode.! !
+
 !EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:43:44'!
 value
 	^OOStack error: OOStack stackEmptyErrorDescription.
@@ -270,6 +278,9 @@ initializeWith: aValue previous: aNode
 previous
 	^previous.
 ! !
+
+!Node methodsFor: 'as yet unclassified' stamp: 'G. I. B 10/2/2020 23:53:22'!
+updateFirst: aNode! !
 
 !Node methodsFor: 'as yet unclassified' stamp: 'G.I.B. 10/2/2020 21:22:06'!
 value
