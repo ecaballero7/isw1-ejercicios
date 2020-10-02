@@ -1,4 +1,4 @@
-!classDefinition: #OOStackTest category: #'Stack-Exercise'!
+!classDefinition: #OOStackTest category: 'Stack-Exercise'!
 TestCase subclass: #OOStackTest
 	instanceVariableNames: ''
 	classVariableNames: ''
@@ -137,7 +137,7 @@ test10CanNotTopWhenThereAreNoObjectsInTheStack
 ! !
 
 
-!classDefinition: #SentenceFinderByPrefixTest category: #'Stack-Exercise'!
+!classDefinition: #SentenceFinderByPrefixTest category: 'Stack-Exercise'!
 TestCase subclass: #SentenceFinderByPrefixTest
 	instanceVariableNames: ''
 	classVariableNames: ''
@@ -145,40 +145,59 @@ TestCase subclass: #SentenceFinderByPrefixTest
 	category: 'Stack-Exercise'!
 
 
-!classDefinition: #OOStack category: #'Stack-Exercise'!
+!classDefinition: #OOStack category: 'Stack-Exercise'!
 Object subclass: #OOStack
-	instanceVariableNames: 'firstNode lastNode'
+	instanceVariableNames: 'firstNode lastNode size'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:41:07'!
+initialize
+	size := 0.
+	firstNode := nil.
+	lastNode := nil.! !
 
 !OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 20:48:06'!
 isEmpty
 	^ firstNode = nil.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:21:57'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:39:27'!
+new
+	size := 0.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:59:55'!
 pop
 	|node|
 	node := lastNode.
+	(lastNode = nil) ifTrue: [^self error: self class stackEmptyErrorDescription ].
+	(lastNode = nil) ifFalse: [size := size - 1].
 	lastNode := lastNode previous.
 	(lastNode = nil) ifTrue: [firstNode := nil].
 	^ node value.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:15:33'!
-push: aString 
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:36:57'!
+push: aString
 	|node|
+	size := size+1.
 	node := Node with: aString previous: lastNode.
 	(self isEmpty) ifTrue: [firstNode := node].
 	lastNode := node.
 	! !
 
-!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 21:23:07'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:35:56'!
+size
+	^ size.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:00:53'!
 top
+	(lastNode = nil) ifTrue: [^self error: self class stackEmptyErrorDescription ].
+
 	^ lastNode value.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'OOStack class' category: #'Stack-Exercise'!
+!classDefinition: 'OOStack class' category: 'Stack-Exercise'!
 OOStack class
 	instanceVariableNames: ''!
 
@@ -188,7 +207,7 @@ stackEmptyErrorDescription
 	^ 'Stack is empty!!'! !
 
 
-!classDefinition: #Node category: #'Stack-Exercise'!
+!classDefinition: #Node category: 'Stack-Exercise'!
 OOStack subclass: #Node
 	instanceVariableNames: 'value previous'
 	classVariableNames: ''
@@ -213,7 +232,7 @@ value
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'Node class' category: #'Stack-Exercise'!
+!classDefinition: 'Node class' category: 'Stack-Exercise'!
 Node class
 	instanceVariableNames: ''!
 
@@ -222,7 +241,7 @@ with: aValue previous: aNode
 	^self new initializeWith: aValue previous: aNode.! !
 
 
-!classDefinition: #SentenceFinderByPrefix category: #'Stack-Exercise'!
+!classDefinition: #SentenceFinderByPrefix category: 'Stack-Exercise'!
 Object subclass: #SentenceFinderByPrefix
 	instanceVariableNames: ''
 	classVariableNames: ''
