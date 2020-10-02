@@ -152,36 +152,33 @@ Object subclass: #OOStack
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:41:07'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:41:48'!
 initialize
 	size := 0.
-	firstNode := nil.
-	lastNode := nil.! !
+	firstNode := EmptyNode new.
+	lastNode := EmptyNode new.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G.I.B. 10/2/2020 20:48:06'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:47:00'!
 isEmpty
-	^ firstNode = nil.! !
+	^ firstNode == EmptyNode new.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:39:27'!
-new
-	size := 0.! !
-
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:59:55'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:44:57'!
 pop
 	|node|
 	node := lastNode.
-	(lastNode = nil) ifTrue: [^self error: self class stackEmptyErrorDescription ].
-	(lastNode = nil) ifFalse: [size := size - 1].
+	(lastNode = EmptyNode new) ifTrue: [^self error: self class stackEmptyErrorDescription ].
+	(lastNode = EmptyNode new) ifFalse: [size := size - 1].
 	lastNode := lastNode previous.
-	(lastNode = nil) ifTrue: [firstNode := nil].
+	(lastNode = EmptyNode new) ifTrue: [firstNode := EmptyNode new].
 	^ node value.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 21:36:57'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:45:06'!
 push: aString
 	|node|
 	size := size+1.
 	node := Node with: aString previous: lastNode.
-	(self isEmpty) ifTrue: [firstNode := node].
+	(firstNode = EmptyNode new) ifTrue: [firstNode := node].
+	"firstNode xxx: node."
 	lastNode := node.
 	! !
 
@@ -189,11 +186,25 @@ push: aString
 size
 	^ size.! !
 
-!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:00:53'!
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:17:39'!
 top
-	(lastNode = nil) ifTrue: [^self error: self class stackEmptyErrorDescription ].
+"	(lastNode = nil) ifTrue: [^self error: self class stackEmptyErrorDescription ].
 
-	^ lastNode value.! !
+	^ lastNode value.
+"
+	^lastNode value.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:18:47'!
+value
+	self subclassResponsibility.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:35:23'!
+xxx
+	self subclassResponsibility.! !
+
+!OOStack methodsFor: 'operations' stamp: 'G. I. B. 10/2/2020 22:35:34'!
+xxx: aNode
+	self subclassResponsibility.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -205,6 +216,37 @@ OOStack class
 stackEmptyErrorDescription
 	
 	^ 'Stack is empty!!'! !
+
+
+!classDefinition: #EmptyNode category: 'Stack-Exercise'!
+OOStack subclass: #EmptyNode
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:43:18'!
+initialize! !
+
+!EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:43:44'!
+value
+	^OOStack error: OOStack stackEmptyErrorDescription.
+! !
+
+!EmptyNode methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:36:37'!
+xxx: aNode
+	firstNode := aNode.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'EmptyNode class' category: 'Stack-Exercise'!
+EmptyNode class
+	instanceVariableNames: ''!
+
+!EmptyNode class methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:18:27'!
+value
+	^OOStack error: OOStack stackEmptyErrorDescription.
+! !
 
 
 !classDefinition: #Node category: 'Stack-Exercise'!
@@ -229,6 +271,9 @@ previous
 value
 	^value.
 ! !
+
+!Node methodsFor: 'as yet unclassified' stamp: 'G. I. B. 10/2/2020 22:35:58'!
+xxx: aNode! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
