@@ -144,14 +144,8 @@ TestCase subclass: #SentenceFinderByPrefixTest
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 18:47:22'!
-test01CanNotFindWhenThereAreNoObjectsInTheSentenceFinder
-"dado un prefijo se encarga de devolver todas las oraciones almacenadas en el Stack que contengan dicho prefijo.
-
-Por ej. si el prefijo es 'Wint', y las oraciones en el Stack son 'winter is coming', 'winning is everything', 'The winds of Winter' y 'Winter is here' sólo debería devolver la última.
-
-El prefijo es case sensitive, no puede ser vacío, ni contener espacios vacíos y el Stack al terminar la operación de búsqueda debe de mantener las mismas oraciones en idéntico orden.
-" 
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:49:13'!
+test01CanNotFindInEmptySentenceFinder
 	|sentenceFinder  prefix|
 	
 	sentenceFinder := SentenceFinderByPrefix  new.
@@ -163,53 +157,8 @@ El prefijo es case sensitive, no puede ser vacío, ni contener espacios vacíos y 
 		withExceptionDo: [ :anError |
 			self assert: anError messageText = SentenceFinderByPrefix SentenceFinderEmptyErrorDescription ]! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 19:46:33'!
-test02FindsSentencesWhenExistsAprefix
-
-	|sentenceFinder  prefix sentence solution |
-	
-	sentenceFinder := SentenceFinderByPrefix  new.
-	prefix := 'a'.
-	sentence:= 'awinter'.
-	sentenceFinder addSentence: sentence. 
-	solution := OrderedCollection new.
-	solution add: 'awinter'.
-		
-	
-	self assert: solution equals: (sentenceFinder find: prefix).! !
-
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 19:49:05'!
-test03ReturnsEmptyCollectionWhenPrefixIsNotPresent
-
-	|sentenceFinder  prefix sentence solution |
-	
-	sentenceFinder := SentenceFinderByPrefix  new.
-	prefix := 'b'.
-	sentence:= 'awinter'.
-	sentenceFinder addSentence: sentence. 
-	solution := OrderedCollection new.
-
-	
-	self assert: solution equals: (sentenceFinder find: prefix).! !
-
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 20:09:57'!
-test04IfPrefixContainsSpaceRaiseErrorPrefixCanNotContainSpaces
-
-	|sentenceFinder  prefix solution |
-	
-	sentenceFinder := SentenceFinderByPrefix  new.
-	sentenceFinder addSentence: 'cualquiera'.
-	
-	prefix := 'a b'.
-	
-	self 
-		should: [ sentenceFinder find: prefix]
-		raise: Error 
-		withExceptionDo: [ :anError |
-			self assert: anError messageText = SentenceFinderByPrefix SentenceFinderErrorPrefixCanNotContainSpaces ].! !
-
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 20:14:12'!
-test05IfPrefixIsEmptyRaiseErrorPrefixCanNotBeEmpty
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:26:25'!
+test02IfPrefixIsEmptyRaiseErrorPrefixCanNotBeEmpty
 
 	|sentenceFinder  prefix |
 	
@@ -224,8 +173,53 @@ test05IfPrefixIsEmptyRaiseErrorPrefixCanNotBeEmpty
 		withExceptionDo: [ :anError |
 			self assert: anError messageText = SentenceFinderByPrefix SentenceFinderErrorPrefixCanNotBeEmpty ].! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 20:30:25'!
-test06PrefixFinderIsCaseSensitive
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:26:47'!
+test03IfPrefixContainsSpaceRaiseErrorPrefixCanNotContainSpaces
+
+	|sentenceFinder  prefix |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	sentenceFinder addSentence: 'cualquiera'.
+	
+	prefix := 'a b'.
+	
+	self 
+		should: [ sentenceFinder find: prefix]
+		raise: Error 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = SentenceFinderByPrefix SentenceFinderErrorPrefixCanNotContainSpaces ].! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:37:00'!
+test04ReturnsEmptyCollectionWhenPrefixIsNotPresentAndFinderHas1Sentence
+
+	|sentenceFinder  prefix sentence solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	prefix := 'b'.
+	sentence:= 'awinter'.
+	sentenceFinder addSentence: sentence. 
+	solution := OrderedCollection new.
+
+	
+	self assert: solution equals: (sentenceFinder find: prefix).! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:36:36'!
+test05FindsSentencesWhenExistsAprefixAndFinderHas1Sentence
+
+	|sentenceFinder  prefix sentence solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	prefix := 'a'.
+	sentence:= 'awinter'.
+	sentenceFinder addSentence: sentence. 
+	solution := OrderedCollection new.
+	solution add: 'awinter'.
+		
+	
+	self assert: solution equals: (sentenceFinder find: prefix).! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:50:30'!
+test06ReturnsEmptyCollectionWhenFinderHasMoreThan1SentenceAndThereIsNoMatch
 
 	|sentenceFinder  prefix solution |
 	
@@ -233,17 +227,17 @@ test06PrefixFinderIsCaseSensitive
 	sentenceFinder addSentence: 'winter is coming'.
 	sentenceFinder addSentence: 'winning is everything'.
 	sentenceFinder addSentence: 'The winds of Winter'.
-	sentenceFinder addSentence: 'Winter is here'.
+	sentenceFinder addSentence: 'winter is here'.
 	
-	prefix := 'Wint'.
+	prefix := 'Win'.
 	solution:= OrderedCollection  new.
-	solution add: 'Winter is here'.
+
 	
-	self  assert: solution equals: (sentenceFinder find: prefix).
+	self  assert: solution asSet equals: (sentenceFinder find: prefix) asSet .
 		! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 20:30:57'!
-test07FindMoreThatOneSolutionInSentences
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:41:09'!
+test07FindMoreThatOneSentenceWhenFinderHasMoreThan1SentenceAndThereAreMatches
 
 	|sentenceFinder  prefix solution |
 	
@@ -259,6 +253,74 @@ test07FindMoreThatOneSolutionInSentences
 	solution add: 'winning is everything'. 
 	
 	self  assert: solution asSet equals: (sentenceFinder find: prefix) asSet .
+		! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:52:12'!
+test08FinderIsCaseSentitiveWhenFinderHas1SentenceAndThereIsNoMatch
+
+	|sentenceFinder  prefix solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	sentenceFinder addSentence: 'winter is coming'.
+	sentenceFinder addSentence: 'winning is everything'.
+	sentenceFinder addSentence: 'The winds of Winter'.
+	sentenceFinder addSentence: 'winter is here'.
+	
+	prefix := 'Wint'.
+	solution:= OrderedCollection  new.
+	
+	self  assert: solution equals: (sentenceFinder find: prefix).
+		! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:52:36'!
+test09FinderIsCaseSentitiveWhenFinderHas1SentenceAndThereIsMatch
+
+	|sentenceFinder  prefix solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	sentenceFinder addSentence: 'Winter is here'.
+	
+	prefix := 'Wint'.
+	solution:= OrderedCollection  new.
+	solution add: 'Winter is here'.
+	
+	self  assert: solution equals: (sentenceFinder find: prefix).
+		! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:53:05'!
+test10FinderIsCaseSentitiveWhenFinderHasMoreThan1SentenceAndThereIsNoMatch
+
+	|sentenceFinder  prefix solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	sentenceFinder addSentence: 'winter is coming'.
+	sentenceFinder addSentence: 'winning is everything'.
+	sentenceFinder addSentence: 'The winds of Winter'.
+	sentenceFinder addSentence: 'winter is here'.
+	
+	prefix := 'Wint'.
+	solution:= OrderedCollection  new.
+	
+	self  assert: solution equals: (sentenceFinder find: prefix).
+		! !
+
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:55:19'!
+test11FinderIsCaseSentitiveWhenFinderHasMoreThan1SentenceAndThereIsAreMatches
+
+	|sentenceFinder  prefix solution |
+	
+	sentenceFinder := SentenceFinderByPrefix  new.
+	sentenceFinder addSentence: 'winter is coming'.
+	sentenceFinder addSentence: 'winning is everything'.
+	sentenceFinder addSentence: 'The winds of Winter'.
+	sentenceFinder addSentence: 'winter is here'.
+	
+	prefix := 'wint'.
+	solution:= OrderedCollection  new.
+	solution add: 'winter is coming'.
+	solution add: 'winter is here'.
+	
+	self  assert: solution asSet equals: (sentenceFinder find: prefix) asSet.
 		! !
 
 
@@ -412,14 +474,12 @@ Object subclass: #SentenceFinderByPrefix
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'ERMC 10/3/2020 20:16:50'!
+!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:23:09'!
 find: aPrefix
 	
 	| invertedStack sentencesWithPrefix currentTop  |
 	
-	(sentences isEmpty) ifTrue: [self error: self class SentenceFinderEmptyErrorDescription ].
-	(aPrefix  includesSubString:  ' ' ) ifTrue:[self error: self class SentenceFinderErrorPrefixCanNotContainSpaces ].
-	(aPrefix = '' ) ifTrue:[self error: self class SentenceFinderErrorPrefixCanNotBeEmpty ].
+	self validatePrefix: aPrefix.
 	
 	invertedStack := OOStack new.
 	sentencesWithPrefix := OrderedCollection new.
@@ -429,7 +489,7 @@ find: aPrefix
 			invertedStack push: currentTop value.
 			((currentTop value) beginsWith: aPrefix) ifTrue: [ sentencesWithPrefix add: currentTop value] 
 			].
-	
+		
 	self reorderOriginalStack: invertedStack . 
 	
 	^ sentencesWithPrefix.! !
@@ -449,6 +509,14 @@ reorderOriginalStack: invertedStack
 	[invertedStack isEmpty] whileFalse:
 		[ currentTop:= invertedStack pop. 
 			sentences push: currentTop value].
+	! !
+
+!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'G. B. 10/4/2020 23:10:12'!
+validatePrefix: aPrefix
+
+	(sentences isEmpty) ifTrue: [self error: self class SentenceFinderEmptyErrorDescription ].
+	(aPrefix  includesSubString:  ' ' ) ifTrue:[self error: self class SentenceFinderErrorPrefixCanNotContainSpaces ].
+	(aPrefix = '' ) ifTrue:[self error: self class SentenceFinderErrorPrefixCanNotBeEmpty ].
 	! !
 
 
