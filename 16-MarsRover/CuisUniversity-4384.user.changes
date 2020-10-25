@@ -1,0 +1,1640 @@
+
+
+----STARTUP---- (25 October 2020 15:38:43) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:36:51' prior: 50879630!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	"self assert: rover position equals: 5@4.
+	self assert: rover cardinalPoint class equals: West."
+	
+	self assert: rover position: 5@4 pointing: West. 
+	
+	! !
+!MarsRoverTest methodsFor: 'nil' stamp: 'ERMC 10/25/2020 17:37:40'!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. ! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:38:46' prior: 50880636!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:39:32'!
+assert: aMarsRover positionIs: aPosition andIsPointingAt: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:39:32' prior: 50880624!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	"self assert: rover position equals: 5@4.
+	self assert: rover cardinalPoint class equals: West."
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	
+	! !
+
+!methodRemoval: MarsRoverTest #assert:position:pointing: stamp: 'ERMC 10/25/2020 17:39:32'!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:39:42'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:04' prior: 50880661!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	
+	! !
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:24' prior: 50879641!
+test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 5@5 andIsPointingAt: North. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:42' prior: 50879652!
+test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 6@4 andIsPointingAt: East. 
+	
+	! !
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:59' prior: 50879663!
+test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'f'.
+
+	self assert: rover positionIs: 5@3 andIsPointingAt: South . 
+	
+	! !
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:41:13' prior: 50879674!
+test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 4@4 andIsPointingAt: West. 
+	
+	! !
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:41:42' prior: 50879586!
+test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 5@3 andIsPointingAt: North . 
+	
+	! !
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:41:58' prior: 50879597!
+test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'b'.
+	
+	self assert: rover positionIs: 4@4 andIsPointingAt: East. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:42:16' prior: 50879608!
+test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 5@5 andIsPointingAt: South. 
+
+	
+	! !
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:42:28' prior: 50879619!
+test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 6@4 andIsPointingAt: West. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:43:37' prior: 50879542!
+test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+
+	! !
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:02' prior: 50879553!
+test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: North . 
+
+	! !
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:13' prior: 50879564!
+test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: East. 
+! !
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:26' prior: 50879575!
+test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'l'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: South. 
+
+	! !
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/25/2020 17:44:52' prior: 50879769!
+test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands
+	|rover|
+	rover _ MarsRover createAt: 0@0 pointingTo: North.
+	rover processCommand: 'ffbrl'.
+
+	self assert: rover positionIs: 0@1 andIsPointingAt: North. 
+! !
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/25/2020 17:45:11' prior: 50879780!
+test23ShouldStopProcessingStringWhenEncountersInvalidCharInString
+	|rover|
+	rover _ MarsRover createAt: 0@0 pointingTo: North.
+	self 
+	should: [ 	rover processCommand: 'ffAbrl'. ]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = MarsRover invalidInputErrorDescription . ].
+	
+	self assert: rover positionIs: 0@2 andIsPointingAt: North. ! !
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:23' prior: 50879685!
+test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: East. 
+
+	! !
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:40' prior: 50879696!
+test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: North. 
+	! !
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:50' prior: 50879707!
+test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: South. ! !
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:57' prior: 50879718!
+test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	! !
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
