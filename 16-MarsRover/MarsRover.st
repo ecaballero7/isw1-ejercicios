@@ -5,132 +5,86 @@ TestCase subclass: #MarsRoverTest
 	poolDictionaries: ''
 	category: 'MarsRover'!
 
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test23ShouldPointWestWhenGivenLeftPositionAndIsPointingNorth
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/24/2020 21:03:10'!
+test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: North.
 	rover processCommand: 'l'.
 	self assert: rover cardinalPoint class equals: West.
-	! !
-
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test24ShouldKeepPositionWhenGivenLeftPositionAndIsPointingEast
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: East.
-	rover processCommand: 'l'.
 	self assert: rover position equals: 5@4.
+
 	! !
 
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test25ShouldPointNorthWhenGivenLeftPositionAndIsPointingEast
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/24/2020 21:03:17'!
+test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: East.
 	rover processCommand: 'l'.
 	self assert: rover cardinalPoint class equals: North.
-	! !
-
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test26ShouldKeepPositionWhenGivenLeftPositionAndIsPointingSouth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: South.
-	rover processCommand: 'l'.
 	self assert: rover position equals: 5@4.
+
 	! !
 
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test27ShouldPointEastWhenGivenLeftPositionAndIsPointingSouth
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/24/2020 21:03:23'!
+test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: South.
 	rover processCommand: 'l'.
 	self assert: rover cardinalPoint class equals: East.
-	! !
-
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test28ShouldKeepPositionWhenGivenLeftPositionAndIsPointingWest
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: West.
-	rover processCommand: 'l'.
 	self assert: rover position equals: 5@4.
-	! !
+! !
 
-!MarsRoverTest methodsFor: 'move left tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test29ShouldPointSouthWhenGivenLeftPositionAndIsPointingWest
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/24/2020 21:03:29'!
+test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: West.
 	rover processCommand: 'l'.
 	self assert: rover cardinalPoint class equals: South.
+	self assert: rover position equals: 5@4.
+
 	! !
 
 
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test14ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingNorth
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/24/2020 21:02:34'!
+test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: North.
 	rover processCommand: 'b'.
 	self assert: rover position equals: 5@3.
+	self assert: rover cardinalPoint class equals: North .
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test15ShouldPointNorthWhenGivenBackwardPositionAndIsPointingNorth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: West.
-	rover processCommand: 'b'.
-	self assert: rover cardinalPoint class equals: West.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test16ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/24/2020 21:02:41'!
+test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: East.
 	rover processCommand: 'b'.
 	self assert: rover position equals: 4@4.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test17ShouldPointEastWhenGivenBackwardPositionAndIsPointingEast
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: East.
-	rover processCommand: 'b'.
 	self assert: rover cardinalPoint class equals: East.
+
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test18ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/24/2020 21:02:49'!
+test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: South.
 	rover processCommand: 'b'.
 	self assert: rover position equals: 5@5.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test19ShouldPointSouthWhenGivenBackwardPositionAndIsPointingSouth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: South.
-	rover processCommand: 'b'.
 	self assert: rover cardinalPoint class equals: South.
+
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test20ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/24/2020 21:02:55'!
+test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: West.
 	rover processCommand: 'b'.
 	self assert: rover position equals: 6@4.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move backward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test21ShouldPointWestWhenGivenBackwardPositionAndIsPointingWest
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: West.
-	rover processCommand: 'b'.
 	self assert: rover cardinalPoint class equals: West.
+
 	
 	! !
 
@@ -145,141 +99,84 @@ test05ShouldMaintainPositionWhenGivenEmptyStringCommand
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test06ShouldMoveForwardWhenGivenForwardPositionAndIsPointingNorth
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/24/2020 20:48:49'!
+test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: North.
 	rover processCommand: 'f'.
 	self assert: rover position equals: 5@5.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test07ShouldPointNorthWhenGivenForwardPositionAndIsPointingNorth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: North.
-	rover processCommand: 'f'.
 	self assert: rover cardinalPoint class equals: North.
+
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test08ShouldMoveForwardWhenGivenForwardPositionAndIsPointingEast
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/24/2020 20:48:35'!
+test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: East.
 	rover processCommand: 'f'.
 	self assert: rover position equals: 6@4.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test09ShouldPointEastWhenGivenForwardPositionAndIsPointingEast
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: East.
-	rover processCommand: 'f'.
 	self assert: rover cardinalPoint class equals: East.
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test10ShouldMoveForwardWhenGivenForwardPositionAndIsPointingSouth
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/24/2020 20:48:28'!
+test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: South.
 	rover processCommand: 'f'.
 	self assert: rover position equals: 5@3.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test11ShouldPointSouthWhenGivenForwardPositionAndIsPointingSouth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: South.
-	rover processCommand: 'f'.
 	self assert: rover cardinalPoint class equals: South.
 	
 	! !
 
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test12ShouldMoveForwardWhenGivenForwardPositionAndIsPointingWest
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/24/2020 20:48:22'!
+test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: West.
 	rover processCommand: 'f'.
 	self assert: rover position equals: 4@4.
-	
-	! !
-
-!MarsRoverTest methodsFor: 'move forward tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test13ShouldPointWestWhenGivenForwardPositionAndIsPointingWest
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: West.
-	rover processCommand: 'f'.
 	self assert: rover cardinalPoint class equals: West.
+
 	
 	! !
 
 
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test30ShouldKeepPositionWhenGivenRightPositionAndIsPointingNorth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: North.
-	rover processCommand: 'r'.
-	self assert: rover position equals: 5@4.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test31ShouldPointEastWhenGivenRightPositionAndIsPointingNorth
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/24/2020 21:03:36'!
+test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: North.
 	rover processCommand: 'r'.
 	self assert: rover cardinalPoint class equals: East.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test32ShouldKeepPositionWhenGivenRightPositionAndIsPointingEast
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: East.
-	rover processCommand: 'r'.
 	self assert: rover position equals: 5@4.
+
 	! !
 
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test33ShouldPointSouthWhenGivenRightPositionAndIsPointingEast
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: East.
-	rover processCommand: 'r'.
-	self assert: rover cardinalPoint class equals: South.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test34ShouldKeepPositionWhenGivenRightPositionAndIsPointingSouth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: South.
-	rover processCommand: 'r'.
-	self assert: rover position equals: 5@4.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test35ShouldPointWestWhenGivenRightPositionAndIsPointingSouth
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: South.
-	rover processCommand: 'r'.
-	self assert: rover cardinalPoint class equals: West.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test36ShouldKeepPositionWhenGivenRightPositionAndIsPointingWest
-	|rover|
-	rover _ MarsRover createAt: 5@4 pointingTo: West.
-	rover processCommand: 'r'.
-	self assert: rover position equals: 5@4.
-	! !
-
-!MarsRoverTest methodsFor: 'move right tests' stamp: 'G. B. 10/24/2020 21:52:27'!
-test37ShouldPointNorthWhenGivenRightPositionAndIsPointingWest
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/24/2020 21:03:51'!
+test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest
 	|rover|
 	rover _ MarsRover createAt: 5@4 pointingTo: West.
 	rover processCommand: 'r'.
 	self assert: rover cardinalPoint class equals: North.
+	self assert: rover position equals: 5@4.
+	! !
+
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/24/2020 21:01:46'!
+test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'r'.
+	self assert: rover cardinalPoint class equals: South.
+	self assert: rover position equals: 5@4.
+	! !
+
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/24/2020 21:01:40'!
+test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'r'.
+	self assert: rover cardinalPoint class equals: West.
+	self assert: rover position equals: 5@4.
 	! !
 
 
@@ -320,8 +217,8 @@ test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint
 ! !
 
 
-!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test38ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/24/2020 21:04:11'!
+test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands
 	|rover|
 	rover _ MarsRover createAt: 0@0 pointingTo: North.
 	rover processCommand: 'ffbrl'.
@@ -329,8 +226,8 @@ test38ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands
 	self assert: rover cardinalPoint class equals: North.
 ! !
 
-!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'G. B. 10/24/2020 21:52:26'!
-test39ShouldStopProcessingStringWhenEncountersInvalidCharInString
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/24/2020 21:04:18'!
+test23ShouldStopProcessingStringWhenEncountersInvalidCharInString
 	|rover|
 	rover _ MarsRover createAt: 0@0 pointingTo: North.
 	self 
@@ -351,10 +248,6 @@ Object subclass: #MarsRover
 	poolDictionaries: ''
 	category: 'MarsRover'!
 
-!MarsRover methodsFor: 'initialization' stamp: 'G. B. 10/24/2020 16:06:04'!
-cardinalPoint
-	^ cardinalPoint.! !
-
 !MarsRover methodsFor: 'initialization' stamp: 'G. B. 10/24/2020 18:10:59'!
 initializeWith: aPoint pointingTo: aCardinalPoint
 	|points|
@@ -364,99 +257,14 @@ initializeWith: aPoint pointingTo: aCardinalPoint
 	currentPosition := aPoint.
 	cardinalPoint := aCardinalPoint new.! !
 
-!MarsRover methodsFor: 'initialization' stamp: 'G. B. 10/24/2020 15:51:12'!
+
+!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 16:06:04'!
+cardinalPoint
+	^ cardinalPoint.! !
+
+!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 15:51:12'!
 position
 	^ currentPosition.! !
-
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 18:23:37'!
-moveBackwardFromEast 
-
-	currentPosition _ (currentPosition x - 1) @ (currentPosition y).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 18:19:04'!
-moveBackwardFromNorth 
-
-	currentPosition _ (currentPosition x) @ (currentPosition y -1).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 18:31:10'!
-moveBackwardFromSouth
-
-	currentPosition _ (currentPosition x) @ (currentPosition y +1).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 20:26:34'!
-moveBackwardFromWest
-
-	currentPosition _ (currentPosition x + 1) @ (currentPosition y).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 17:55:06'!
-moveForwardFromEast 
-
-	currentPosition _ (currentPosition x + 1) @ (currentPosition y).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 18:09:40'!
-moveForwardFromNorth 
-
-	currentPosition _ (currentPosition x) @ (currentPosition y +1).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 18:29:33'!
-moveForwardFromSouth 
-
-	currentPosition _ (currentPosition x) @ (currentPosition y -1).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 17:55:19'!
-moveForwardFromWest 
-
-	currentPosition _ (currentPosition x-1) @ (currentPosition y).
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:04:16'!
-moveLeftFromEast
-
-	cardinalPoint _ North new.! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:01:43'!
-moveLeftFromNorth
-
-	cardinalPoint _ West new.! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:06:15'!
-moveLeftFromSouth
-	cardinalPoint _ East new.! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:08:47'!
-moveLeftFromWest
-	cardinalPoint _ South new.! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:16:55'!
-moveRightFromEast
-	cardinalPoint _ South new.
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:14:30'!
-moveRightFromNorth
-	cardinalPoint _ East new.
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:19:38'!
-moveRightFromSouth
-	cardinalPoint _ West new.
-
-! !
-
-!MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:24:10'!
-moveRightFromWest
-	cardinalPoint _ North new.
-
-
-! !
 
 !MarsRover methodsFor: 'commands' stamp: 'G. B. 10/24/2020 21:52:26'!
 processCommand: aCommandString 
@@ -474,6 +282,96 @@ processCommand: aCommandString
 							('fblr' includes: command ) ifFalse: [^self error: self class invalidInputErrorDescription].
 		].
 	! !
+
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 18:23:37'!
+moveBackwardFromEast 
+
+	currentPosition _ (currentPosition x - 1) @ (currentPosition y).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 18:19:04'!
+moveBackwardFromNorth 
+
+	currentPosition _ (currentPosition x) @ (currentPosition y -1).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 18:31:10'!
+moveBackwardFromSouth
+
+	currentPosition _ (currentPosition x) @ (currentPosition y +1).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 20:26:34'!
+moveBackwardFromWest
+
+	currentPosition _ (currentPosition x + 1) @ (currentPosition y).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 17:55:06'!
+moveForwardFromEast 
+
+	currentPosition _ (currentPosition x + 1) @ (currentPosition y).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 18:09:40'!
+moveForwardFromNorth 
+
+	currentPosition _ (currentPosition x) @ (currentPosition y +1).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 18:29:33'!
+moveForwardFromSouth 
+
+	currentPosition _ (currentPosition x) @ (currentPosition y -1).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 17:55:19'!
+moveForwardFromWest 
+
+	currentPosition _ (currentPosition x-1) @ (currentPosition y).
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:04:16'!
+moveLeftFromEast
+
+	cardinalPoint _ North new.! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:01:43'!
+moveLeftFromNorth
+
+	cardinalPoint _ West new.! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:06:15'!
+moveLeftFromSouth
+	cardinalPoint _ East new.! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:08:47'!
+moveLeftFromWest
+	cardinalPoint _ South new.! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:16:55'!
+moveRightFromEast
+	cardinalPoint _ South new.
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:14:30'!
+moveRightFromNorth
+	cardinalPoint _ East new.
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:19:38'!
+moveRightFromSouth
+	cardinalPoint _ West new.
+
+! !
+
+!MarsRover methodsFor: 'commands - private' stamp: 'G. B. 10/24/2020 21:24:10'!
+moveRightFromWest
+	cardinalPoint _ North new.
+
+
+! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
