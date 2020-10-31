@@ -1,0 +1,3198 @@
+
+
+----STARTUP---- (25 October 2020 15:38:43) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:41:46'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:42:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:43:48'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 15:48:36'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:36:51' prior: 50879630!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	"self assert: rover position equals: 5@4.
+	self assert: rover cardinalPoint class equals: West."
+	
+	self assert: rover position: 5@4 pointing: West. 
+	
+	! !
+!MarsRoverTest methodsFor: 'nil' stamp: 'ERMC 10/25/2020 17:37:40'!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. ! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:38:46' prior: 50880636!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:39:32'!
+assert: aMarsRover positionIs: aPosition andIsPointingAt: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.! !
+!MarsRoverTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/25/2020 17:39:32' prior: 50880624!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	"self assert: rover position equals: 5@4.
+	self assert: rover cardinalPoint class equals: West."
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	
+	! !
+
+!methodRemoval: MarsRoverTest #assert:position:pointing: stamp: 'ERMC 10/25/2020 17:39:32'!
+assert: aMarsRover position: aPosition pointing: aCardinalPoint. 
+
+	self assert: aMarsRover position equals: aPosition .
+	self assert: aMarsRover cardinalPoint class equals: aCardinalPoint.!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:39:42'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:04' prior: 50880661!
+test05ShouldMaintainPositionWhenGivenEmptyStringCommand
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: ''.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	
+	! !
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:24' prior: 50879641!
+test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 5@5 andIsPointingAt: North. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:40:26'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:42' prior: 50879652!
+test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 6@4 andIsPointingAt: East. 
+	
+	! !
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:40:43'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:40:59' prior: 50879663!
+test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'f'.
+
+	self assert: rover positionIs: 5@3 andIsPointingAt: South . 
+	
+	! !
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:00'!
+PASSED!
+!MarsRoverTest methodsFor: 'move forward tests' stamp: 'ERMC 10/25/2020 17:41:13' prior: 50879674!
+test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'f'.
+	
+	self assert: rover positionIs: 4@4 andIsPointingAt: West. 
+	
+	! !
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:15'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:41:42' prior: 50879586!
+test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 5@3 andIsPointingAt: North . 
+	
+	! !
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:41:45'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:41:58' prior: 50879597!
+test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'b'.
+	
+	self assert: rover positionIs: 4@4 andIsPointingAt: East. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:42:00'!
+PASSED!
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:42:16' prior: 50879608!
+test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 5@5 andIsPointingAt: South. 
+
+	
+	! !
+!MarsRoverTest methodsFor: 'move backward tests' stamp: 'ERMC 10/25/2020 17:42:28' prior: 50879619!
+test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'b'.
+
+	self assert: rover positionIs: 6@4 andIsPointingAt: West. 
+
+	
+	! !
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:42:29'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:43:37' prior: 50879542!
+test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+
+	! !
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:43:39'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:43:41'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:02' prior: 50879553!
+test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: North . 
+
+	! !
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:13' prior: 50879564!
+test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'l'.
+	
+	self assert: rover positionIs: 5@4 andIsPointingAt: East. 
+! !
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:44:14'!
+PASSED!
+!MarsRoverTest methodsFor: 'move left tests' stamp: 'ERMC 10/25/2020 17:44:26' prior: 50879575!
+test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'l'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: South. 
+
+	! !
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:44:28'!
+PASSED!
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/25/2020 17:44:52' prior: 50879769!
+test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands
+	|rover|
+	rover _ MarsRover createAt: 0@0 pointingTo: North.
+	rover processCommand: 'ffbrl'.
+
+	self assert: rover positionIs: 0@1 andIsPointingAt: North. 
+! !
+!MarsRoverTest methodsFor: 'multiple commands tests' stamp: 'ERMC 10/25/2020 17:45:11' prior: 50879780!
+test23ShouldStopProcessingStringWhenEncountersInvalidCharInString
+	|rover|
+	rover _ MarsRover createAt: 0@0 pointingTo: North.
+	self 
+	should: [ 	rover processCommand: 'ffAbrl'. ]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = MarsRover invalidInputErrorDescription . ].
+	
+	self assert: rover positionIs: 0@2 andIsPointingAt: North. ! !
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:45:12'!
+PASSED!
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:23' prior: 50879685!
+test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: North.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: East. 
+
+	! !
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:46:25'!
+PASSED!
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:40' prior: 50879696!
+test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: West.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: North. 
+	! !
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:50' prior: 50879707!
+test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: East.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: South. ! !
+!MarsRoverTest methodsFor: 'move right tests' stamp: 'ERMC 10/25/2020 17:46:57' prior: 50879718!
+test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth
+	|rover|
+	rover _ MarsRover createAt: 5@4 pointingTo: South.
+	rover processCommand: 'r'.
+
+	self assert: rover positionIs: 5@4 andIsPointingAt: West. 
+	! !
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:46:58'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:51:00'!
+PASSED!
+
+!testRun: #MarsRoverTest #test01ShouldReturnInitialPositionWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test02ShouldRaiseErrorWhenPassedNotValidInitialPosition stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test03ShouldReturnInitialCardinalPointWhenCreatedCorrectly stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test04ShouldRaiseErrorWhenPassedNotValidInitialCardinalPoint stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test05ShouldMaintainPositionWhenGivenEmptyStringCommand stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test06ShouldMoveForwardWhenGivenForwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test07ShouldMoveForwardWhenGivenForwardCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test08ShouldMoveForwardWhenGivenForwardCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test09ShouldMoveForwardWhenGivenForwardCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test10ShouldMoveBackwardsWhenGivenBackwardCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test11ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test12ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test13ShouldMoveBackwardsWhenGivenBackwardPositionAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test14ShouldPointWestAndKeepPositionWhenGivenLeftCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test15ShouldPointNorthAndKeepPositionWhenGivenLeftCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test16ShouldPointEastAndKeepPositionWhenGivenLeftCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test17ShouldPointSouthAndKeepPositionWhenGivenLeftCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test18ShouldPointEastAndKeepPositionWhenGivenRightCommandAndIsPointingNorth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test19ShouldPointNorthAndKeepPositionWhenGivenRightCommandAndIsPointingWest stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test20ShouldPointSouthAndKeepPositionWhenGivenRightCommandAndIsPointingEast stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test21ShouldPointWestAndKeepPositionWhenGivenRightCommandAndIsPointingSouth stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test22ShouldChangePositionAndCardinalPointWhenGivenMultipleCommands stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+!testRun: #MarsRoverTest #test23ShouldStopProcessingStringWhenEncountersInvalidCharInString stamp: 'ERMC 10/25/2020 17:51:53'!
+PASSED!
+
+----QUIT----(25 October 2020 17:59:16) CuisUniversity-4384.image priorSource: 17554262!
+
+----STARTUP---- (29 October 2020 17:35:05) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+TestCase subclass: #TerniLapilliTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli
+	'!
+
+!classDefinition: #TerniLapilliTest category: 'TerniLapilli' stamp: 'ERMC 10/29/2020 17:38:18'!
+TestCase subclass: #TerniLapilliTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/29/2020 19:04:46'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'grid'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapilliTest methodsFor: 'nil' stamp: 'ERMC 10/29/2020 19:04:18'!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  terniLapili isEmpty ! !
+!TerniLapili methodsFor: 'nil' stamp: 'ERMC 10/29/2020 19:05:11'!
+isEmpty
+	
+	^ true.! !
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/29/2020 19:05:14'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/29/2020 19:32:02'!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert:  terniLapili  isEmpty ! !
+!TerniLapili class methodsFor: 'nil' stamp: 'ERMC 10/29/2020 20:57:07'!
+create
+	^ self new initialize.! !
+
+----QUIT----(29 October 2020 22:33:14) CuisUniversity-4384.image priorSource: 17628431!
+
+----STARTUP---- (31 October 2020 11:45:48) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 11:52:07' overrides: 16896425!
+initialize
+	
+	grid := Collection new.! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 11:52:42' prior: 50882565!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili create.
+	
+	self assert:  terniLapili isEmpty ! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 12:05:18' prior: 50882603!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  terniLapili isEmpty ! !
+
+!methodRemoval: TerniLapili class #create stamp: 'ERMC 10/31/2020 12:05:26'!
+create
+	^ self new initialize.!
+
+Object subclass: #TerniLapili
+	instanceVariableNames: 'xTurn xMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 13:51:23'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'xTurn xMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:00:41' prior: 50882598 overrides: 16896425!
+initialize
+	
+	xMoves := OrderedCollection new.! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:09:46' prior: 50882611!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  terniLapili isEmpty ! !
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:09:48'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:09:48'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:09:48'!
+ERROR!
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:09:48'!
+ERROR!
+
+xMoves!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:11:25' prior: 50882639!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  (terniLapili xMoves) isEmpty ! !
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:11:29'!
+ERROR!
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 14:11:42'!
+xMoves
+	self shouldBeImplemented.
+	^xMoves! !
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 14:11:49' prior: 50882670!
+xMoves
+
+	^xMoves! !
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:11:51'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:11:53'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:11:53'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:11:53'!
+ERROR!
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:11:53'!
+ERROR!
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:11:59'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:20:10' prior: 50882579!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:20:48' prior: 50882700!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: {0@0} equals: terniLapili xMoves.
+! !
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:20:50'!
+ERROR!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:24:17'!
+putXAT: aPoint 
+	self shouldBeImplemented.! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:24:56' prior: 50882721!
+putXAT: aPoint 
+	
+	xMoves  := xMoves add: aPoint .! !
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:24:58'!
+ERROR!
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 14:25:04'!
+yMoves
+	self shouldBeImplemented.! !
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 14:25:25'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'xTurn xMoves yMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 14:25:21' prior: 50882734!
+yMoves
+	
+	^ yMoves! !
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:25:27'!
+ERROR!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:26:12' prior: 50882634 overrides: 16896425!
+initialize
+	
+	xMoves := OrderedCollection new.
+	yMoves := OrderedCollection new. ! !
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:26:13'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:26:30' prior: 50882709!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: (0@0) equals: terniLapili xMoves.
+! !
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:26:33'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 14:26:33'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 14:26:33'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:36:36'!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: (0@0) equals: terniLapili xMoves.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:41:02' prior: 50882764!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAT: 0@0.
+	
+	self assert: (0@0) equals: terniLapili xMoves.
+	self assert:  (terniLapili yMoves)  isEmpty.
+! !
+
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer xMoves yMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 14:41:25'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer xMoves yMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:44:06'!
+test03shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putOAT: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: (0@0) equals: terniLapili xMoves.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:45:44' prior: 50882817!
+test03shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = MarsRover notValidCardinalPointErrorDescription. ].
+! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:46:25'!
+putXAt: aPoint 
+	
+	xMoves  := xMoves add: aPoint .! !
+
+!methodRemoval: TerniLapili #putXAT: stamp: 'ERMC 10/31/2020 14:46:25'!
+putXAT: aPoint 
+	
+	xMoves  := xMoves add: aPoint .!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:46:41' prior: 50882784!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: (0@0) equals: terniLapili xMoves.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:46:48' prior: 50882794!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0) equals: terniLapili xMoves.
+	self assert:  (terniLapili yMoves)  isEmpty.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:47:38' prior: 50882828!
+test03shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili playerXshouldStartTheGameErrorDescription. ].
+! !
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 14:47:46'!
+ERROR!
+
+----QUIT----(31 October 2020 14:48:22) CuisUniversity-4384.image priorSource: 17630081!
+
+----STARTUP---- (31 October 2020 14:51:17) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 14:53:43'!
+ERROR!
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 14:54:02'!
+playerXshouldStartTheGameErrorDescription
+	self shouldBeImplemented.! !
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 14:54:51' prior: 50882894!
+playerXshouldStartTheGameErrorDescription
+	
+		^ 'playerX Should play First '.! !
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 14:54:52'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 14:55:18'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 14:55:18'!
+FAILURE!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:56:05'!
+putOAt: aPoint 
+	
+	yMoves add: aPoint.! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:56:11' prior: 50882839!
+putXAt: aPoint 
+	
+	xMoves add: aPoint .! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 14:57:56' prior: 50882916!
+putOAt: aPoint 
+	
+	xMoves isEmpty  ifTrue: [^ self error: self class playerXshouldStartTheGameErrorDescription ].
+	yMoves add: aPoint.! !
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 14:59:33'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer xPositions yMoves'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:33' prior: 50882920!
+putXAt: aPoint 
+	
+	xPositions add: aPoint .! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:33' prior: 50882675!
+xMoves
+
+	^xPositions! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:33' prior: 50882754 overrides: 16896425!
+initialize
+	
+	xPositions := OrderedCollection new.
+	yMoves := OrderedCollection new. ! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:33' prior: 50882924!
+putOAt: aPoint 
+	
+	xPositions isEmpty  ifTrue: [^ self error: self class playerXshouldStartTheGameErrorDescription ].
+	yMoves add: aPoint.! !
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 14:59:44'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer xPositions yPositions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:44' prior: 50882956!
+putOAt: aPoint 
+	
+	xPositions isEmpty  ifTrue: [^ self error: self class playerXshouldStartTheGameErrorDescription ].
+	yPositions add: aPoint.! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:44' prior: 50882746!
+yMoves
+	
+	^ yPositions! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 14:59:44' prior: 50882950 overrides: 16896425!
+initialize
+	
+	xPositions := OrderedCollection new.
+	yPositions := OrderedCollection new. ! !
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 15:00:16'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer XPositions yPositions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:16' prior: 50882940!
+putXAt: aPoint 
+	
+	XPositions add: aPoint .! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:16' prior: 50882945!
+xMoves
+
+	^XPositions! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:16' prior: 50882985 overrides: 16896425!
+initialize
+	
+	XPositions := OrderedCollection new.
+	yPositions := OrderedCollection new. ! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:16' prior: 50882972!
+putOAt: aPoint 
+	
+	XPositions isEmpty  ifTrue: [^ self error: self class playerXshouldStartTheGameErrorDescription ].
+	yPositions add: aPoint.! !
+
+!classDefinition: #TerniLapili category: 'TerniLapilli' stamp: 'ERMC 10/31/2020 15:00:24'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'currentPlayer XPositions OPositions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:24' prior: 50883015!
+putOAt: aPoint 
+	
+	XPositions isEmpty  ifTrue: [^ self error: self class playerXshouldStartTheGameErrorDescription ].
+	OPositions add: aPoint.! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:24' prior: 50882980!
+yMoves
+	
+	^ OPositions! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:24' prior: 50883009 overrides: 16896425!
+initialize
+	
+	XPositions := OrderedCollection new.
+	OPositions := OrderedCollection new. ! !
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 15:00:56'!
+XPositions
+
+	^XPositions! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:56' prior: 50882848!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili yMoves)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:56' prior: 50882858!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0) equals: terniLapili XPositions.
+	self assert:  (terniLapili yMoves)  isEmpty.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:00:56' prior: 50882660!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  (terniLapili XPositions) isEmpty ! !
+
+!methodRemoval: TerniLapili #xMoves stamp: 'ERMC 10/31/2020 15:00:56'!
+xMoves
+
+	^XPositions!
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 15:01:07'!
+OPositions
+	
+	^ OPositions! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:01:07' prior: 50883065!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:01:07' prior: 50883055!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+! !
+
+!methodRemoval: TerniLapili #yMoves stamp: 'ERMC 10/31/2020 15:01:08'!
+yMoves
+	
+	^ OPositions!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:01:25'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:03:29'!
+test00TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  (terniLapili XPositions) isEmpty ! !
+
+!methodRemoval: TerniLapilliTest #test01TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:03:29'!
+test01TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  (terniLapili XPositions) isEmpty !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:03:35'!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!methodRemoval: TerniLapilliTest #test02TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:03:35'!
+test02TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:03:42'!
+test02PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+! !
+
+!methodRemoval: TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:03:42'!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:04:00'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:04:00'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:04:00'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:04:00'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:04:00'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:04:05'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:04:05'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:04:13'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:04:50' prior: 50883133!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: {0@0} equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:04:52'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:06:03' prior: 50883201!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (OrderedCollection with: (0@0)) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:06:04'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:06:04'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:06:04'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:06:04'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:06:04'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:06:04'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:06:32' prior: 50883215!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (0@0 asOrderedCollection) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:06:34'!
+ERROR!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:06:47' prior: 50883246!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: ((0@0) asOrderedCollection) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:06:49'!
+ERROR!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:06:56'!
+ERROR!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:07:10' prior: 50883260!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: (#(0@0) asOrderedCollection) equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:07:10'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:08:28' prior: 50883278!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: (0@0).
+	
+	self assert: expectedPosition equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:08:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:08:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:08:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:08:30'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:08:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:08:30'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:09:29' prior: 50883293!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: (0@0).
+	expectedPosition := OrderedCollection with: (0@0).
+	
+	self assert: expectedPosition equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:09:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:09:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:09:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:09:30'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:09:30'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:09:30'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:10:03' prior: 50883326!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0.
+	
+	self assert: expectedPosition equals: terniLapili XPositions.
+	"self assert:  (terniLapili OPositions)  isEmpty."
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:05'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:10:05'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:05'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:05'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:10:05'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:05'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:10'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:10:10'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:10'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:10'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:10:10'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:10'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:34'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:10:51' prior: 50883359!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0.
+	
+	self assert: expectedPosition equals: terniLapili XPositions.
+	self assert:  (terniLapili OPositions)  isEmpty.
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:10:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:58'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:10:58'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:11:42'!
+test02shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili playerXshouldStartTheGameErrorDescription. ].
+! !
+
+!methodRemoval: TerniLapilliTest #test03shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:11:42'!
+test03shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili playerXshouldStartTheGameErrorDescription. ].
+!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:11:47'!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+! !
+
+!methodRemoval: TerniLapilliTest #test02PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:11:47'!
+test02PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:11:51'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:12:39' prior: 50883463!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0.
+
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: (0@0) equals: terniLapili XPositions.
+! !
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:15:17'!
+shouldPlayePlayerXErrorDescription
+	
+		^ 'playerX Should play First '.! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:15:17' prior: 50883031!
+putOAt: aPoint 
+	
+	XPositions isEmpty  ifTrue: [^ self error: self class shouldPlayePlayerXErrorDescription ].
+	OPositions add: aPoint.! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:15:17' prior: 50883438!
+test02shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayePlayerXErrorDescription. ].
+! !
+
+!methodRemoval: TerniLapili class #playerXshouldStartTheGameErrorDescription stamp: 'ERMC 10/31/2020 15:15:17'!
+playerXshouldStartTheGameErrorDescription
+	
+		^ 'playerX Should play First '.!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:15:24'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:15:27'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:15:40' prior: 50883487!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0.
+
+	
+	self assert:  (terniLapili OPositions)  isEmpty.
+	self assert: expectedPosition equals: terniLapili XPositions.
+! !
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:15:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:15:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:15:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:15:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:15:45'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:18:26' prior: 50883538!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	terniLapili putOAt: 0@1.
+	expectedPosition := OrderedCollection with: 0@1.
+
+	
+	self assert: expectedPosition equals: terniLapili OPositions.
+! !
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:18:28'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:18:28'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:18:28'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:18:28'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:18:28'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:21:14'!
+test03PlayerXPlayAfterPlayerO
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	terniLapili putOAt: 0@1.
+	terniLapili putXAt:  1@0. 
+	
+	expectedPosition := OrderedCollection with: 0@1.
+
+	
+	self assert: expectedPosition equals: terniLapili OPositions.
+! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:22:21' prior: 50883044 overrides: 16896425!
+initialize
+	
+	currentPlayer := #X. 
+	XPositions := OrderedCollection new.
+	OPositions := OrderedCollection new. ! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:25:15' prior: 50883416!
+test01TheFirstMoveIsForPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  terniLapili currentPlayer equals: #X 
+! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:25:23'!
+ERROR!
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 15:25:31'!
+currentPlayer
+	self shouldBeImplemented.
+	^currentPlayer! !
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 15:25:35' prior: 50883628!
+currentPlayer
+
+	^currentPlayer! !
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:25:36'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:25:45'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:30:46' prior: 50883568!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	 
+	terniLapili putOAt: 0@1.
+	expectedPosition := OrderedCollection with: 0@1.
+
+	
+	self assert: expectedPosition equals: terniLapili OPositions.
+! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:31:06' prior: 50882999!
+putXAt: aPoint 
+	
+	XPositions add: aPoint .
+	currentPlayer := #O. ! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:31:26' prior: 50883505!
+putOAt: aPoint 
+	
+	XPositions isEmpty  ifTrue: [^ self error: self class shouldPlayePlayerXErrorDescription ].
+	OPositions add: aPoint.
+	currentPlayer := #X. ! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:32:22' prior: 50883678!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: terniLapili currentPlayer equals: #Invalid literal character ->0. 
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:32:28' prior: 50883704!
+test03PlayerOPlayAfterPlayerX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self assert: terniLapili currentPlayer equals: #O. 
+! !
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:32:32'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:32:45'!
+test04PlayerXPlayAfterPlayerO
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	terniLapili putOAt: 0@1.
+	terniLapili putXAt:  1@0. 
+	
+	expectedPosition := OrderedCollection with: 0@1.
+
+	
+	self assert: expectedPosition equals: terniLapili OPositions.
+! !
+
+!methodRemoval: TerniLapilliTest #test03PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:32:45'!
+test03PlayerXPlayAfterPlayerO
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	terniLapili putOAt: 0@1.
+	terniLapili putXAt:  1@0. 
+	
+	expectedPosition := OrderedCollection with: 0@1.
+
+	
+	self assert: expectedPosition equals: terniLapili OPositions.
+!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:33:28' prior: 50883743!
+test04PlayerXPlayAfterPlayerO
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 0@1. 
+	
+	self assert: terniLapili currentPlayer equals: #X.
+! !
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:33:32'!
+PASSED!
+
+!methodRemoval: TerniLapilliTest #test00TheGameStartWithNoOneInTheGrid stamp: 'ERMC 10/31/2020 15:33:44'!
+test00TheGameStartWithNoOneInTheGrid
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  (terniLapili XPositions) isEmpty !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:35:29'!
+test05shouldRaiseErrorIfXplaysAfterX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putXAt: 0@1. 
+	
+	self assert: terniLapili currentPlayer equals: #X.
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:36:08' prior: 50883806!
+test05shouldRaiseErrorIfXplaysAfterX
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	
+	self 
+	should: [ terniLapili putXAt: 0@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayPlayerOErrorDescription. ].
+! !
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 10/31/2020 15:36:14'!
+FAILURE!
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:36:54'!
+shouldPlayPlayerXErrorDescription
+	
+		^ 'playerX Should play First '.! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:36:54' prior: 50883513!
+test02shouldRaiseErrorIfPlayer0startsTheGame
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayPlayerXErrorDescription. ].
+! !
+!TerniLapili methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:36:54' prior: 50883695!
+putOAt: aPoint 
+	
+	XPositions isEmpty  ifTrue: [^ self error: self class shouldPlayPlayerXErrorDescription ].
+	OPositions add: aPoint.
+	currentPlayer := #X. ! !
+
+!methodRemoval: TerniLapili class #shouldPlayePlayerXErrorDescription stamp: 'ERMC 10/31/2020 15:36:54'!
+shouldPlayePlayerXErrorDescription
+	
+		^ 'playerX Should play First '.!
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:37:10'!
+shouldPlayPlayerOErrorDescription
+	
+		^ 'playerO Should play Now'.! !
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:37:16' prior: 50883832!
+shouldPlayPlayerXErrorDescription
+	
+		^ 'playerX Should play Now '.! !
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:37:19' prior: 50883869!
+shouldPlayPlayerXErrorDescription
+	
+		^ 'playerX Should play Now'.! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:38:24' prior: 50883690!
+putXAt: aPoint 
+	
+	currentPlayer = #O ifTrue: [^ self error: self class shouldPlayPlayerOErrorDescription ].
+	XPositions add: aPoint .
+	currentPlayer := #O. ! !
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 10/31/2020 15:38:28'!
+PASSED!
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:39:36'!
+test06shouldRaiseErrorIfOplaysAfterO
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 0@1.
+	
+	
+	self 
+	should: [ terniLapili putOAt: 1@1]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayPlayerOErrorDescription. ].
+! !
+!TerniLapilliTest methodsFor: 'as yet unclassified' stamp: 'ERMC 10/31/2020 15:39:43' prior: 50883892!
+test06shouldRaiseErrorIfOplaysAfterO
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 0@1.
+	
+	
+	self 
+	should: [ terniLapili putOAt: 1@1]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayPlayerXErrorDescription. ].
+! !
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 10/31/2020 15:39:47'!
+FAILURE!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:40:44' prior: 50883850!
+putOAt: aPoint 
+	
+	currentPlayer = #X ifTrue: [^ self error: self class shouldPlayPlayerXErrorDescription ].
+	
+	OPositions add: aPoint.
+	currentPlayer := #X. ! !
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 10/31/2020 15:40:45'!
+PASSED!
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 15:48:54'!
+test07shouldSavePositionIfPlayerXPutAvalidPosition
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0. 	
+	
+	self assert: expectedPosition equals: terniLapili XPositions  ! !
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'ERMC 10/31/2020 15:48:55'!
+PASSED!
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 15:49:22'!
+test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	expectedPosition := OrderedCollection with: 0@0. 	
+	
+	self assert: expectedPosition equals: terniLapili XPositions  ! !
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 15:49:38' prior: 50883995!
+test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition
+	
+	|terniLapili expectedPosition |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@2.
+	
+	self assert: expectedPosition equals: terniLapili XPositions  ! !
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 15:53:11' prior: 50884007!
+test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putOAt: 0@3.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili playersShouldChooseAValidPosition ].! !
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 15:53:19'!
+ERROR!
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:53:32'!
+playersShouldChooseAValidPosition
+	self shouldBeImplemented.! !
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 10/31/2020 15:54:21' prior: 50884033!
+playersShouldChooseAValidPosition
+	
+	^ 'Players only play in a valid position'! !
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 15:54:22'!
+FAILURE!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:58:39' prior: 50883880!
+putXAt: aPoint 
+	
+	currentPlayer = #O ifTrue: [^ self error: self class shouldPlayPlayerOErrorDescription ].
+	aPoint isValidPosition ifFalse:[^ self error: self class playersShouldChooseAValidPosition ].
+	
+	XPositions add: aPoint .
+	currentPlayer := #O. ! !
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 15:59:28' prior: 50884048!
+putXAt: aPoint 
+	
+	currentPlayer = #O ifTrue: [^ self error: self class shouldPlayPlayerOErrorDescription ].
+	(self isValidPosition: aPoint) ifFalse:[^ self error: self class playersShouldChooseAValidPosition ].
+	
+	XPositions add: aPoint .
+	currentPlayer := #O. ! !
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 16:01:22'!
+isValidPosition: aPoint
+	
+	(aPoint x  > 2 or: aPoint y  > 2) ifTrue: [^ false].
+! !
+!TerniLapili methodsFor: 'accessing' stamp: 'ERMC 10/31/2020 16:01:47' prior: 50884070!
+isValidPosition: aPoint
+	
+	(aPoint x  > 2 or: aPoint y  > 2) ifTrue: [^ false].
+	(aPoint x  < 0 or: aPoint y  < 0) ifTrue: [^ false].
+	^ true! !
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 16:02:15'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 16:02:15'!
+FAILURE!
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 16:02:22'!
+FAILURE!
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 16:02:40' prior: 50884017!
+test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self 
+	should: [ terniLapili putXAt: 0@3.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili playersShouldChooseAValidPosition ].! !
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayer0startsTheGame stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldRaiseErrorIfPlayerXPutAnInvalidPosition stamp: 'ERMC 10/31/2020 16:02:41'!
+PASSED!
