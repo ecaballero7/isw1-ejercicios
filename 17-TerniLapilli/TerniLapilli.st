@@ -5,6 +5,17 @@ TestCase subclass: #TerniLapilliTest
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 11/1/2020 13:42:31'!
+test00TheGameStartWithThePlayersWithoutPosition
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	self assert:  terniLapili XPositions isEmpty .
+	self assert: terniLapili OPositions isEmpty.
+! !
+
 !TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 10/31/2020 18:48:54'!
 test01TheFirstMoveIsForPlayerX
 	
@@ -180,6 +191,62 @@ test24PlayerXWinsIfHeMakesHorizontal0
 	self assert: terniLapili hasPlayerXWon. 
 ! !
 
+!TerniLapilliTest methodsFor: 'game over tests' stamp: 'ERMC 11/1/2020 12:00:16'!
+test25PlayerXWinsIfHeMakesDiagonal0
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@0.
+	terniLapili putXAt: 1@1.
+	terniLapili putOAt: 0@2.
+	terniLapili putXAt: 2@2.
+
+	
+	self assert: terniLapili isOver. 
+	self assert: terniLapili hasPlayerXWon. 
+! !
+
+!TerniLapilliTest methodsFor: 'game over tests' stamp: 'ERMC 11/1/2020 12:00:07'!
+test26PlayerXWinsIfHeMakesDiagonal1
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@2.
+	terniLapili putOAt: 1@0.
+	terniLapili putXAt: 1@1.
+	terniLapili putOAt: 2@2.
+	terniLapili putXAt: 2@0.
+
+	
+	self assert: terniLapili isOver. 
+	self assert: terniLapili hasPlayerXWon. 
+! !
+
+!TerniLapilliTest methodsFor: 'game over tests' stamp: 'ERMC 11/1/2020 13:33:40'!
+testxxWhenTheGameIsOverNoOneCanMove
+	
+	|terniLapili |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 1@1.
+	terniLapili putOAt: 1@0.
+	terniLapili putXAt: 2@2.
+	terniLapili putOAt: 0@2.
+	
+	self 
+	should: [terniLapili moveXFrom: 0@0 to: 2@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili theGameIsOverErrorDescription].! !
+
 
 !TerniLapilliTest methodsFor: 'move positions tests' stamp: 'G. B. 10/31/2020 22:05:57'!
 test15PlayerXCantMoveAPositionBeforeHaving3Positions
@@ -285,6 +352,58 @@ test19RulesFromPlayerXApplyToPlayerO
 	self assert: terniLapili isPlayingX.
 	self assert: terniLapili OPositions equals: expectedPositions.
 	
+	
+
+	
+! !
+
+!TerniLapilliTest methodsFor: 'move positions tests' stamp: 'ERMC 11/1/2020 12:06:17'!
+testxxPlayersCanOnlyMoveInTheirTurn
+
+	|terniLapili expectedPositions |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+	
+	terniLapili moveXFrom: 0@0 to: 0@1. 
+	
+	self 
+	should: [terniLapili moveXFrom: 0@1 to: 0@0. ]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapili shouldPlayPlayerOErrorDescription ].
+
+	
+
+	
+! !
+
+!TerniLapilliTest methodsFor: 'move positions tests' stamp: 'ERMC 11/1/2020 13:30:39'!
+testyyPositionIsEmptyAfterAMove
+
+	|terniLapili  |
+
+	terniLapili := TerniLapili new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+	
+	terniLapili moveXFrom: 0@0 to: 0@1. 
+	
+	self deny: (terniLapili XPositions includes: (0@0)).
+	self deny: (terniLapili OPositions  includes: (0@0))
+
+
 	
 
 	
@@ -426,6 +545,22 @@ test14ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions
 		self assert: anError messageText = TerniLapili playersCantUseMoreThan3PositionsErrorDescription ].! !
 
 
+!classDefinition: #TerniLaPiliPlayingO category: 'TerniLapilli'!
+Object subclass: #TerniLaPiliPlayingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+
+!classDefinition: #TerniLaPiliPlayingX category: 'TerniLapilli'!
+Object subclass: #TerniLaPiliPlayingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+
 !classDefinition: #TerniLapili category: 'TerniLapilli'!
 Object subclass: #TerniLapili
 	instanceVariableNames: 'currentPlayer XPositions OPositions'
@@ -507,10 +642,10 @@ checkWinnerO
 	^ winningPositions includes: OPositions 	
 ! !
 
-!TerniLapili methodsFor: 'game over' stamp: 'ERMC 10/31/2020 20:34:20'!
+!TerniLapili methodsFor: 'game over' stamp: 'ERMC 11/1/2020 11:58:52'!
 checkWinnerX
 
-	|winningPositions vertical0 vertical1 vertical2 horizontal0 horizontal1 horizontal2 |
+	|winningPositions vertical0 vertical1 vertical2 horizontal0 horizontal1 horizontal2 diagonal0 diagonal1 |
 	vertical0 _ Set with: 0@0 with: 0@1 with: 0@2.
 	vertical1 _ Set with: 1@0 with: 1@1 with: 1@2.
 	vertical2 _ Set with: 2@0 with: 2@1 with: 2@2.
@@ -519,7 +654,13 @@ checkWinnerX
 	horizontal1 _ Set with: 0@1 with: 1@1 with: 1@2.
 	horizontal2 _ Set with: 0@2 with: 1@2 with: 2@2.
 	
+	diagonal0 _ Set with: 	0@0 with: 1@1 with: 2@2.
+	diagonal1 _ Set with: 	0@2 with: 1@1 with: 2@0.
+	
 	winningPositions _ Set with: vertical0 with: vertical1 with: vertical2 with: horizontal0 with: horizontal1 with: horizontal2.
+	winningPositions  add: diagonal0 .
+	winningPositions  add: diagonal1 .
+	
 	
 	^ winningPositions includes: XPositions 	
 
@@ -531,11 +672,12 @@ isAdistanceOne: aPosition to: aNextPosition
 
 	^ ((aPosition x - aNextPosition x) abs <= 1) and: ( (aPosition y - aNextPosition y) abs <= 1)! !
 
-!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 19:41:08'!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 11/1/2020 13:39:14'!
 moveOFrom: aPosition to: aNextPosition
 
 	OPositions size < 3 ifTrue: 	[^ self error: self class playersCantMoveAPositionBeforeHaving3PositionsErrorDescription].
-	
+	(self isOver ) ifTrue: [^ self error: self class theGameIsOverErrorDescription ].
+	self isPlayingX ifTrue: [^ self error: self class shouldPlayPlayerXErrorDescription ].
 	(self isValidPosition: aNextPosition) ifFalse:[^ self error: self class playersShouldChooseAValidPosition ].
 	(OPositions includes: aPosition) ifFalse:[^ self error: self class playersCantMoveAPositionThatIsNotHis ].
 	(self isEmptyPosition: aNextPosition) ifFalse:[^ self error: self class playersShouldChooseAnEmptyPosition].
@@ -548,11 +690,12 @@ moveOFrom: aPosition to: aNextPosition
 	
 	currentPlayer := #X. ! !
 
-!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 19:26:18'!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 11/1/2020 13:37:13'!
 moveXFrom: aPosition to: aNextPosition
 
 	XPositions size < 3 ifTrue: 	[^ self error: self class playersCantMoveAPositionBeforeHaving3PositionsErrorDescription].
-	
+	(self isOver ) ifTrue: [^ self error: self class theGameIsOverErrorDescription ].
+	self isPlayingO ifTrue: [^ self error: self class shouldPlayPlayerOErrorDescription ].
 	(self isValidPosition: aNextPosition) ifFalse:[^ self error: self class playersShouldChooseAValidPosition ].
 	(XPositions includes: aPosition) ifFalse:[^ self error: self class playersCantMoveAPositionThatIsNotHis ].
 	(self isEmptyPosition: aNextPosition) ifFalse:[^ self error: self class playersShouldChooseAnEmptyPosition].
@@ -565,15 +708,16 @@ moveXFrom: aPosition to: aNextPosition
 	
 	currentPlayer := #O. ! !
 
-!TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 18:45:36'!
+!TerniLapili methodsFor: 'moves' stamp: 'ERMC 11/1/2020 12:14:30'!
 putOAt: aPoint 
 	
 	self isPlayingX ifTrue: [^ self error: self class shouldPlayPlayerXErrorDescription ].
-	
 	(self isValidPosition: aPoint) ifFalse:[^ self error: self class playersShouldChooseAValidPosition ].
 	(self isEmptyPosition: aPoint) ifFalse:[^ self error: self class playersShouldChooseAnEmptyPosition].
+	(OPositions size = 3) ifTrue: [^ self error: self class playersCantUseMoreThan3PositionsErrorDescription].
 
 	OPositions add: aPoint.
+	self checkWinnerO.
 	currentPlayer := #X. ! !
 
 !TerniLapili methodsFor: 'moves' stamp: 'ERMC 10/31/2020 20:15:51'!
@@ -637,6 +781,11 @@ shouldPlayPlayerOErrorDescription
 shouldPlayPlayerXErrorDescription
 	
 		^ 'playerX Should play Now'.! !
+
+!TerniLapili class methodsFor: 'errors' stamp: 'ERMC 11/1/2020 13:34:14'!
+theGameIsOverErrorDescription
+	
+	^ 'The Game is Over!!'! !
 
 
 !TerniLapili class methodsFor: 'as yet unclassified' stamp: 'G. B. 10/31/2020 22:07:14'!
