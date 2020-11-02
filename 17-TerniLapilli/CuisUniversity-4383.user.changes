@@ -13159,3 +13159,736 @@ PASSED!
 
 !testRun: #TerniLapilliTest #testyyPositionIsEmptyAfterAMove stamp: 'G. B. 11/2/2020 01:59:08'!
 PASSED!
+
+----QUIT----(2 November 2020 02:04:26) CuisUniversity-4383.image priorSource: 18542618!
+
+----STARTUP---- (2 November 2020 19:17:21) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+----End fileIn of /home/guille/Desktop/Ingeniería 1/isw1-ejercicios/17-TerniLapilli/TerniLapilli.st----!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayerOstartsTheGame stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayersCanOnlyMoveInTheirTurn stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17PositionIsEmptyAfterAMove stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test18PlayersCanOnlyMoveToADistance1Position stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test19RulesFromPlayerXApplyToPlayerO stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20PlayerXWinsIfHeMakesVertical0 stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20shouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21PlayerXWinsIfHeMakesVertical1 stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21shouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22PlayerXWinsIfHeMakesVertical2 stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22shouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23PlayerOWinsIfHeMakesAnyVerticals stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23shouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24PlayerXWinsIfHeMakesHorizontal0 stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24PlayerXWinsIfHeMakesHorizontal1 stamp: 'G. B. 11/2/2020 19:17:58'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24PlayerXWinsIfHeMakesHorizontal2 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24shouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesDiagonal0 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesVertical0 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesDiagonal1 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesVertical1 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test27PlayerXWinsIfHeMakesVertical2 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test28PlayerOWinsIfHeMakesAnyVerticals stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test29PlayerXWinsIfHeMakesHorizontal0 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test30PlayerXWinsIfHeMakesHorizontal1 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test31PlayerXWinsIfHeMakesHorizontal2 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test32PlayerXWinsIfHeMakesDiagonal0 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test33PlayerXWinsIfHeMakesDiagonal1 stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxPlayersCanOnlyMoveInTheirTurn stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxWhenTheGameIsOverNoOneCanMove stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!testRun: #TerniLapilliTest #testyyPositionIsEmptyAfterAMove stamp: 'G. B. 11/2/2020 19:17:59'!
+PASSED!
+
+!classRemoval: #TerniLapilliPlayingX stamp: 'G. B. 11/2/2020 19:18:09'!
+TerniLapilliState subclass: #TerniLapilliPlayingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliPlayingO stamp: 'G. B. 11/2/2020 19:18:10'!
+TerniLapilliState subclass: #TerniLapilliPlayingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliMovingX stamp: 'G. B. 11/2/2020 19:18:12'!
+TerniLapilliState subclass: #TerniLapilliMovingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliMovingO stamp: 'G. B. 11/2/2020 19:18:13'!
+TerniLapilliState subclass: #TerniLapilliMovingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliGameOver stamp: 'G. B. 11/2/2020 19:18:14'!
+TerniLapilliState subclass: #TerniLapilliGameOver
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliState stamp: 'G. B. 11/2/2020 19:18:15'!
+Object subclass: #TerniLapilliState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilli stamp: 'G. B. 11/2/2020 19:18:16'!
+Object subclass: #TerniLapilli
+	instanceVariableNames: 'XPositions OPositions currentState'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLaPiliPlayingX stamp: 'G. B. 11/2/2020 19:18:18'!
+TerniLapiliState subclass: #TerniLaPiliPlayingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLaPiliPlayingO stamp: 'G. B. 11/2/2020 19:18:19'!
+TerniLapiliState subclass: #TerniLaPiliPlayingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLaPiliMovingX stamp: 'G. B. 11/2/2020 19:18:20'!
+TerniLapiliState subclass: #TerniLaPiliMovingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLaPiliMovingO stamp: 'G. B. 11/2/2020 19:18:21'!
+TerniLapiliState subclass: #TerniLaPiliMovingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLaPiliGameOver stamp: 'G. B. 11/2/2020 19:18:22'!
+TerniLapiliState subclass: #TerniLaPiliGameOver
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapiliState stamp: 'G. B. 11/2/2020 19:18:23'!
+Object subclass: #TerniLapiliState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapili stamp: 'G. B. 11/2/2020 19:18:24'!
+Object subclass: #TerniLapili
+	instanceVariableNames: 'XPositions OPositions currentState'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliTest stamp: 'G. B. 11/2/2020 19:18:26'!
+TestCase subclass: #TerniLapilliTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+----End fileIn of /home/guille/Desktop/Ingeniería 1/isw1-ejercicios/17-TerniLapilli/TerniLapilli.st----!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPosition stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayerOstartsTheGame stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayersCanOnlyMoveInTheirTurn stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17PositionIsEmptyAfterAMove stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test18PlayersCanOnlyMoveToADistance1Position stamp: 'G. B. 11/2/2020 19:18:42'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test19RulesFromPlayerXApplyToPlayerO stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20shouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21shouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22shouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23shouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24shouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesVertical0 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesVertical1 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test27PlayerXWinsIfHeMakesVertical2 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test28PlayerOWinsIfHeMakesAnyVerticals stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test29PlayerXWinsIfHeMakesHorizontal0 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test30PlayerXWinsIfHeMakesHorizontal1 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test31PlayerXWinsIfHeMakesHorizontal2 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test32PlayerXWinsIfHeMakesDiagonal0 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test33PlayerXWinsIfHeMakesDiagonal1 stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'G. B. 11/2/2020 19:18:43'!
+PASSED!
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'G. B. 11/2/2020 19:20:33'!
+test00TheGameStartWithThePlayersWithoutPositionsTaken
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	self assert:  terniLapili XPositions isEmpty .
+	self assert: terniLapili OPositions isEmpty.
+! !
+
+!methodRemoval: TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPosition stamp: 'G. B. 11/2/2020 19:20:33'!
+test00TheGameStartWithThePlayersWithoutPosition
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	self assert:  terniLapili XPositions isEmpty .
+	self assert: terniLapili OPositions isEmpty.
+!
+!TerniLapilliTest methodsFor: 'move positions tests' stamp: 'G. B. 11/2/2020 19:26:07'!
+testxxshouldRaiseErrorIfPlayerXTriesToPutAPositionWhenHisInMovingState
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	
+		
+	self 
+	should: [terniLapili moveXFrom: 2@0 to: 2@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantMoveAPositionBeforeHaving3PositionsErrorDescription ].! !
+!TerniLapilliTest methodsFor: 'move positions tests' stamp: 'G. B. 11/2/2020 19:26:11'!
+testxxshouldRaiseErrorIfPlayerOTriesToPutAPositionWhenHisInMovingState
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	
+		
+	self 
+	should: [terniLapili moveXFrom: 2@0 to: 2@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantMoveAPositionBeforeHaving3PositionsErrorDescription ].! !
+!TerniLapilliTest methodsFor: 'move positions tests' stamp: 'G. B. 11/2/2020 19:29:10' prior: 50928795!
+testxxshouldRaiseErrorIfPlayerOTriesToPutAPositionWhenHisInMovingState
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 1@1.
+	terniLapili putOAt: 1@0.
+	terniLapili putXAt: 0@2.
+	terniLapili putOAt: 2@0.
+	terniLapili moveXFrom: 1@1 to: 2@1.
+		
+	self 
+	should: [terniLapili putOAt: 1@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCanOnlyHave3PositionsErrorDescription ].! !
+!TerniLapilli class methodsFor: 'errors' stamp: 'G. B. 11/2/2020 19:29:32'!
+playersCanOnlyHave3PositionsErrorDescription
+	
+	^ 'Player can only have 3 positions!!'! !
+
+!testRun: #TerniLapilliTest #testxxshouldRaiseErrorIfPlayerOTriesToPutAPositionWhenHisInMovingState stamp: 'G. B. 11/2/2020 19:29:39'!
+FAILURE!
+
+!methodRemoval: TerniLapilli class #playersCanOnlyHave3PositionsErrorDescription stamp: 'G. B. 11/2/2020 19:31:27'!
+playersCanOnlyHave3PositionsErrorDescription
+	
+	^ 'Player can only have 3 positions!!'!
+
+!methodRemoval: TerniLapilliTest #testxxshouldRaiseErrorIfPlayerOTriesToPutAPositionWhenHisInMovingState stamp: 'G. B. 11/2/2020 19:32:55'!
+testxxshouldRaiseErrorIfPlayerOTriesToPutAPositionWhenHisInMovingState
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 1@1.
+	terniLapili putOAt: 1@0.
+	terniLapili putXAt: 0@2.
+	terniLapili putOAt: 2@0.
+	terniLapili moveXFrom: 1@1 to: 2@1.
+		
+	self 
+	should: [terniLapili putOAt: 1@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCanOnlyHave3PositionsErrorDescription ].!
+
+!methodRemoval: TerniLapilliTest #testxxshouldRaiseErrorIfPlayerXTriesToPutAPositionWhenHisInMovingState stamp: 'G. B. 11/2/2020 19:32:59'!
+testxxshouldRaiseErrorIfPlayerXTriesToPutAPositionWhenHisInMovingState
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	
+		
+	self 
+	should: [terniLapili moveXFrom: 2@0 to: 2@1.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantMoveAPositionBeforeHaving3PositionsErrorDescription ].!
+!TerniLapilliTest methodsFor: 'positions tests' stamp: 'G. B. 11/2/2020 19:33:44'!
+test11ShouldRaiseErrorIfPlayerXTriesToTakeMoreThan3Positions
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+
+	
+	self 
+	should: [ terniLapili putXAt: 1@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].! !
+
+!methodRemoval: TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:33:44'!
+test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+
+	
+	self 
+	should: [ terniLapili putXAt: 1@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].!
+!TerniLapilliTest methodsFor: 'positions tests' stamp: 'G. B. 11/2/2020 19:33:54'!
+test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+	" TO DO:
+	
+	hacer un move y despues que el O trate de poner y salte error"
+	
+	self 
+	should: [ terniLapili putXAt: 1@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].! !
+
+!methodRemoval: TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions stamp: 'G. B. 11/2/2020 19:33:54'!
+test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+	" TO DO:
+	
+	hacer un move y despues que el O trate de poner y salte error"
+	
+	self 
+	should: [ terniLapili putXAt: 1@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].!
+!TerniLapilliTest methodsFor: 'positions tests' stamp: 'G. B. 11/2/2020 19:34:06' prior: 50928920!
+test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions
+	
+	|terniLapili |
+
+	terniLapili := TerniLapilli new.
+	
+	terniLapili putXAt: 0@0.
+	terniLapili putOAt: 1@2.
+	terniLapili putXAt: 2@0.
+	terniLapili putOAt: 1@1.
+	terniLapili putXAt: 2@1.
+	terniLapili putOAt: 0@2.
+
+	
+	self 
+	should: [ terniLapili putXAt: 1@0.]
+	raise: Error 
+	withExceptionDo: [ :anError |
+		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].! !
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPositionsTaken stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayerOstartsTheGame stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToTakeMoreThan3Positions stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayersCanOnlyMoveInTheirTurn stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17PositionIsEmptyAfterAMove stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test18PlayersCanOnlyMoveToADistance1Position stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test19RulesFromPlayerXApplyToPlayerO stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20shouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21shouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22shouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23shouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24shouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'G. B. 11/2/2020 19:38:14'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesVertical0 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesVertical1 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test27PlayerXWinsIfHeMakesVertical2 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test28PlayerOWinsIfHeMakesAnyVerticals stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test29PlayerXWinsIfHeMakesHorizontal0 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test30PlayerXWinsIfHeMakesHorizontal1 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test31PlayerXWinsIfHeMakesHorizontal2 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test32PlayerXWinsIfHeMakesDiagonal0 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test33PlayerXWinsIfHeMakesDiagonal1 stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'G. B. 11/2/2020 19:38:15'!
+PASSED!

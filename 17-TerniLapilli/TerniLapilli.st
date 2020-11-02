@@ -5,8 +5,8 @@ TestCase subclass: #TerniLapilliTest
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliTest methodsFor: 'order of Players' stamp: 'ERMC 11/1/2020 22:53:50'!
-test00TheGameStartWithThePlayersWithoutPosition
+!TerniLapilliTest methodsFor: 'order of Players' stamp: 'G. B. 11/2/2020 19:20:33'!
+test00TheGameStartWithThePlayersWithoutPositionsTaken
 	
 	|terniLapili |
 
@@ -576,8 +576,8 @@ test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition
 	withExceptionDo: [ :anError |
 		self assert: anError messageText = TerniLapilli playersShouldChooseAnEmptyPosition ].! !
 
-!TerniLapilliTest methodsFor: 'positions tests' stamp: 'ERMC 11/1/2020 23:05:45'!
-test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions
+!TerniLapilliTest methodsFor: 'positions tests' stamp: 'G. B. 11/2/2020 19:33:44'!
+test11ShouldRaiseErrorIfPlayerXTriesToTakeMoreThan3Positions
 	
 	|terniLapili |
 
@@ -597,8 +597,8 @@ test11ShouldRaiseErrorIfPlayerXTriesToUseMoreThan3Positions
 	withExceptionDo: [ :anError |
 		self assert: anError messageText = TerniLapilli playersCantUseMoreThan3PositionsErrorDescription ].! !
 
-!TerniLapilliTest methodsFor: 'positions tests' stamp: 'ERMC 11/1/2020 23:05:50'!
-test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions
+!TerniLapilliTest methodsFor: 'positions tests' stamp: 'G. B. 11/2/2020 19:34:06'!
+test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions
 	
 	|terniLapili |
 
@@ -610,9 +610,7 @@ test12ShouldRaiseErrorIfPlayerOTriesToUseMoreThan3Positions
 	terniLapili putOAt: 1@1.
 	terniLapili putXAt: 2@1.
 	terniLapili putOAt: 0@2.
-	" TO DO:
-	
-	hacer un move y despues que el O trate de poner y salte error"
+
 	
 	self 
 	should: [ terniLapili putXAt: 1@0.]
