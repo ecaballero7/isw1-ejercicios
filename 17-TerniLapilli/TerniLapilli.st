@@ -943,32 +943,35 @@ Object subclass: #TerniLapilliState
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:57:38'!
-checkGameOver
-	self subclassResponsibility .! !
-
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 23:00:12'!
-currentPlayer
-	self subclassResponsibility .! !
-
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:59:38'!
-isOver
-	self subclassResponsibility .! !
-
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:59:06'!
+!TerniLapilliState methodsFor: 'moving' stamp: 'ERMC 11/1/2020 22:59:06'!
 moveOFrom: aPosition to: aNextPosition.
 	self subclassResponsibility .! !
 
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:59:01'!
+!TerniLapilliState methodsFor: 'moving' stamp: 'ERMC 11/1/2020 22:59:01'!
 moveXFrom: aPosition to: aNextPosition.
 	self subclassResponsibility .! !
 
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:58:37'!
+
+!TerniLapilliState methodsFor: 'insert' stamp: 'ERMC 11/1/2020 22:58:37'!
 putOAt: aPoint
 	self subclassResponsibility .! !
 
-!TerniLapilliState methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:58:47'!
+!TerniLapilliState methodsFor: 'insert' stamp: 'ERMC 11/1/2020 22:58:47'!
 putXAt: aPoint
+	self subclassResponsibility .! !
+
+
+!TerniLapilliState methodsFor: 'game over' stamp: 'ERMC 11/1/2020 22:57:38'!
+checkGameOver
+	self subclassResponsibility .! !
+
+!TerniLapilliState methodsFor: 'game over' stamp: 'ERMC 11/1/2020 22:59:38'!
+isOver
+	self subclassResponsibility .! !
+
+
+!TerniLapilliState methodsFor: 'accessing' stamp: 'ERMC 11/1/2020 23:00:12'!
+currentPlayer
 	self subclassResponsibility .! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
@@ -992,37 +995,41 @@ TerniLapilliState subclass: #TerniLapilliGameOver
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:51'!
+!TerniLapilliGameOver methodsFor: 'game over' stamp: 'ERMC 11/1/2020 22:53:51'!
 checkGameOver
 	^ self error: TerniLapilli theGameIsOverErrorDescription.! !
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:50'!
-currentPlayer
-	^ self error: TerniLapilli theGameIsOverErrorDescription.! !
-
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:27:56'!
-initializeWith: aGame
-	game _ aGame.! !
-
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:41:12'!
+!TerniLapilliGameOver methodsFor: 'game over' stamp: 'G. B. 11/1/2020 18:41:12'!
 isOver
 	^ true.! !
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:29:40'!
+
+!TerniLapilliGameOver methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:29:40'!
 moveOFrom: aPosition to: aNextPosition.
 	^game error: game class theGameIsOverErrorDescription 		.! !
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:29:37'!
+!TerniLapilliGameOver methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:29:37'!
 moveXFrom: aPosition to: aNextPosition.
 	^game error: game class theGameIsOverErrorDescription 		.! !
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:51'!
+
+!TerniLapilliGameOver methodsFor: 'insert' stamp: 'ERMC 11/1/2020 22:53:51'!
 putOAt: aPoint
 	^ self error: TerniLapilli theGameIsOverErrorDescription.! !
 
-!TerniLapilliGameOver methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:51'!
+!TerniLapilliGameOver methodsFor: 'insert' stamp: 'ERMC 11/1/2020 22:53:51'!
 putXAt: aPoint
 	^ self error: TerniLapilli theGameIsOverErrorDescription.! !
+
+
+!TerniLapilliGameOver methodsFor: 'accessing' stamp: 'ERMC 11/1/2020 22:53:50'!
+currentPlayer
+	^ self error: TerniLapilli theGameIsOverErrorDescription.! !
+
+
+!TerniLapilliGameOver methodsFor: 'initialization' stamp: 'G. B. 11/2/2020 01:27:56'!
+initializeWith: aGame
+	game _ aGame.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1046,31 +1053,39 @@ TerniLapilliState subclass: #TerniLapilliMovingO
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:41:26'!
+!TerniLapilliMovingO methodsFor: 'accessing' stamp: 'G. B. 11/2/2020 01:41:26'!
 currentPlayer
 	^#O.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:02:55'!
+
+!TerniLapilliMovingO methodsFor: 'initialization' stamp: 'G. B. 11/1/2020 21:02:55'!
 initializeWith: aGame
 	game _ aGame.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 20:16:33'!
+
+!TerniLapilliMovingO methodsFor: 'game over' stamp: 'ERMC 11/2/2020 15:48:32'!
+isOver
+	^false.! !
+
+
+!TerniLapilliMovingO methodsFor: 'moving' stamp: 'G. B. 11/1/2020 20:16:33'!
 isMovingO
 	^true.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:31:28'!
+!TerniLapilliMovingO methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:31:28'!
 moveOFrom: aPosition to: aNextPosition.
 	game MovingOMoveOFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:31:14'!
+!TerniLapilliMovingO methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:31:14'!
 moveXFrom: aPosition to: aNextPosition.
 	game MovingOMoveXFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:50:16'!
+
+!TerniLapilliMovingO methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:50:16'!
 putOAt: aPoint.
 	^game MovingOPutOAt: aPoint.! !
 
-!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:50:23'!
+!TerniLapilliMovingO methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:50:23'!
 putXAt: aPoint.
 	^game MovingOPutXAt: aPoint.! !
 
@@ -1096,33 +1111,41 @@ TerniLapilliState subclass: #TerniLapilliMovingX
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:41:32'!
+!TerniLapilliMovingX methodsFor: 'accessing' stamp: 'G. B. 11/2/2020 01:41:32'!
 currentPlayer
 	^#X.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:02:51'!
-initializeWith: aGame
-	game _ aGame.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:51'!
+!TerniLapilliMovingX methodsFor: 'moving' stamp: 'ERMC 11/1/2020 22:53:51'!
 isMovingO
 	^self error: TerniLapilli shouldPlayPlayerXErrorDescription.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:32:06'!
+!TerniLapilliMovingX methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:32:06'!
 moveOFrom: aPosition to: aNextPosition.
 	game MovingXMoveOFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:31:57'!
+!TerniLapilliMovingX methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:31:57'!
 moveXFrom: aPosition to: aNextPosition.
 	game MovingXMoveXFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:49:49'!
+
+!TerniLapilliMovingX methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:49:49'!
 putOAt: aPoint.
 	^game MovingXPutOAt: aPoint.! !
 
-!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:49:59'!
+!TerniLapilliMovingX methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:49:59'!
 putXAt: aPoint.
 	^game MovingXPutXAt: aPoint.! !
+
+
+!TerniLapilliMovingX methodsFor: 'game over' stamp: 'ERMC 11/2/2020 15:48:53'!
+isOver
+	^false.! !
+
+
+!TerniLapilliMovingX methodsFor: 'initialization' stamp: 'G. B. 11/1/2020 21:02:51'!
+initializeWith: aGame
+	game _ aGame.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1146,46 +1169,42 @@ TerniLapilliState subclass: #TerniLapilliPlayingO
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:28:58'!
-checkGameOver
-	! !
-
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:41:39'!
+!TerniLapilliPlayingO methodsFor: 'accesing' stamp: 'G. B. 11/2/2020 01:41:39'!
 currentPlayer
 	^#O.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:02:45'!
+
+!TerniLapilliPlayingO methodsFor: 'initialization' stamp: 'G. B. 11/1/2020 21:02:45'!
 initializeWith: aGame
 	game _ aGame.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:50'!
+
+!TerniLapilliPlayingO methodsFor: 'moving' stamp: 'ERMC 11/1/2020 22:53:50'!
 isMovingO
 	^self error: TerniLapilli  playersCantMoveAPositionBeforeHaving3PositionsErrorDescription! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:41:38'!
-isOver
-	^false.
-	! !
-
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:32:34'!
+!TerniLapilliPlayingO methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:32:34'!
 moveOFrom: aPosition to: aNextPosition.
 	game PlayingOMoveOFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:32:25'!
+!TerniLapilliPlayingO methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:32:25'!
 moveXFrom: aPosition to: aNextPosition.
 	game PlayingOMoveXFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:09:39'!
-player
-	^#O.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:00:49'!
+!TerniLapilliPlayingO methodsFor: 'insert' stamp: 'G. B. 11/1/2020 21:00:49'!
 putOAt: aPoint.
 	^game PlayingOPutOAt: aPoint.! !
 
-!TerniLapilliPlayingO methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:49:24'!
+!TerniLapilliPlayingO methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:49:24'!
 putXAt: aPoint.
 	^game PlayingOPutXAt: aPoint.! !
+
+
+!TerniLapilliPlayingO methodsFor: 'game over' stamp: 'G. B. 11/1/2020 18:41:38'!
+isOver
+	^false.
+	! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1209,46 +1228,42 @@ TerniLapilliState subclass: #TerniLapilliPlayingX
 	poolDictionaries: ''
 	category: 'TerniLapilli'!
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:29:15'!
-checkGameOver
-! !
-
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:41:44'!
+!TerniLapilliPlayingX methodsFor: 'accessing' stamp: 'G. B. 11/2/2020 01:41:44'!
 currentPlayer
 	^#X.! !
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:02:35'!
-initializeWith: aGame
-	game _ aGame.! !
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'ERMC 11/1/2020 22:53:50'!
+!TerniLapilliPlayingX methodsFor: 'moving' stamp: 'ERMC 11/1/2020 22:53:50'!
 isMovingO
 	^self error: TerniLapilli shouldPlayPlayerXErrorDescription.! !
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:41:32'!
+!TerniLapilliPlayingX methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:32:53'!
+moveOFrom: aPosition to: aNextPosition.
+	game PlayingXMoveOFrom: aPosition to: aNextPosition.! !
+
+!TerniLapilliPlayingX methodsFor: 'moving' stamp: 'G. B. 11/2/2020 01:33:02'!
+moveXFrom: aPosition to: aNextPosition.
+	game PlayingXMoveXFrom: aPosition to: aNextPosition.! !
+
+
+!TerniLapilliPlayingX methodsFor: 'insert' stamp: 'G. B. 11/1/2020 21:19:09'!
+putOAt: aPoint.
+	^game PlayingXPutOAt: aPoint.! !
+
+!TerniLapilliPlayingX methodsFor: 'insert' stamp: 'G. B. 11/1/2020 22:49:06'!
+putXAt: aPoint.
+	^game PlayingXPutXAt: aPoint.! !
+
+
+!TerniLapilliPlayingX methodsFor: 'game over' stamp: 'G. B. 11/1/2020 18:41:32'!
 isOver
 	^false.
 ! !
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:32:53'!
-moveOFrom: aPosition to: aNextPosition.
-	game PlayingXMoveOFrom: aPosition to: aNextPosition.! !
 
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/2/2020 01:33:02'!
-moveXFrom: aPosition to: aNextPosition.
-	game PlayingXMoveXFrom: aPosition to: aNextPosition.! !
-
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 18:09:29'!
-player
-	^ #X.! !
-
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 21:19:09'!
-putOAt: aPoint.
-	^game PlayingXPutOAt: aPoint.! !
-
-!TerniLapilliPlayingX methodsFor: 'as yet unclassified' stamp: 'G. B. 11/1/2020 22:49:06'!
-putXAt: aPoint.
-	^game PlayingXPutXAt: aPoint.! !
+!TerniLapilliPlayingX methodsFor: 'initialization' stamp: 'G. B. 11/1/2020 21:02:35'!
+initializeWith: aGame
+	game _ aGame.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 

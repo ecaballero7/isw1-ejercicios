@@ -9708,3 +9708,298 @@ PASSED!
 
 !testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'ERMC 11/1/2020 23:12:45'!
 PASSED!
+
+----QUIT----(1 November 2020 23:16:53) CuisUniversity-4384.image priorSource: 17776306!
+
+----STARTUP---- (2 November 2020 15:12:11) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!classRemoval: #TerniLapilliPlayingX stamp: 'ERMC 11/2/2020 15:46:35'!
+TerniLapilliState subclass: #TerniLapilliPlayingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliPlayingO stamp: 'ERMC 11/2/2020 15:46:35'!
+TerniLapilliState subclass: #TerniLapilliPlayingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliMovingX stamp: 'ERMC 11/2/2020 15:46:36'!
+TerniLapilliState subclass: #TerniLapilliMovingX
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliMovingO stamp: 'ERMC 11/2/2020 15:46:36'!
+TerniLapilliState subclass: #TerniLapilliMovingO
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliGameOver stamp: 'ERMC 11/2/2020 15:46:36'!
+TerniLapilliState subclass: #TerniLapilliGameOver
+	instanceVariableNames: 'game'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliState stamp: 'ERMC 11/2/2020 15:46:37'!
+Object subclass: #TerniLapilliState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilli stamp: 'ERMC 11/2/2020 15:46:37'!
+Object subclass: #TerniLapilli
+	instanceVariableNames: 'XPositions OPositions currentState'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+!classRemoval: #TerniLapilliTest stamp: 'ERMC 11/2/2020 15:46:38'!
+TestCase subclass: #TerniLapilliTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TerniLapilli'!
+
+----End fileIn of /home/edy/Escritorio/IngSoft I/isw1-ejercicios/17-TerniLapilli/TerniLapilli.st----!
+
+!methodRemoval: TerniLapilliPlayingO #player stamp: 'ERMC 11/2/2020 15:47:10'!
+player
+	^#O.!
+
+!methodRemoval: TerniLapilliPlayingX #player stamp: 'ERMC 11/2/2020 15:47:16'!
+player
+	^ #X.!
+
+!methodRemoval: TerniLapilliPlayingO #checkGameOver stamp: 'ERMC 11/2/2020 15:47:56'!
+checkGameOver
+	!
+
+!methodRemoval: TerniLapilliPlayingX #checkGameOver stamp: 'ERMC 11/2/2020 15:47:59'!
+checkGameOver
+!
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPositionsTaken stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayerOstartsTheGame stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToTakeMoreThan3Positions stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayersCanOnlyMoveInTheirTurn stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17PositionIsEmptyAfterAMove stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test18PlayersCanOnlyMoveToADistance1Position stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test19RulesFromPlayerXApplyToPlayerO stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20shouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21shouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22shouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23shouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24shouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesVertical0 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesVertical1 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test27PlayerXWinsIfHeMakesVertical2 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test28PlayerOWinsIfHeMakesAnyVerticals stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test29PlayerXWinsIfHeMakesHorizontal0 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test30PlayerXWinsIfHeMakesHorizontal1 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test31PlayerXWinsIfHeMakesHorizontal2 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test32PlayerXWinsIfHeMakesDiagonal0 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test33PlayerXWinsIfHeMakesDiagonal1 stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'ERMC 11/2/2020 15:48:02'!
+PASSED!
+!TerniLapilliMovingO methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 15:48:32' overrides: 50892171!
+isOver
+	^false.! !
+!TerniLapilliMovingX methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 15:48:53' overrides: 50892171!
+isOver
+	^false.! !
+
+!testRun: #TerniLapilliTest #test00TheGameStartWithThePlayersWithoutPositionsTaken stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test01TheFirstMoveIsForPlayerX stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test02shouldRaiseErrorIfPlayerOstartsTheGame stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test03PlayerOPlayAfterPlayerX stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test04PlayerXPlayAfterPlayerO stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test05shouldRaiseErrorIfXplaysAfterX stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test06shouldRaiseErrorIfOplaysAfterO stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test07shouldSavePositionIfPlayerXPutAvalidPosition stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test08shouldSavePositionIfPlayerOPutsAValidPosition stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test09shouldRaiseErrorIfPlayerXPlaysOccupiedPosition stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test10shouldRaiseErrorIfPlayerOPlaysOccupiedPosition stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test11ShouldRaiseErrorIfPlayerXTriesToTakeMoreThan3Positions stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test12ShouldRaiseErrorIfPlayerOTriesToTakeMoreThan3Positions stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test13shouldRaiseErrorIfAPlayerXTriesToMoveAPositionBeforeHaving3Positions stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test14PlayerXCanOnlyMoveAPositionToAnEmptyPositionAndInsideTheBoard stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test15shouldRaiseErrorIfPlayerXTriesToMoveAPositionThatIsNotHis stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test16PlayersCanOnlyMoveInTheirTurn stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test17PositionIsEmptyAfterAMove stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test18PlayersCanOnlyMoveToADistance1Position stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test19RulesFromPlayerXApplyToPlayerO stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test20shouldRaiseErrorIfPlayerXGoesBelowFloor stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test21shouldRaiseErrorIfPlayerXGoesBeyondLeftWall stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test22shouldRaiseErrorIfPlayerXGoesBeyondRoof stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test23shouldRaiseErrorIfPlayerXGoesBeyondRightWall stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test24shouldRaiseErrorIfPlayerOGoesBeyondABoardLimit stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test25PlayerXWinsIfHeMakesVertical0 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test26PlayerXWinsIfHeMakesVertical1 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test27PlayerXWinsIfHeMakesVertical2 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test28PlayerOWinsIfHeMakesAnyVerticals stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test29PlayerXWinsIfHeMakesHorizontal0 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test30PlayerXWinsIfHeMakesHorizontal1 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test31PlayerXWinsIfHeMakesHorizontal2 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test32PlayerXWinsIfHeMakesDiagonal0 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test33PlayerXWinsIfHeMakesDiagonal1 stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
+
+!testRun: #TerniLapilliTest #test34WhenTheGameIsOverNoOneCanMove stamp: 'ERMC 11/2/2020 15:55:32'!
+PASSED!
