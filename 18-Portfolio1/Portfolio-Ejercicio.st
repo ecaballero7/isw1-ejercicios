@@ -5,8 +5,8 @@ TestCase subclass: #PortfolioTest
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
-!PortfolioTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 19:40:19'!
-test01APorfolioHaveZeroAsBalanceWhenCreated 
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:15:49'!
+test01APortfolioHaveZeroAsBalanceWhenCreated 
 
 	| portfolio |
 	
@@ -15,52 +15,123 @@ test01APorfolioHaveZeroAsBalanceWhenCreated
 	self assert: 0 equals: portfolio balance.
 ! !
 
-!PortfolioTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 19:50:21'!
-test02APortfolioWithOneAccountHasTheBalanceOfTheAccount
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:16:40'!
+test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount
 
-	| portfolio account |
-	
-	portfolio := Portfolio new.
-	
-	account := ReceptiveAccount  new.
+	| portfolio anAccount aPortfolio|
 		
-	portfolio addAccount: account.
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	aPortfolio := Portfolio with: anAccount. 
 	
-
-	self assert: 0 equals: portfolio balance.
-! !
-
-!PortfolioTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 19:55:22'!
-test03APortfolioWithOneAccountWithNonZeroBalanceHasTheBalanceOfTheAccount
-
-	| portfolio account |
-	
-	portfolio := Portfolio new.
-	
-	account := ReceptiveAccount  new.
-	Deposit register: 100 on: account.
-
-	portfolio addAccount: account.
+	portfolio := Portfolio with: aPortfolio .
 	
 	self assert: 100 equals: portfolio balance.
 ! !
 
-!PortfolioTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/2/2020 20:04:52'!
-test04APortfolioWithOnePortfolioWithNonZeroBalanceHasTheSumOfBalance
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:23:26'!
+test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance
 
-	| portfolio anAccount aPortfolio|
+	| portfolio anAccount anAccount2 aPortfolioA aPortfolioB |
+		
+	anAccount := ReceptiveAccount new.
+	anAccount2 := ReceptiveAccount new.
 	
-	portfolio := Portfolio new.
+	Deposit register: 100 on: anAccount.
+	Deposit register: 30 on: anAccount2.
+	Withdraw register: 50 on: anAccount. 
+	aPortfolioA := Portfolio with: anAccount.
+	aPortfolioB := Portfolio with: aPortfolioA.
 	
-	aPortfolio := Portfolio new.
+	portfolio := Portfolio with: aPortfolioB.
+	portfolio add: anAccount2 . 
+		
+	self assert: 80 equals: portfolio balance.
+! !
+
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:48:31'!
+test05PortfolioKnowsRegisteredTransactions 
+
+	| portfolio anAccount  aPortfolio  aDeposit aWithdraw |
+		
+	anAccount := ReceptiveAccount new.
+	aDeposit := Deposit register: 100 on: anAccount.
+	aWithdraw := Withdraw register: 50 on: anAccount. 
+	aPortfolio := Portfolio with: anAccount.
+	
+	portfolio := Portfolio with: aPortfolio.
+	
+	self assert: (portfolio hasRegistered: aDeposit).
+	self assert: (portfolio hasRegistered: aWithdraw).
+		
+! !
+
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:07:32'!
+test06PortfolioWithManyAccountsKnowsRegisteredTransactions 
+
+	| portfolio anAccount anAccount2 anAccount3  aPortfolio1 aPortfolio2  aDeposit aWithdraw  |
+		
+	anAccount := ReceptiveAccount new.
+	aDeposit := Deposit register: 100 on: anAccount.
+	aWithdraw := Withdraw register: 50 on: anAccount. 
+	aPortfolio1 := Portfolio with: anAccount.
+	
+	anAccount2 := ReceptiveAccount new.
+	Deposit register: 30 on: anAccount.
+	
+	anAccount3 := ReceptiveAccount new.
+	Withdraw register: 60 on: anAccount3 .
+	aPortfolio2 := Portfolio with: anAccount3.
+	
+	portfolio := Portfolio with: aPortfolio1.
+	portfolio add: anAccount2.
+	portfolio add: aPortfolio2.
+
+	self assert: (portfolio hasRegistered: aDeposit).
+	self assert: (portfolio hasRegistered: aWithdraw).
+		
+! !
+
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:15:17'!
+test07AnEmptyPortfolioHasZeroTransaction
+
+	|  portfolio |
+	
+	portfolio := Portfolio new. 
+	
+	self assert: 0 equals:  portfolio transactions size.
+! !
+
+!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:56:35'!
+test08PortfolioWithOneAccountKnewTheAccountTransactions
+
+	|  portfolio anAccount expectedResult aDeposit aWithdraw portfolio2 portfolio3 |
+	
+	anAccount := ReceptiveAccount new.
+	aDeposit := Deposit register: 100 on: anAccount.
+	aWithdraw := Withdraw register: 50 on: anAccount. 
+	
+	portfolio3 := Portfolio with: anAccount. 
+	portfolio2 := Portfolio with: portfolio3. 
+	portfolio := Portfolio with: portfolio2.  
+	
+	expectedResult := Set with: aDeposit with: aWithdraw. 
+	
+	self assert: expectedResult equals:  portfolio transactions.
+
+	! !
+
+
+!PortfolioTest methodsFor: 'test - hasRegitered' stamp: 'ERMC 11/6/2020 18:37:37'!
+test04AnEmptyPortfolioDontKnowAnyTransaction
+
+	| anAccount portfolio |
+	portfolio := Portfolio new. 
+	
 	anAccount := ReceptiveAccount new.
 	Deposit register: 100 on: anAccount.
 	
-	portfolio addAccount: aPortfolio .
-	
-	
-	self assert: 100 equals: portfolio balance.
-! !
+	self deny: (portfolio hasRegistered: anAccount)! !
 
 
 !classDefinition: #ReceptiveAccountTest category: 'Portfolio-Ejercicio'!
@@ -260,6 +331,11 @@ Object subclass: #Portfolio
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
+!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 18:27:16'!
+add: anAccount
+
+	accounts add: anAccount. ! !
+
 !Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/2/2020 19:51:12'!
 addAccount: aReceptiveAccount 
 	
@@ -275,6 +351,38 @@ balance
 initialize
 	
 	accounts := OrderedCollection new. ! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 19:53:15'!
+transactions
+	|transactions|
+	
+	transactions _ Set new.
+	 accounts do: [:anAccount | anAccount transactions do: [:aTransaction | transactions add: aTransaction ]].
+		
+	^ transactions .! !
+
+
+!Portfolio methodsFor: 'initialize' stamp: 'ERMC 11/6/2020 18:14:13'!
+initializeWith: anAccount 
+	
+	accounts := OrderedCollection with: anAccount.! !
+
+
+!Portfolio methodsFor: 'accesing' stamp: 'ERMC 11/6/2020 18:53:57'!
+hasRegistered: aTransaction 
+	
+	^ accounts anySatisfy: [:anAccount | anAccount hasRegistered: aTransaction ] ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'Portfolio class' category: 'Portfolio-Ejercicio'!
+Portfolio class
+	instanceVariableNames: ''!
+
+!Portfolio class methodsFor: 'initialization' stamp: 'ERMC 11/6/2020 18:15:28'!
+with: anAccount 
+
+	^self new initializeWith: anAccount .! !
 
 
 !classDefinition: #ReceptiveAccount category: 'Portfolio-Ejercicio'!
