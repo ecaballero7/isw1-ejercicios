@@ -5,6 +5,216 @@ TestCase subclass: #PortfolioTest
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 20:22:19'!
+test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times
+
+	|  portfolio2 portfolio1 |
+	
+	
+	portfolio2 := Portfolio new. 
+	portfolio1 := Portfolio with: portfolio2. 
+	
+	
+	self
+	should: [ portfolio1 add: portfolio2. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 21:22:15'!
+test10shouldRaiseErrorIfAPortfolioTriesToAddItself
+
+	|  portfolio |
+	
+	
+	portfolio := Portfolio new. 
+	
+	
+	self
+	should: [ portfolio add: portfolio. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 20:22:19'!
+test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio
+
+	|  portfolio2 portfolio1 |
+	
+	
+	portfolio2 := Portfolio new. 
+	portfolio1 := Portfolio with: portfolio2. 
+	
+	
+	self
+	should: [ portfolio2 add: portfolio1. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 20:22:19'!
+test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio
+
+	|  portfolio2 portfolio1 portfolio3 |
+	
+	
+	portfolio2 := Portfolio new. 
+	portfolio1 := Portfolio with: portfolio2. 
+	portfolio3 := Portfolio new.
+	portfolio2 add: portfolio3.
+	
+	
+	self
+	should: [ portfolio3 add: portfolio1. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 20:55:19'!
+test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount
+
+	|  portfolio2 portfolio1 anAccount |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Withdraw register: 50 on: anAccount. 
+	
+	portfolio2 := Portfolio with: anAccount. 
+	portfolio1 := Portfolio with: portfolio2. 
+	
+	self
+	should: [ portfolio1 add: anAccount. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 21:34:14'!
+test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent
+
+	|  portfolio2 portfolio1 anAccount |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Withdraw register: 50 on: anAccount. 
+	
+	portfolio2 := Portfolio new.
+	portfolio1 := Portfolio with: portfolio2. 
+	portfolio1 add: anAccount.
+	
+	self
+	should: [ portfolio2 add: anAccount. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 22:09:35'!
+test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree
+
+	"|  portfolio2 portfolio1 anAccount portfolio3 |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Withdraw register: 50 on: anAccount. 
+	
+	portfolio2 := Portfolio new.
+	portfolio1 := Portfolio with: portfolio2. 
+	portfolio1 add: anAccount.
+	portfolio3 := Portfolio with: anAccount.
+	
+	
+	self
+	should: [ portfolio2 add: portfolio3. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	"! !
+
+
+!PortfolioTest methodsFor: 'test - transactions' stamp: 'G. B. 11/7/2020 18:31:55'!
+test07AnEmptyPortfolioHasZeroTransaction
+
+	|  portfolio expectedResult |
+	
+	portfolio := Portfolio new.
+	expectedResult := Set new. 
+
+	
+	self assert: expectedResult equals:  portfolio transactions.
+! !
+
+!PortfolioTest methodsFor: 'test - transactions' stamp: 'G. B. 11/7/2020 18:32:46'!
+test08PortfolioWithOneAccountKnewTheAccountTransactions
+
+	|  portfolio anAccount expectedResult aDeposit aWithdraw portfolio2 portfolio3 |
+	
+	anAccount := ReceptiveAccount new.
+	aDeposit := Deposit register: 100 on: anAccount.
+	aWithdraw := Withdraw register: 50 on: anAccount. 
+	
+	portfolio3 := Portfolio with: anAccount. 
+	portfolio2 := Portfolio with: portfolio3. 
+	portfolio := Portfolio with: portfolio2.  
+	
+	expectedResult := Set with: aDeposit with: aWithdraw. 
+	
+	self assert: expectedResult equals:  portfolio transactions.
+
+	! !
+
+!PortfolioTest methodsFor: 'test - transactions' stamp: 'G. B. 11/7/2020 20:13:41'!
+test09PortfolioWithManyAccountsKnowsTheAccountsTransactions
+
+	|  portfolio account1 account2 expectedResult aDeposit aWithdraw portfolio2 portfolio3 deposit2 withdraw2 |
+	
+	account1 := ReceptiveAccount new.
+	aDeposit := Deposit register: 100 on: account1.
+	aWithdraw := Withdraw register: 50 on: account1. 
+	
+	account2 := ReceptiveAccount new.
+	deposit2 := Deposit register: 34 on: account2.
+	withdraw2 := Withdraw register: 55 on: account2. 
+	
+	portfolio3 := Portfolio with: account1. 
+	portfolio2 := Portfolio with: portfolio3. 
+	portfolio2 add: account2.
+
+	portfolio := Portfolio with: portfolio2. 
+	
+	
+	expectedResult := Set with: aDeposit with: aWithdraw with: deposit2 with: withdraw2. 
+	
+	self assert: expectedResult equals:  portfolio transactions.
+
+	! !
+
+
 !PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:15:49'!
 test01APortfolioHaveZeroAsBalanceWhenCreated 
 
@@ -49,7 +259,19 @@ test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance
 	self assert: 80 equals: portfolio balance.
 ! !
 
-!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 18:48:31'!
+
+!PortfolioTest methodsFor: 'test - hasRegitered' stamp: 'ERMC 11/6/2020 18:37:37'!
+test04AnEmptyPortfolioDontKnowAnyTransaction
+
+	| anAccount portfolio |
+	portfolio := Portfolio new. 
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	
+	self deny: (portfolio hasRegistered: anAccount)! !
+
+!PortfolioTest methodsFor: 'test - hasRegitered' stamp: 'ERMC 11/6/2020 18:48:31'!
 test05PortfolioKnowsRegisteredTransactions 
 
 	| portfolio anAccount  aPortfolio  aDeposit aWithdraw |
@@ -66,7 +288,7 @@ test05PortfolioKnowsRegisteredTransactions
 		
 ! !
 
-!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:07:32'!
+!PortfolioTest methodsFor: 'test - hasRegitered' stamp: 'ERMC 11/6/2020 19:07:32'!
 test06PortfolioWithManyAccountsKnowsRegisteredTransactions 
 
 	| portfolio anAccount anAccount2 anAccount3  aPortfolio1 aPortfolio2  aDeposit aWithdraw  |
@@ -91,47 +313,6 @@ test06PortfolioWithManyAccountsKnowsRegisteredTransactions
 	self assert: (portfolio hasRegistered: aWithdraw).
 		
 ! !
-
-!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:15:17'!
-test07AnEmptyPortfolioHasZeroTransaction
-
-	|  portfolio |
-	
-	portfolio := Portfolio new. 
-	
-	self assert: 0 equals:  portfolio transactions size.
-! !
-
-!PortfolioTest methodsFor: 'test - balance' stamp: 'ERMC 11/6/2020 19:56:35'!
-test08PortfolioWithOneAccountKnewTheAccountTransactions
-
-	|  portfolio anAccount expectedResult aDeposit aWithdraw portfolio2 portfolio3 |
-	
-	anAccount := ReceptiveAccount new.
-	aDeposit := Deposit register: 100 on: anAccount.
-	aWithdraw := Withdraw register: 50 on: anAccount. 
-	
-	portfolio3 := Portfolio with: anAccount. 
-	portfolio2 := Portfolio with: portfolio3. 
-	portfolio := Portfolio with: portfolio2.  
-	
-	expectedResult := Set with: aDeposit with: aWithdraw. 
-	
-	self assert: expectedResult equals:  portfolio transactions.
-
-	! !
-
-
-!PortfolioTest methodsFor: 'test - hasRegitered' stamp: 'ERMC 11/6/2020 18:37:37'!
-test04AnEmptyPortfolioDontKnowAnyTransaction
-
-	| anAccount portfolio |
-	portfolio := Portfolio new. 
-	
-	anAccount := ReceptiveAccount new.
-	Deposit register: 100 on: anAccount.
-	
-	self deny: (portfolio hasRegistered: anAccount)! !
 
 
 !classDefinition: #ReceptiveAccountTest category: 'Portfolio-Ejercicio'!
@@ -326,20 +507,28 @@ for: aValue
 
 !classDefinition: #Portfolio category: 'Portfolio-Ejercicio'!
 Object subclass: #Portfolio
-	instanceVariableNames: 'accounts'
+	instanceVariableNames: 'accounts parents'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
-!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 18:27:16'!
-add: anAccount
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:05:11'!
+add: anAccountToAdd
 
-	accounts add: anAccount. ! !
-
-!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/2/2020 19:51:12'!
-addAccount: aReceptiveAccount 
+	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
 	
-	accounts add: aReceptiveAccount.! !
+	
+	(self isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	(anAccountToAdd class = Portfolio) ifTrue: [anAccountToAdd addParent: self.].
+	accounts add: anAccountToAdd. ! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 19:39:52'!
+addParent: aParentPorfolio 
+	
+	parents add: aParentPorfolio.! !
 
 !Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/2/2020 19:56:51'!
 balance
@@ -347,10 +536,56 @@ balance
 	^accounts sum: [ :anAccount | anAccount balance ] ifEmpty: [ 0 ]
 	! !
 
-!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/2/2020 19:52:04'!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:11:17'!
+hasAsParent: anAccountToAdd.
+
+parents do: [:account | (account class = Portfolio) ifTrue: [(account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ] ].
+	^false.! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 19:42:21'!
 initialize
-	
+	parents := OrderedCollection new.
 	accounts := OrderedCollection new. ! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 22:05:04'!
+isAccountChildrenPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
+
+	^false.
+	
+	
+! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:48:29'!
+isAccountPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
+
+	^false.
+	
+	
+! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 22:04:48'!
+isSafeToAddAccount: anAccountToAdd.
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^false]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^false].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^false].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^false].].
+
+	^ (self = anAccountToAdd) not.
+	
+	
+	
+	
+	
+	
+! !
 
 !Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 19:53:15'!
 transactions
@@ -362,22 +597,41 @@ transactions
 	^ transactions .! !
 
 
-!Portfolio methodsFor: 'initialize' stamp: 'ERMC 11/6/2020 18:14:13'!
+!Portfolio methodsFor: 'initialize' stamp: 'G. B. 11/7/2020 21:00:33'!
 initializeWith: anAccount 
-	
-	accounts := OrderedCollection with: anAccount.! !
+	parents := OrderedCollection new.
 
+	accounts := OrderedCollection with: anAccount.
+	
+	(anAccount class = Portfolio) ifTrue: [anAccount addParent: self.].! !
+
+
+!Portfolio methodsFor: 'accesing' stamp: 'G. B. 11/7/2020 20:34:24'!
+accounts
+	
+	^accounts.
+	! !
 
 !Portfolio methodsFor: 'accesing' stamp: 'ERMC 11/6/2020 18:53:57'!
 hasRegistered: aTransaction 
 	
 	^ accounts anySatisfy: [:anAccount | anAccount hasRegistered: aTransaction ] ! !
 
+!Portfolio methodsFor: 'accesing' stamp: 'G. B. 11/7/2020 19:52:29'!
+parents
+	
+	^parents.
+	! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Portfolio class' category: 'Portfolio-Ejercicio'!
 Portfolio class
 	instanceVariableNames: ''!
+
+!Portfolio class methodsFor: 'initialization' stamp: 'G. B. 11/7/2020 20:22:45'!
+cantAddAccountErrorDescripcion
+	^ 'Cant add the account, the account you are trying to add is already present or is a parent portfolio'.! !
 
 !Portfolio class methodsFor: 'initialization' stamp: 'ERMC 11/6/2020 18:15:28'!
 with: anAccount 
