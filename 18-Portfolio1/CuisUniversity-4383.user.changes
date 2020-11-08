@@ -17047,3 +17047,3731 @@ PASSED!
 
 !testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/7/2020 22:14:39'!
 PASSED!
+
+----QUIT----(8 November 2020 00:24:12) CuisUniversity-4383.image priorSource: 19187353!
+
+----STARTUP---- (8 November 2020 15:51:55) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 15:52:05'!
+PASSED!
+
+Object subclass: #BankAccount
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #BankAccount category: 'Portfolio-Ejercicio' stamp: 'G. B. 11/8/2020 16:04:26'!
+Object subclass: #BankAccount
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+BankAccount subclass: #ReceptiveAccount
+	instanceVariableNames: 'transactions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #ReceptiveAccount category: 'Portfolio-Ejercicio' stamp: 'G. B. 11/8/2020 16:04:40'!
+BankAccount subclass: #ReceptiveAccount
+	instanceVariableNames: 'transactions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+BankAccount subclass: #Portfolio
+	instanceVariableNames: 'accounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #Portfolio category: 'Portfolio-Ejercicio' stamp: 'G. B. 11/8/2020 16:04:48'!
+BankAccount subclass: #Portfolio
+	instanceVariableNames: 'accounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:04:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:12:09'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 16:12:10'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:13:38' prior: 50934669!
+isSafeToAddAccount: anAccountToAdd.
+
+	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	
+	
+	(self isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	^ (self = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:13:56' prior: 50935197!
+isSafeToAddAccount: anAccountToAdd.
+
+	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	^ (self = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:13:58'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:13:58'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:13:58'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:13:58'!
+ERROR!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:13:58'!
+ERROR!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:13:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:14:04'!
+ERROR!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:14:32' prior: 50935236!
+isSafeToAddAccount: anAccountToAdd.
+
+	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	(self = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:14:33'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:15:13' prior: 50934076!
+add: anAccountToAdd
+
+	"(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ]."
+	
+	
+	(self isSafeToAddAccount: anAccountToAdd). 
+	
+	"(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]."
+	
+	(anAccountToAdd class = Portfolio) ifTrue: [anAccountToAdd addParent: self.].
+	accounts add: anAccountToAdd. ! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:15:14'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:15:24' prior: 50935440!
+add: anAccountToAdd
+
+	(self isSafeToAddAccount: anAccountToAdd). 
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [anAccountToAdd addParent: self.].
+	accounts add: anAccountToAdd. ! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:15:27' prior: 50935520!
+add: anAccountToAdd
+
+	self isSafeToAddAccount: anAccountToAdd. 
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [anAccountToAdd addParent: self.].
+	accounts add: anAccountToAdd. ! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:21:27' prior: 50935340!
+isSafeToAddAccount: anAccountToAdd.
+
+	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	(self = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:21:28'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:22:03' prior: 50935538!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd) or: [accounts includes: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+
+	
+	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:22:04'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:23:14' prior: 50935638!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd) or: [accounts includes: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+
+	
+	((self hasAsParent: anAccountToAdd) or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:23:16'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:23:28' prior: 50935736!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd) or: [accounts includes: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+
+	
+	((self hasAsParent: anAccountToAdd) or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+"	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+"	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:23:29'!
+FAILURE!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:23:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:23:29'!
+FAILURE!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:23:42' prior: 50935832!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd) or: [accounts includes: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+
+	
+	((self hasAsParent: anAccountToAdd) or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:23:43'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:26:10' prior: 50935933!
+isSafeToAddAccount: anAccountToAdd.
+
+"	((self = anAccountToAdd) or: [accounts includes: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ]."
+
+	
+	((self hasAsParent: anAccountToAdd) or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:26:11'!
+FAILURE!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:26:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:26:11'!
+FAILURE!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:26:17'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:26:18'!
+FAILURE!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:26:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:26:18'!
+FAILURE!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:26:38' prior: 50936029!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd)) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+
+	
+	((self hasAsParent: anAccountToAdd) or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+	
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:26:39'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:31:52' prior: 50936198!
+isSafeToAddAccount: anAccountToAdd.
+
+	((self = anAccountToAdd) or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:31:53'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:32:27' prior: 50936293!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:32:58'!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]
+	
+	
+	
+	
+! !
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 16:34:56'!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]
+	
+	
+	! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:35:07'!
+PASSED!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 16:35:17' prior: 50936419!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd).
+	
+	
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 16:35:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:35:20'!
+PASSED!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 16:35:56' prior: 50936492!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd].
+	
+	
+	! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:38:18' prior: 50936386!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | (account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:38:19'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:19'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:38:19'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:38:19'!
+FAILURE!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:38:19'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:38:48' prior: 50936597!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | (account isSafeToAddAccount: anAccountToAdd)].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:38:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:38:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:38:49'!
+FAILURE!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:38:49'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:38:56' prior: 50936680!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion]]
+	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:38:57'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:45:44' prior: 50936761!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+	accounts do: [:account | 	(account madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:45:46'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:45:46'!
+FAILURE!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:45:46'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:45:59' prior: 50936851!
+isSafeToAddAccount: anAccountToAdd.
+
+	"(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ]."
+		
+
+	accounts do: [:account | 	(account madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:46:00'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:46:00'!
+FAILURE!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:46:00'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:46:00'!
+FAILURE!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:46:00'!
+FAILURE!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:46:00'!
+FAILURE!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:46:00'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:47:38' prior: 50936934!
+isSafeToAddAccount: anAccountToAdd.
+
+	"(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ]."
+		
+
+	accounts do: [:account | 	(account madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ] ifFalse: [account isSafeToAddAccount: anAccountToAdd]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:47:48' prior: 50937017!
+isSafeToAddAccount: anAccountToAdd.
+
+	"(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ]."
+		
+
+	accounts do: [:account | 	(account madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ] ifFalse: [account isSafeToAddAccount: anAccountToAdd]].
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:47:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:47:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:47:49'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:47:49'!
+FAILURE!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:47:49'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:47:49'!
+FAILURE!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:47:49'!
+FAILURE!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:47:49'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:48:47' prior: 50937037!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+
+
+	
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:49:38' prior: 50936411!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	accounts do: [:account | 	(account madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ] ifFalse: [account isSafeToAddAccount: anAccountToAdd]].]
+	
+	
+	
+	
+	
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:51:58' prior: 50937135!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | account madeOf: anAccountToAdd]]
+
+	
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:51:59'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:51:59'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:51:59'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:51:59'!
+PASSED!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 16:53:15' prior: 50936589!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd).
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 16:53:16'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:54:07' prior: 50937149!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]]
+
+	
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:54:08'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:54:34' prior: 50937121!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:55:09' prior: 50937257!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]]
+
+	
+	"or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd]"
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:55:10'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:55:10'!
+FAILURE!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:55:10'!
+FAILURE!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:55:10'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:55:34' prior: 50937348!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]] 
+
+
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd].
+	
+	
+	
+	
+! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:57:30' prior: 50934538!
+isAccountPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | ((aParent accounts) includes: anAccountToAdd) or: [^aParent isAccountPresentInAParent: anAccountToAdd]].
+
+	^false.
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:57:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:57:31'!
+FAILURE!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:57:31'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:57:31'!
+FAILURE!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 16:58:52' prior: 50937437!
+isAccountPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [^aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
+
+	^false.
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 16:58:53'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:00:00' prior: 50937334!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+		
+	(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
+
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:00:00'!
+PASSED!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 17:03:18'!
+addParent: anAccountToAdd	! !
+!Portfolio methodsFor: 'initialize' stamp: 'G. B. 11/8/2020 17:03:34' prior: 50933932!
+initializeWith: anAccount 
+	parents := OrderedCollection new.
+
+	accounts := OrderedCollection with: anAccount.
+	
+	anAccount addParent: self.! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:03:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:03:41'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:03:59' prior: 50935529!
+add: anAccountToAdd
+
+	self isSafeToAddAccount: anAccountToAdd. 
+		
+	anAccountToAdd addParent: self.
+	accounts add: anAccountToAdd. ! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:07:12' prior: 50934128!
+hasAsParent: anAccountToAdd.
+
+parents do: [:account | (account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ].
+	^false.! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:07:13'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:07:18'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:07:34' prior: 50937842!
+hasAsParent: anAccountToAdd.
+
+	parents do: [:account | (account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ].
+	^false.! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:07:47' prior: 50938007!
+hasAsParent: anAccountToAdd.
+
+	parents do: [:account | (account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ].
+	^false.! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:08:30' prior: 50937425!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]] 
+
+
+	or: [self hasAsParent: anAccountToAdd] 
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:08:30'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:08:34'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:09:02' prior: 50938023!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd) or: [
+	
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]] 
+
+
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd].
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:09:03'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:16:57' prior: 50937515!
+isAccountPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
+
+	^false.
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:17:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:17:02'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:18:38' prior: 50937590!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	
+	^true.
+	
+	
+	
+	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:18:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:18:43'!
+PASSED!
+
+!methodRemoval: Portfolio #isAccountChildrenPresentInAParent: stamp: 'G. B. 11/8/2020 17:18:50'!
+isAccountChildrenPresentInAParent: anAccountToAdd.
+
+	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
+
+	^false.
+	
+	
+!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:18:52'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:21:25' prior: 50938015!
+hasAsParent: anAccountToAdd.
+
+	parents anySatisfy: [:account | account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]]! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:21:25'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:21:25'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:21:25'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:21:25'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:21:25'!
+ERROR!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:21:25'!
+ERROR!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:21:25'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:22:15' prior: 50938619!
+hasAsParent: anAccountToAdd.
+
+	parents anySatisfy: [:account | account = anAccountToAdd or: [^account hasAsParent: anAccountToAdd]]! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:22:16'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:22:16'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:22:16'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:22:16'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:22:16'!
+ERROR!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:22:16'!
+ERROR!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:22:16'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:22:38' prior: 50938691!
+hasAsParent: anAccountToAdd.
+
+	parents do: [:account | (account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ].
+	^false.! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:22:39'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:24:44' prior: 50938763!
+hasAsParent: anAccountToAdd.
+
+	parents anySatisfy: [:account | account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]]! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:24:45'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:24:45'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:24:45'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:24:45'!
+FAILURE!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:24:45'!
+ERROR!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:24:45'!
+ERROR!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:24:45'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:24:47'!
+ERROR!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:25:11' prior: 50938836!
+hasAsParent: anAccountToAdd.
+
+	^parents anySatisfy: [:account | account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]]! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:25:12'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:25:14'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:26:33' prior: 50938267!
+isAccountPresentInAParent: anAccountToAdd.
+
+	^parents do: [:aParent | ((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd] ].	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:26:34'!
+ERROR!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:34'!
+ERROR!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:26:34'!
+ERROR!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:34'!
+ERROR!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:26:34'!
+ERROR!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:26:34'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:26:46' prior: 50939076!
+isAccountPresentInAParent: anAccountToAdd.
+
+	^parents anySatisfy: [:aParent | ((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd] ].	
+	
+! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:26:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:26:49'!
+PASSED!
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:30:19' prior: 50937835!
+add: anAccountToAdd
+
+	self isSafeToAddAccount: anAccountToAdd. 
+		
+	anAccountToAdd addParent: self.
+	accounts add: anAccountToAdd. ! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:34:47'!
+PASSED!
+!BankAccount methodsFor: 'nil' stamp: 'G. B. 11/8/2020 17:36:15'!
+addParent
+	self subclassResponsibility.! !
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:36:22'!
+addParent: anAccount
+	self subclassResponsibility.! !
+
+!methodRemoval: BankAccount #addParent stamp: 'G. B. 11/8/2020 17:36:26'!
+addParent
+	self subclassResponsibility.!
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:37:32'!
+balance
+	self subclassResponsibility.! !
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:37:47'!
+hasRegistered: anAccount
+	self subclassResponsibility.! !
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:37:52' prior: 50939431!
+hasRegistered: aTransaction
+	self subclassResponsibility.! !
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:38:16'!
+madeOf: aTransaction
+	self subclassResponsibility.! !
+!BankAccount methodsFor: 'as yet unclassified' stamp: 'G. B. 11/8/2020 17:38:23'!
+transaction
+	self subclassResponsibility.! !
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:40:32'!
+PASSED!
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/8/2020 17:42:32'!
+test10shouldRaiseErrorIfAPortfolioTriesToAddAnAccount2Times
+
+	|  portfolio2 portfolio1 |
+	
+	
+	portfolio2 := Portfolio new. 
+	portfolio1 := Portfolio with: portfolio2. 
+	
+	
+	self
+	should: [ portfolio1 add: portfolio2. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!methodRemoval: PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times stamp: 'G. B. 11/8/2020 17:42:37'!
+test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times
+
+	|  portfolio2 portfolio1 |
+	
+	
+	portfolio2 := Portfolio new. 
+	portfolio1 := Portfolio with: portfolio2. 
+	
+	
+	self
+	should: [ portfolio1 add: portfolio2. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	!
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/8/2020 17:43:35'!
+test14shouldRaiseErrorIfAPortfolioTriesToAddAnAccountPresentInAParent
+
+	|  portfolio2 portfolio1 anAccount |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Withdraw register: 50 on: anAccount. 
+	
+	portfolio2 := Portfolio new.
+	portfolio1 := Portfolio with: portfolio2. 
+	portfolio1 add: anAccount.
+	
+	self
+	should: [ portfolio2 add: anAccount. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	! !
+
+!methodRemoval: PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:43:35'!
+test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent
+
+	|  portfolio2 portfolio1 anAccount |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Withdraw register: 50 on: anAccount. 
+	
+	portfolio2 := Portfolio new.
+	portfolio1 := Portfolio with: portfolio2. 
+	portfolio1 add: anAccount.
+	
+	self
+	should: [ portfolio2 add: anAccount. ]
+	raise: Error
+	withMessageText: Portfolio cantAddAccountErrorDescripcion. 
+
+
+	
+
+	!
+
+!testRun: #PortfolioTest #test01APortfolioHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test02APortfolioWithOnePortfolioWithNonZeroBalanceHasTheBalanceOfTheAccount stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test03APortfolioWithManyAccountWithNonZeroBalanceHasTheSumOfBalance stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test04AnEmptyPortfolioDontKnowAnyTransaction stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioWithManyAccountsKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test07AnEmptyPortfolioHasZeroTransaction stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioWithOneAccountKnewTheAccountTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioWithManyAccountsKnowsTheAccountsTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddAnAccount2Times stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test10shouldRaiseErrorIfAPortfolioTriesToAddItself stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test11shouldRaiseErrorIfAPortfolioTriesToAddAParentPortfolio stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test12shouldRaiseErrorIfAPortfolioTriesToAddAParentOfAParentPortfolio stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test14shouldRaiseErrorIfAPortfolioTriesToAddAnAccountPresentInAParent stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test15shouldRaiseErrorIfAPortfolioTriesToAddAPortfolioWithAnAccountPresentOnItsTree stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/8/2020 17:52:51'!
+PASSED!

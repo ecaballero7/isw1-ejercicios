@@ -5,8 +5,8 @@ TestCase subclass: #PortfolioTest
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
-!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 20:22:19'!
-test10shouldRaiseErrorIfAPortfolioTriesToAddAPortfolio2Times
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/8/2020 17:42:32'!
+test10shouldRaiseErrorIfAPortfolioTriesToAddAnAccount2Times
 
 	|  portfolio2 portfolio1 |
 	
@@ -108,8 +108,8 @@ test13shouldRaiseErrorIfAPortfolioTriesToAddAnAlreadyPresentAccount
 
 	! !
 
-!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/7/2020 21:34:14'!
-test14shouldRaiseErrorIfAPortfolioTriesToAnAccountPresentInAParent
+!PortfolioTest methodsFor: 'test - add' stamp: 'G. B. 11/8/2020 17:43:35'!
+test14shouldRaiseErrorIfAPortfolioTriesToAddAnAccountPresentInAParent
 
 	|  portfolio2 portfolio1 anAccount |
 	
@@ -505,30 +505,47 @@ for: aValue
 	^ self new initializeFor: aValue ! !
 
 
+!classDefinition: #BankAccount category: 'Portfolio-Ejercicio'!
+Object subclass: #BankAccount
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!BankAccount methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:37:32'!
+balance
+	self subclassResponsibility.! !
+
+!BankAccount methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:37:52'!
+hasRegistered: aTransaction
+	self subclassResponsibility.! !
+
+!BankAccount methodsFor: 'accessing' stamp: 'G. B. 11/8/2020 17:38:23'!
+transaction
+	self subclassResponsibility.! !
+
+
+!BankAccount methodsFor: 'adding' stamp: 'G. B. 11/8/2020 17:36:22'!
+addParent: anAccount
+	self subclassResponsibility.! !
+
+!BankAccount methodsFor: 'adding' stamp: 'G. B. 11/8/2020 17:38:16'!
+madeOf: aTransaction
+	self subclassResponsibility.! !
+
+
 !classDefinition: #Portfolio category: 'Portfolio-Ejercicio'!
-Object subclass: #Portfolio
+BankAccount subclass: #Portfolio
 	instanceVariableNames: 'accounts parents'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:05:11'!
-add: anAccountToAdd
-
-	(accounts includes: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 20:34:24'!
+accounts
 	
-	
-	(self isSafeToAddAccount: anAccountToAdd) ifFalse: [^self error: self class cantAddAccountErrorDescripcion].
-	
-	(self hasAsParent: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion].
-	
-	(anAccountToAdd class = Portfolio) ifTrue: [anAccountToAdd addParent: self.].
-	accounts add: anAccountToAdd. ! !
-
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 19:39:52'!
-addParent: aParentPorfolio 
-	
-	parents add: aParentPorfolio.! !
+	^accounts.
+	! !
 
 !Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/2/2020 19:56:51'!
 balance
@@ -536,56 +553,16 @@ balance
 	^accounts sum: [ :anAccount | anAccount balance ] ifEmpty: [ 0 ]
 	! !
 
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:11:17'!
-hasAsParent: anAccountToAdd.
-
-parents do: [:account | (account class = Portfolio) ifTrue: [(account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]) ifTrue: [^true] ] ].
-	^false.! !
-
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 19:42:21'!
-initialize
-	parents := OrderedCollection new.
-	accounts := OrderedCollection new. ! !
-
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 22:05:04'!
-isAccountChildrenPresentInAParent: anAccountToAdd.
-
-	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
-
-	^false.
+!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 18:53:57'!
+hasRegistered: aTransaction 
 	
-	
-! !
+	^ accounts anySatisfy: [:anAccount | anAccount hasRegistered: aTransaction ] ! !
 
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 21:48:29'!
-isAccountPresentInAParent: anAccountToAdd.
-
-	parents do: [:aParent | (((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd]) ifTrue: [^true]  ].
-
-	^false.
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 19:52:29'!
+parents
 	
-	
-! !
-
-!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/7/2020 22:04:48'!
-isSafeToAddAccount: anAccountToAdd.
-
-	accounts do: [:account | (account class = ReceptiveAccount) ifTrue: [(account = anAccountToAdd) ifTrue: [^false]]
-	                                                                     	                ifFalse: [(account isSafeToAddAccount: anAccountToAdd) ifFalse: [^false].]].
-
-	
-	(self isAccountPresentInAParent: anAccountToAdd) ifTrue: [^false].
-		
-	(anAccountToAdd class = Portfolio) ifTrue: [(self isAccountChildrenPresentInAParent: anAccountToAdd) ifTrue: [^false].].
-
-	^ (self = anAccountToAdd) not.
-	
-	
-	
-	
-	
-	
-! !
+	^parents.
+	! !
 
 !Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/6/2020 19:53:15'!
 transactions
@@ -597,31 +574,73 @@ transactions
 	^ transactions .! !
 
 
-!Portfolio methodsFor: 'initialize' stamp: 'G. B. 11/7/2020 21:00:33'!
+!Portfolio methodsFor: 'initialization' stamp: 'G. B. 11/7/2020 19:42:21'!
+initialize
+	parents := OrderedCollection new.
+	accounts := OrderedCollection new. ! !
+
+!Portfolio methodsFor: 'initialization' stamp: 'G. B. 11/8/2020 17:03:34'!
 initializeWith: anAccount 
 	parents := OrderedCollection new.
 
 	accounts := OrderedCollection with: anAccount.
 	
-	(anAccount class = Portfolio) ifTrue: [anAccount addParent: self.].! !
+	anAccount addParent: self.! !
 
 
-!Portfolio methodsFor: 'accesing' stamp: 'G. B. 11/7/2020 20:34:24'!
-accounts
+!Portfolio methodsFor: 'adding' stamp: 'G. B. 11/8/2020 17:30:19'!
+add: anAccountToAdd
+
+	self isSafeToAddAccount: anAccountToAdd. 
+		
+	anAccountToAdd addParent: self.
+	accounts add: anAccountToAdd. ! !
+
+
+!Portfolio methodsFor: 'adding - private' stamp: 'G. B. 11/7/2020 19:39:52'!
+addParent: aParentPorfolio 
 	
-	^accounts.
-	! !
+	parents add: aParentPorfolio.! !
 
-!Portfolio methodsFor: 'accesing' stamp: 'ERMC 11/6/2020 18:53:57'!
-hasRegistered: aTransaction 
-	
-	^ accounts anySatisfy: [:anAccount | anAccount hasRegistered: aTransaction ] ! !
+!Portfolio methodsFor: 'adding - private' stamp: 'G. B. 11/8/2020 17:09:02'!
+madeOf: anAccountToAdd.
 
-!Portfolio methodsFor: 'accesing' stamp: 'G. B. 11/7/2020 19:52:29'!
-parents
+	^ (self = anAccountToAdd) or: [
 	
-	^parents.
-	! !
+	accounts anySatisfy: [:account | (account madeOf: anAccountToAdd) or: [anAccountToAdd madeOf: account]]] 
+
+
+	or: [self hasAsParent: anAccountToAdd] or: [self isAccountPresentInAParent: anAccountToAdd].
+	
+	
+	
+! !
+
+
+!Portfolio methodsFor: 'testing - private' stamp: 'G. B. 11/8/2020 17:25:11'!
+hasAsParent: anAccountToAdd.
+
+	^parents anySatisfy: [:account | account = anAccountToAdd or: [account hasAsParent: anAccountToAdd]]! !
+
+!Portfolio methodsFor: 'testing - private' stamp: 'G. B. 11/8/2020 17:26:46'!
+isAccountPresentInAParent: anAccountToAdd.
+
+	^parents anySatisfy: [:aParent | ((aParent accounts) includes: anAccountToAdd) or: [aParent isAccountPresentInAParent: anAccountToAdd] ].	
+	
+! !
+
+!Portfolio methodsFor: 'testing - private' stamp: 'G. B. 11/8/2020 17:18:38'!
+isSafeToAddAccount: anAccountToAdd.
+
+	(self madeOf: anAccountToAdd) ifTrue: [^self error: self class cantAddAccountErrorDescripcion ].
+	
+	^true.
+	
+	
+	
+	
+	
+! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -640,7 +659,7 @@ with: anAccount
 
 
 !classDefinition: #ReceptiveAccount category: 'Portfolio-Ejercicio'!
-Object subclass: #ReceptiveAccount
+BankAccount subclass: #ReceptiveAccount
 	instanceVariableNames: 'transactions'
 	classVariableNames: ''
 	poolDictionaries: ''
@@ -651,6 +670,15 @@ initialize
 
 	transactions := OrderedCollection new.! !
 
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 17:03:18'!
+addParent: anAccountToAdd	! !
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/8/2020 16:53:15'!
+madeOf: anAccountToAdd.
+
+	^ (self = anAccountToAdd).
+	! !
 
 !ReceptiveAccount methodsFor: 'transactions' stamp: 'HernanWilkinson 7/13/2011 18:37'!
 register: aTransaction
