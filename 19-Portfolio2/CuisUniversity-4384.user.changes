@@ -1,0 +1,708 @@
+
+
+----STARTUP---- (14 November 2020 11:18:12) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+----End fileIn of /home/edy/Escritorio/IngSoft I/isw1-ejercicios/19-Portfolio2/Portfolio-Solucion.st----!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'ERMC 11/14/2020 11:18:33'!
+PASSED!
+
+TestCase subclass: #TransferTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferTest category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:18:55'!
+TestCase subclass: #TransferTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transfer category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:23:08'!
+Object subclass: #Transfer
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferTest methodsFor: 'nil' stamp: 'ERMC 11/14/2020 11:22:43'!
+test01EfectiveTransferBetweenAccounts
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: -50 equals: account1 balance. 
+	self assert: 50 equals: account2 balance. ! !
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:23:20'!
+ERROR!
+!Transfer class methodsFor: 'instance creation' stamp: 'ERMC 11/14/2020 11:23:34'!
+from: aReceptiveAccount to: aReceptiveAccount2 amount: aSmallInteger 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeFrom: aReceptiveAccount to: aReceptiveAccount2 amount: aSmallInteger ! !
+!Transfer class methodsFor: 'instance creation' stamp: 'ERMC 11/14/2020 11:25:58' prior: 50897056!
+from: aOriginAccount to: aDestinyAccount amount: anAmount
+
+	Withdraw register: anAmount on: aOriginAccount .
+	Deposit register: anAmount on: aDestinyAccount. 
+
+	^self new initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount ! !
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:26:00'!
+ERROR!
+
+!classDefinition: #Transfer category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:26:29'!
+Object subclass: #Transfer
+	instanceVariableNames: 'originAccount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transfer category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:26:29'!
+Object subclass: #Transfer
+	instanceVariableNames: 'originAccount destinyAccount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #Transfer category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:26:29'!
+Object subclass: #Transfer
+	instanceVariableNames: 'originAccount destinyAccount amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:26:29'!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	self shouldBeImplemented.
+	originAccount := aOriginAccount.
+	destinyAccount := aDestinyAccount.
+	amount := anAmount.! !
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:26:48' prior: 50897105!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	originAccount := aOriginAccount.
+	destinyAccount := aDestinyAccount.
+	amount := anAmount.! !
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:26:49'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:26:49'!
+PASSED!
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:28:37'!
+test02TransferBetweenAccountsSaveThisTransactions
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (account1 hasRegistered: aTransfer).
+	self assert: (account2 hasRegistered: aTransfer).! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:30:18'!
+FAILURE!
+
+!classDefinition: #TransferWithdraw category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:35:22'!
+Object subclass: #TransferWithdraw
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferDeposit category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:35:25'!
+Object subclass: #TransferDeposit
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:35:16' prior: 50897114!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	amount := anAmount.! !
+
+Object subclass: #TransferTransaction
+	instanceVariableNames: 'originAccount destinyAccount amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferTransaction category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:35:47'!
+Object subclass: #TransferTransaction
+	instanceVariableNames: 'originAccount destinyAccount amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+TransferTransaction subclass: #TransferDeposit
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferDeposit category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:35:59'!
+TransferTransaction subclass: #TransferDeposit
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+TransferTransaction subclass: #TransferWithdraw
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferWithdraw category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:36:04'!
+TransferTransaction subclass: #TransferWithdraw
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: 'originAccount destinyAccount amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferTransaction category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:36:28'!
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: 'originAccount destinyAccount amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferDeposit class methodsFor: 'nil' stamp: 'ERMC 11/14/2020 11:38:03'!
+for: aTrasnfer
+
+	^ self new initializeFor: aTrasnfer. ! !
+
+!classDefinition: #Transfer category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:38:26'!
+Object subclass: #Transfer
+	instanceVariableNames: 'originAccount destinyAccount value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!Transfer methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:38:26' prior: 50897161!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+!TransferDeposit methodsFor: 'nil' stamp: 'ERMC 11/14/2020 11:40:34'!
+initializeFor: aTransfer. 
+
+	! !
+
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferTransaction category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:40:51'!
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:41:06' prior: 50897227!
+for: aTransfer
+
+	^ self new initializeFor: aTransfer. ! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:41:20' prior: 50897250!
+initializeFor: aTransfer. 
+
+	transfer := aTransfer
+	! !
+
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferTransaction category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:42:00'!
+AccountTransaction subclass: #TransferTransaction
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+TransferTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferDeposit category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:42:05'!
+TransferTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+TransferTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferWithdraw category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 11:42:09'!
+TransferTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'transfer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferWithdraw class methodsFor: 'nil' stamp: 'ERMC 11/14/2020 11:42:20'!
+for: aTransfer
+
+	^ self new initializeFor: aTransfer. ! !
+!TransferWithdraw methodsFor: 'nil' stamp: 'ERMC 11/14/2020 11:42:30'!
+initializeFor: aTransfer. 
+
+	transfer := aTransfer
+	! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:44:00'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:44:00'!
+FAILURE!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:44:37'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:44:37'!
+ERROR!
+!Transfer class methodsFor: 'instance creation' stamp: 'ERMC 11/14/2020 11:45:05' prior: 50897068!
+from: aOriginAccount to: aDestinyAccount amount: anAmount
+"
+	Withdraw register: anAmount on: aOriginAccount .
+	Deposit register: anAmount on: aDestinyAccount. 	
+"
+
+	^self new initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount ! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:46:57' overrides: 50896834!
+affectBalance: aBalance
+
+	^aBalance + (transfer value)! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:47:07' overrides: 50896834!
+affectBalance: aBalance
+
+	^aBalance - (transfer value)! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:47:12'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:47:12'!
+FAILURE!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:47:16'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:47:16'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:48:24'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:48:24'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:48:34'!
+ERROR!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:48:38'!
+ERROR!
+
+value!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:50:10' overrides: 16881508!
+value
+
+	^ value! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:50:17'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:50:17'!
+FAILURE!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 11:50:24'!
+PASSED!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:51:10'!
+originAccount
+	
+	originAccount
+
+	! !
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:51:13' prior: 50897406!
+originAccount
+	
+	^ originAccount
+
+	! !
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:51:34'!
+destinyAccount
+	
+	^ destinyAccount
+
+	! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:51:46'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:51:46'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:53:10'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:53:47'!
+FAILURE!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:54:57' overrides: 50896830!
+value
+	
+	^ transfer ! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:55:03'!
+FAILURE!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 11:55:03'!
+FAILURE!
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:21:37' prior: 50897129!
+test02TransferBetweenAccountsSaveThisTransactions
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (account1 hasRegistered: (aTransfer originAccount )).
+	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).! !
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:21:39'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 12:21:39'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:21:39'!
+PASSED!
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:25:04'!
+test03AutoTransferIsNotValid
+	
+	|anAccount aTransfer|
+	
+	anAccount := ReceptiveAccount new.
+		
+	aTransfer := Transfer from: anAccount to: anAccount amount: 50. 
+	
+! !
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:29:44' prior: 50897471!
+test03AutoTransferIsNotValid
+	
+	|anAccount aTransfer|
+	
+	anAccount := ReceptiveAccount new.
+	
+	self
+	
+		should: [aTransfer := Transfer from: anAccount to: anAccount amount: 50. ]
+		raise: Error withMessageText: Transfer canNotTransferYourSelfErrorMessage. 
+
+	
+! !
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:29:51'!
+ERROR!
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:30:14'!
+canNotTransferYourSelfErrorMessage
+	self shouldBeImplemented.! !
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:30:48' prior: 50897494!
+canNotTransferYourSelfErrorMessage
+	self "can not Transfer your Self"! !
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:30:49'!
+FAILURE!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 12:33:12' prior: 50897240!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self canNotTransferYourSelfErrorMessage ].
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:33:14'!
+FAILURE!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 12:33:53' prior: 50897508!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:33:54'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 12:33:54'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:33:54'!
+PASSED!
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:33:54'!
+PASSED!
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:34:42'!
+test03EmptyTransferIsNotPosible
+	
+	|anAccount aTransfer|
+	
+	anAccount := ReceptiveAccount new.
+	anAccount := ReceptiveAccount new.
+	
+	
+	self
+	
+		should: [aTransfer := Transfer from: anAccount to: anAccount amount: 50. ]
+		raise: Error withMessageText: Transfer canNotTransferYourSelfErrorMessage. 
+
+	
+! !
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:36:28'!
+test04EmptyTransferIsNotPosible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: 0. ]
+		raise: Error withMessageText: Transfer canNotMakeAnEmptyTransferErrorMessage. 
+
+	
+! !
+
+!methodRemoval: TransferTest #test03EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:36:43'!
+test03EmptyTransferIsNotPosible
+	
+	|anAccount aTransfer|
+	
+	anAccount := ReceptiveAccount new.
+	anAccount := ReceptiveAccount new.
+	
+	
+	self
+	
+		should: [aTransfer := Transfer from: anAccount to: anAccount amount: 50. ]
+		raise: Error withMessageText: Transfer canNotTransferYourSelfErrorMessage. 
+
+	
+!
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:36:47'!
+ERROR!
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:37:00'!
+canNotMakeAnEmptyTransferErrorMessage
+	self shouldBeImplemented.! !
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:37:17' prior: 50897593!
+canNotMakeAnEmptyTransferErrorMessage
+	self "You can not make an empty Transfer"! !
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:37:23'!
+FAILURE!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 12:38:14' prior: 50897525!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  = 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:38:16'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 12:38:16'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:38:16'!
+PASSED!
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:38:16'!
+PASSED!
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:38:16'!
+PASSED!
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:38:23'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 12:38:23'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:38:23'!
+PASSED!
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:38:23'!
+PASSED!
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:38:23'!
+PASSED!
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:39:40'!
+test05NegativeTransferIsNotValid
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: -100. ]
+		raise: Error withMessageText: Transfer canNotMakeANegativeTransferErrorMessage. 
+
+	
+! !
+
+!testRun: #TransferTest #test05NegativeTransferIsNotValid stamp: 'ERMC 11/14/2020 12:39:43'!
+ERROR!
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:39:49'!
+canNotMakeANegativeTransferErrorMessage
+	self shouldBeImplemented.! !
+!Transfer class methodsFor: 'errors' stamp: 'ERMC 11/14/2020 12:40:04' prior: 50897673!
+canNotMakeANegativeTransferErrorMessage
+	self "You can not make a negative transfer".! !
+
+!testRun: #TransferTest #test05NegativeTransferIsNotValid stamp: 'ERMC 11/14/2020 12:40:05'!
+FAILURE!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 12:40:44' prior: 50897607!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  = 0 or: anAmount < 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+
+!testRun: #TransferTest #test05NegativeTransferIsNotValid stamp: 'ERMC 11/14/2020 12:40:45'!
+PASSED!
+
+!testRun: #TransferTest #test01EfectiveTransferBetweenAccounts stamp: 'ERMC 11/14/2020 12:40:45'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferBetweenAccountsSaveThisTransactions stamp: 'ERMC 11/14/2020 12:40:45'!
+PASSED!
+
+!testRun: #TransferTest #test03AutoTransferIsNotValid stamp: 'ERMC 11/14/2020 12:40:46'!
+PASSED!
+
+!testRun: #TransferTest #test04EmptyTransferIsNotPosible stamp: 'ERMC 11/14/2020 12:40:46'!
+PASSED!
+
+!testRun: #TransferTest #test05NegativeTransferIsNotValid stamp: 'ERMC 11/14/2020 12:40:46'!
+PASSED!
+
+----QUIT----(14 November 2020 13:06:44) CuisUniversity-4384.image priorSource: 18065853!
+
+----STARTUP---- (14 November 2020 14:48:59) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+TestCase subclass: #AccountSummaryTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #AccountSummaryTest category: 'Portfolio-Solucion' stamp: 'ERMC 11/14/2020 14:49:28'!
+TestCase subclass: #AccountSummaryTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!AccountSummaryTest methodsFor: 'nil' stamp: 'ERMC 11/14/2020 14:53:49'!
+test01AnEmptyAccountReturnsAEmptyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	expectedReport := OrderedCollection new. 
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
