@@ -5,15 +5,153 @@ TestCase subclass: #AccountSummaryTest
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!AccountSummaryTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 14:53:49'!
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 16:39:24'!
 test01AnEmptyAccountReturnsAEmptyReport
 
 	| anAccount expectedReport |
 	
 	anAccount := ReceptiveAccount new.
 	expectedReport := OrderedCollection new. 
+	expectedReport add: 'Balance = 0'.
 	
 	self assert: expectedReport equals: anAccount summaryReport. ! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 16:41:11'!
+test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 16:41:47'!
+test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Withdraw register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Extracción por 100'.
+	expectedReport  add: 'Balance = -100'.
+
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 16:43:12'!
+test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Deposit register: 50 on: anAccount.
+	
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Depósito por 50'.
+	expectedReport  add: 'Balance = 150'.
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 17:08:34'!
+test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport
+
+	| srcAccount dstAccount aTransfer expectedReportFromSrc expectedReportFromDst aValue|
+	
+	aValue := 50.
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	aTransfer := Transfer from: srcAccount to: dstAccount amount: aValue. 
+	
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Salida por transferencia de ', aValue asString .
+	expectedReportFromSrc add: 'Balance = -', aValue asString.
+	
+	expectedReportFromDst := OrderedCollection new.
+	expectedReportFromDst add: 'Entrada por transferencia de ', aValue asString.
+	expectedReportFromDst add: 'Balance = ', aValue asString.
+
+	self assert: expectedReportFromSrc equals: srcAccount summaryReport. 
+	self assert: expectedReportFromDst equals: dstAccount summaryReport. ! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 19:05:20'!
+test06SeMuestranDepositosExtraccionesYTransferencias
+
+	| account1 account2 expectedReportFromSrc |
+
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account1.
+	Transfer from: account1 to: account2 amount: 20. 
+	Transfer from: account2 to: account1 amount: 30. 
+
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Depósito por 100'.
+	expectedReportFromSrc add: 'Extracción por 50'. 
+	expectedReportFromSrc add: 'Salida por transferencia de 20'.
+	expectedReportFromSrc add: 'Entrada por transferencia de 30'.
+	expectedReportFromSrc add: 'Balance = 60'.
+	
+	self assert: expectedReportFromSrc equals: account1 summaryReport. 
+! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 19:48:07'!
+test07PortfolioEmptyHasNoAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: portfolio summaryReport. 
+! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 19:58:35'!
+test08PortfolioWhitOneAccountReturnsCorrectReport
+
+	| portfolio  anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount .
+	portfolio := Portfolio with: anAccount. 
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: portfolio summaryReport. 
+! !
+
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'ERMC 11/14/2020 20:13:18'!
+test09ComposePortfolioWhitManyAccountsReturnsCorrectReport
+
+	| account1 account2 simplePortfolio composedPortfolio expectedReport |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account2.
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Extracción por 50'. 
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 50'.
+	
+	self assert: expectedReport equals: composedPortfolio summaryReport.! !
 
 
 !classDefinition: #PortfolioTest category: 'Portfolio-Solucion'!
@@ -323,6 +461,116 @@ test07AccountKnowsItsTransactions
 ! !
 
 
+!classDefinition: #TransferNetTest category: 'Portfolio-Solucion'!
+TestCase subclass: #TransferNetTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 20:21:48'!
+test01AccountWhitNoTransferReturnsTransferNetZero
+
+	|anAccount expectedValue |
+	
+	anAccount := ReceptiveAccount new.
+	expectedValue := 0.
+	
+	self assert: expectedValue equals: (anAccount transferNet). ! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 20:37:17'!
+test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount
+
+	|srcAccount dstAccount expectedValue |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	Transfer from: srcAccount to: dstAccount  amount: 50.
+	expectedValue := 50.
+	
+	self assert: expectedValue equals: (dstAccount transferNet).
+	self assert: expectedValue negated equals: (srcAccount transferNet ). ! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 20:50:57'!
+test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount
+
+	|account1 account2 |
+	
+	account1 := ReceptiveAccount new.
+	Deposit register: 100 on: account1 .
+	account2 := ReceptiveAccount new.
+	Transfer from: account1 to: account2  amount: 50.
+	Transfer from: account1 to: account2  amount: 20. 
+	Transfer from: account1 to: account2  amount: 30.
+	Transfer from: account2 to: account1 amount: 10.
+	
+	self assert: 90 equals: (account2 transferNet).
+	self assert: -90 equals: (account1 transferNet).
+! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 20:52:48'!
+test04AnEmptyPorfolioHasZeroTransferNet
+
+	| portfolio |
+	
+	portfolio := Portfolio new. 
+	
+	self assert: 0 equals: (portfolio transferNet).
+! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 20:59:05'!
+test05PorfolioWithOneAccountReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount with: dstAccount . 
+	
+	self assert: 0 equals: (portfolio transferNet).	
+	! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 21:10:34'!
+test06PorfolioWithManyAccountReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount . 
+	
+	self assert: -100 equals: (portfolio transferNet).	
+! !
+
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 21:16:37'!
+test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet
+
+	| account1 account2 account3 simplePortfolio composedPortfolio |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	account3 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	
+	Transfer from: account1 to: account3 amount: 100.
+	Transfer from: account2 to: account3  amount: 50.
+	Transfer from: account3 to: account1 amount: 10.
+	
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+	
+	self assert: -140 equals: (composedPortfolio transferNet ).
+	
+		
+! !
+
+
 !classDefinition: #TransferTest category: 'Portfolio-Solucion'!
 TestCase subclass: #TransferTest
 	instanceVariableNames: ''
@@ -330,34 +578,8 @@ TestCase subclass: #TransferTest
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:22:43'!
-test01EfectiveTransferBetweenAccounts
-	
-	|account1 account2 aTransfer|
-	
-	account1 := ReceptiveAccount new.
-	account2 := ReceptiveAccount new.
-	
-	aTransfer := Transfer from: account1 to: account2 amount: 50. 
-	
-	self assert: -50 equals: account1 balance. 
-	self assert: 50 equals: account2 balance. ! !
-
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:21:37'!
-test02TransferBetweenAccountsSaveThisTransactions
-	
-	|account1 account2 aTransfer|
-	
-	account1 := ReceptiveAccount new.
-	account2 := ReceptiveAccount new.
-	
-	aTransfer := Transfer from: account1 to: account2 amount: 50. 
-	
-	self assert: (account1 hasRegistered: (aTransfer originAccount )).
-	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).! !
-
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:29:44'!
-test03AutoTransferIsNotValid
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:20:53'!
+test01AutoTransferIsNotValid
 	
 	|anAccount aTransfer|
 	
@@ -371,8 +593,8 @@ test03AutoTransferIsNotValid
 	
 ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:36:28'!
-test04EmptyTransferIsNotPosible
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:12'!
+test02EmptyTransferIsNotPosible
 	
 	|srcAccount dstAccount aTransfer|
 	
@@ -386,8 +608,8 @@ test04EmptyTransferIsNotPosible
 	
 ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 12:39:40'!
-test05NegativeTransferIsNotValid
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:20'!
+test03NegativeTransferIsNotValid
 	
 	|srcAccount dstAccount aTransfer|
 	
@@ -400,6 +622,45 @@ test05NegativeTransferIsNotValid
 
 	
 ! !
+
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:33'!
+test04EfectiveTransferBetweenAccounts
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: -50 equals: account1 balance. 
+	self assert: 50 equals: account2 balance. ! !
+
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:38'!
+test05TransferBetweenAccountsSaveThisTransactions
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (account1 hasRegistered: (aTransfer originAccount )).
+	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).! !
+
+!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:54:09'!
+test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (aTransfer originAccount  associatedTransferLeg) equals: (aTransfer destinyAccount).
+	self assert: (aTransfer destinyAccount  associatedTransferLeg) equals: (aTransfer originAccount).! !
 
 
 !classDefinition: #Account category: 'Portfolio-Solucion'!
@@ -554,6 +815,26 @@ signalCanNotAddAccount
 	
 	self error: self class canNotAddAccountErrorMessage! !
 
+
+!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 19:57:33'!
+summaryReport
+	
+	|report|
+	
+	report := OrderedCollection new.
+	(self transactions) do: [:aTransaction | 
+				report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report.! !
+
+!Portfolio methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 20:57:51'!
+transferNet
+
+	^ self transactions 
+	 inject: 0
+		into: [ :currentNet :transaction | transaction affectTransferNet: currentNet ]
+! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Portfolio class' category: 'Portfolio-Solucion'!
@@ -637,6 +918,32 @@ addedTo: aPortfolio
 	
 	! !
 
+
+!ReceptiveAccount methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 16:50:09'!
+summaryReport
+	|report|
+	
+	report := OrderedCollection new.
+	transactions do: [:aTransaction | 
+				"(aTransaction isKindOf: Deposit ) ifTrue: [report add: ('Depósito por ' , (aTransaction value) asString)].
+				(aTransaction isKindOf: Withdraw) ifTrue: [report add: ('Extracción por ' , (aTransaction value) asString)]"
+				report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report. ! !
+
+!ReceptiveAccount methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 21:24:24'!
+transferNet
+	
+	|currentNet|
+	currentNet := 0. 
+	transactions do: [:transaction | currentNet _ transaction affectTransferNet: currentNet ].
+	
+	^ currentNet 
+	
+	
+	
+	! !
+
 
 !classDefinition: #AccountTransaction category: 'Portfolio-Solucion'!
 Object subclass: #AccountTransaction
@@ -686,6 +993,13 @@ initializeFor: aValue
 	value := aValue ! !
 
 
+!Deposit methodsFor: 'value' stamp: 'ERMC 11/14/2020 21:25:30'!
+affectTransferNet: aValue
+
+	^ aValue . 
+
+! !
+
 !Deposit methodsFor: 'value' stamp: 'HernanWilkinson 7/13/2011 18:38'!
 value
 
@@ -696,6 +1010,11 @@ value
 affectBalance: aBalance
 
 	^aBalance + value ! !
+
+!Deposit methodsFor: 'balance' stamp: 'ERMC 11/14/2020 16:52:03'!
+affectReport
+
+	^ 'Depósito por ', value asString. ! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -729,16 +1048,31 @@ affectBalance: aBalance
 
 	^aBalance + (transfer value)! !
 
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 17:01:20'!
+affectReport
+
+	^ 'Entrada por transferencia de ', (transfer value) asString. ! !
+
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 21:22:30'!
+affectTransferNet: aValue
+
+	^ aValue + ( transfer value)! !
+
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 16:00:59'!
+associatedTransferLeg
+	
+	^(transfer originAccount )! !
+
 !TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:41:20'!
 initializeFor: aTransfer. 
 
 	transfer := aTransfer
 	! !
 
-!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:54:57'!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:22:45'!
 value
 	
-	^ transfer ! !
+	^ (transfer value)! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -764,11 +1098,27 @@ affectBalance: aBalance
 
 	^aBalance - (transfer value)! !
 
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 17:01:44'!
+affectReport
+
+	^ 'Salida por transferencia de ', (transfer value) asString. ! !
+
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 21:22:09'!
+affectTransferNet: aValue
+
+	^aValue - (transfer value)! !
+
 !TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:42:30'!
 initializeFor: aTransfer. 
 
 	transfer := aTransfer
 	! !
+
+
+!TransferWithdraw methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 16:00:42'!
+associatedTransferLeg
+	
+	^(transfer destinyAccount)! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -795,6 +1145,11 @@ initializeFor: aValue
 	value := aValue ! !
 
 
+!Withdraw methodsFor: 'value' stamp: 'ERMC 11/14/2020 21:25:20'!
+affectTransferNet: aValue
+
+	^ aValue. ! !
+
 !Withdraw methodsFor: 'value' stamp: 'HernanWilkinson 7/13/2011 18:33'!
 value
 
@@ -805,6 +1160,11 @@ value
 affectBalance: aBalance
 
 	^aBalance - value! !
+
+!Withdraw methodsFor: 'balance' stamp: 'ERMC 11/14/2020 16:52:08'!
+affectReport
+
+	^ 'Extracción por ', value asString. ! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -832,12 +1192,12 @@ destinyAccount
 
 	! !
 
-!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 12:40:44'!
+!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 16:08:43'!
 initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
 	
 	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
-	(anAmount  = 0 or: anAmount < 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
-	originAccount := TransferWithdraw register: self on: aOriginAccount .
+	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	originAccount := TransferWithdraw register: self on: aOriginAccount.
 	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
 	value := anAmount.! !
 
