@@ -1,0 +1,4545 @@
+
+
+----STARTUP---- (15 November 2020 15:22:58) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/IngenierÃ­a 1/VM CUIS/CuisUniversity-4383.image!
+
+
+----End fileIn of /home/guille/Desktop/IngenierÃ­a 1/isw1-ejercicios/19-Portfolio2/Portfolio-Solucion.st----!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:23:37'!
+PASSED!
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:24:48' prior: 50939789!
+test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
+!ReceptiveAccount methodsFor: 'accessing' stamp: 'G. B. 11/15/2020 15:25:24' prior: 50940771!
+summaryReport
+	|report|
+	report := OrderedCollection new.
+	transactions do: [:aTransaction | 		report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report. ! !
+!Portfolio methodsFor: 'accessing' stamp: 'G. B. 11/15/2020 15:25:36' prior: 50940670!
+summaryReport
+	
+	|report|
+	
+	report := OrderedCollection new.
+	(self transactions) do: [:aTransaction | report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report.! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:25:46'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:25:46'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:25:46'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:25:46'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:25:47'!
+PASSED!
+
+!classDefinition: #AccountSummary category: 'AccountSummary' stamp: 'G. B. 11/15/2020 15:29:00'!
+Object subclass: #AccountSummary
+	instanceVariableNames: 'account'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AccountSummary'!
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:28:37' prior: 50939778!
+test01AnEmptyAccountReturnsAEmptyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	expectedReport := OrderedCollection new. 
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: AccountSummary from: anAccount.! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:29:10' prior: 50941522!
+test01AnEmptyAccountReturnsAEmptyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	expectedReport := OrderedCollection new. 
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount).! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:29:20' prior: 50941307!
+test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: anAccount summaryReport. ! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:29:43'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:29:43'!
+ERROR!
+!AccountSummary class methodsFor: 'instance creation' stamp: 'G. B. 11/15/2020 15:29:51'!
+from: aReceptiveAccount 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeFrom: aReceptiveAccount ! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:30:36'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:30:36'!
+ERROR!
+!AccountSummary class methodsFor: 'error handling' stamp: 'G. B. 11/15/2020 15:30:55' overrides: 16881409!
+error: aString 
+	self shouldBeImplemented.! !
+
+!methodRemoval: AccountSummary class #error: stamp: 'G. B. 11/15/2020 15:31:08'!
+error: aString 
+	self shouldBeImplemented.!
+!AccountSummary class methodsFor: 'instance creation' stamp: 'G. B. 11/15/2020 15:31:32' prior: 50941568!
+from: anAccount 
+	^self new initializeFrom: anAccount. ! !
+!AccountSummary methodsFor: 'nil' stamp: 'G. B. 11/15/2020 15:31:54'!
+initializeFrom: anAccount
+	account _ anAccount.
+	! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:32:12'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:32:12'!
+FAILURE!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:35:42' prior: 50941598!
+initializeFrom: anAccount
+	account _ anAccount.
+	
+	^ self accountSummaryReportFor: anAccount.! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:35:52'!
+accountSummaryReportFor: anAccount
+! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:36:13' prior: 50941617!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report.! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:36:28' prior: 50941611!
+initializeFrom: anAccount
+	^ self accountSummaryReportFor: anAccount.! !
+
+Object subclass: #AccountSummary
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #AccountSummary category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 15:36:35'!
+Object subclass: #AccountSummary
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:36:39'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:36:39'!
+ERROR!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:36:55' prior: 50941622!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:36:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:37:02'!
+PASSED!
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:41' prior: 50941546!
+test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:48' prior: 50939804!
+test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Withdraw register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Extracción por 100'.
+	expectedReport  add: 'Balance = -100'.
+
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:56' prior: 50939819!
+test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Deposit register: 50 on: anAccount.
+	
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Depósito por 50'.
+	expectedReport  add: 'Balance = 150'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:13' prior: 50939836!
+test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport
+
+	| srcAccount dstAccount aTransfer expectedReportFromSrc expectedReportFromDst aValue|
+	
+	aValue := 50.
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	aTransfer := Transfer from: srcAccount to: dstAccount amount: aValue. 
+	
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Salida por transferencia de ', aValue asString .
+	expectedReportFromSrc add: 'Balance = -', aValue asString.
+	
+	expectedReportFromDst := OrderedCollection new.
+	expectedReportFromDst add: 'Entrada por transferencia de ', aValue asString.
+	expectedReportFromDst add: 'Balance = ', aValue asString.
+
+	self assert: expectedReportFromSrc equals: (AccountSummary from: srcAccount). 
+	self assert: expectedReportFromDst equals: (AccountSummary from: dstAccount). ! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:25' prior: 50939866!
+test06SeMuestranDepositosExtraccionesYTransferencias
+
+	| account1 account2 expectedReportFromSrc |
+
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account1.
+	Transfer from: account1 to: account2 amount: 20. 
+	Transfer from: account2 to: account1 amount: 30. 
+
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Depósito por 100'.
+	expectedReportFromSrc add: 'Extracción por 50'. 
+	expectedReportFromSrc add: 'Salida por transferencia de 20'.
+	expectedReportFromSrc add: 'Entrada por transferencia de 30'.
+	expectedReportFromSrc add: 'Balance = 60'.
+	
+	self assert: expectedReportFromSrc equals: (AccountSummary from: account1). 
+! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:34' prior: 50939893!
+test07PortfolioEmptyHasNoAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:43' prior: 50939904!
+test08PortfolioWhitOneAccountReturnsCorrectReport
+
+	| portfolio  anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount .
+	portfolio := Portfolio with: anAccount. 
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:55' prior: 50939920!
+test09ComposePortfolioWhitManyAccountsReturnsCorrectReport
+
+	| account1 account2 simplePortfolio composedPortfolio expectedReport |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account2.
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Extracción por 50'. 
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 50'.
+	
+	self assert: expectedReport equals: (AccountSummary from: composedPortfolio).! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:39:03'!
+PASSED!
+
+!methodRemoval: ReceptiveAccount #summaryReport stamp: 'G. B. 11/15/2020 15:39:15'!
+summaryReport
+	|report|
+	report := OrderedCollection new.
+	transactions do: [:aTransaction | 		report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report. !
+
+!methodRemoval: Portfolio #summaryReport stamp: 'G. B. 11/15/2020 15:39:21'!
+summaryReport
+	
+	|report|
+	
+	report := OrderedCollection new.
+	(self transactions) do: [:aTransaction | report add: (aTransaction affectReport)].
+	report add: 'Balance = ' , (self balance) asString . 
+	^ report.!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:39:41'!
+PASSED!
+!Deposit methodsFor: 'balance' stamp: 'G. B. 11/15/2020 15:40:32'!
+affectSummaryReport
+
+	^ 'Depósito por ', value asString. ! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:40:32'!
+affectSummaryReport
+
+	^ 'Entrada por transferencia de ', (transfer value) asString. ! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:40:32'!
+affectSummaryReport
+
+	^ 'Salida por transferencia de ', (transfer value) asString. ! !
+!Withdraw methodsFor: 'balance' stamp: 'G. B. 11/15/2020 15:40:32'!
+affectSummaryReport
+
+	^ 'Extracción por ', value asString. ! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:40:32' prior: 50941658!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectSummaryReport)].
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+
+!methodRemoval: Deposit #affectReport stamp: 'G. B. 11/15/2020 15:40:32'!
+affectReport
+
+	^ 'Depósito por ', value asString. !
+
+!methodRemoval: TransferDeposit #affectReport stamp: 'G. B. 11/15/2020 15:40:32'!
+affectReport
+
+	^ 'Entrada por transferencia de ', (transfer value) asString. !
+
+!methodRemoval: TransferWithdraw #affectReport stamp: 'G. B. 11/15/2020 15:40:32'!
+affectReport
+
+	^ 'Salida por transferencia de ', (transfer value) asString. !
+
+!methodRemoval: Withdraw #affectReport stamp: 'G. B. 11/15/2020 15:40:32'!
+affectReport
+
+	^ 'Extracción por ', value asString. !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:40:41'!
+PASSED!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:41:51' prior: 50942460!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectSummaryReport: self)].
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+!Deposit methodsFor: 'balance' stamp: 'G. B. 11/15/2020 15:43:30'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary addDepositToSummaryWithValue: value.
+	
+! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:44:06'!
+addDepositToSummaryWithValue: aValue
+	^ 'Depósito por ', aValue asString. ! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:44:09'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:44:09'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:44:09'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:44:09'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:44:09'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:44:09'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:44:09'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:44:09'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:44:09'!
+ERROR!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:44:11'!
+ERROR!
+
+!methodRemoval: Deposit #affectSummaryReport stamp: 'G. B. 11/15/2020 15:45:03'!
+affectSummaryReport
+
+	^ 'Depósito por ', value asString. !
+!Withdraw methodsFor: 'balance' stamp: 'G. B. 11/15/2020 15:45:35'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary addWithdrawToSummaryWithValue: value.! !
+
+!methodRemoval: Withdraw #affectSummaryReport stamp: 'G. B. 11/15/2020 15:45:41'!
+affectSummaryReport
+
+	^ 'Extracción por ', value asString. !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:46:06'!
+addWithdrawToSummaryWithValue: aValue
+	^ 'Extracción por ', aValue asString.! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:46:40' prior: 50942443!
+affectSummaryReport
+
+	^ 'Entrada por transferencia de ', (transfer value) asString. ! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:46:56' prior: 50942449!
+affectSummaryReport
+
+	^ 'Salida por transferencia de ', (transfer value) asString. ! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:47:37'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary addTransferWithdrawToSummaryWithValue: (transfer value).! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:47:58'!
+addTransferWithdrawToSummaryWithValue: aValue
+	^ 'Salida por transferencia de ', aValue asString. ! !
+
+!methodRemoval: TransferWithdraw #affectSummaryReport stamp: 'G. B. 11/15/2020 15:48:04'!
+affectSummaryReport
+
+	^ 'Salida por transferencia de ', (transfer value) asString. !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:48:26'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary addTransferDepositToSummaryWithValue: (transfer value).! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:48:47'!
+addTransferDepositToSummaryWithValue: aValue
+	^ 'Entrada por transferencia de ', aValue asString. ! !
+
+!methodRemoval: TransferDeposit #affectSummaryReport stamp: 'G. B. 11/15/2020 15:48:55'!
+affectSummaryReport
+
+	^ 'Entrada por transferencia de ', (transfer value) asString. !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:49:00'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:50:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:52:52'!
+PASSED!
+
+!classDefinition: #TransferNet category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 15:53:46'!
+Object subclass: #TransferNet
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:53:30' prior: 50940322!
+test01AccountWhitNoTransferReturnsTransferNetZero
+
+	|anAccount expectedValue |
+	
+	anAccount := ReceptiveAccount new.
+	expectedValue := 0.
+	
+	self assert: expectedValue equals: (TransferNet from: anAccount). ! !
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:54:07'!
+ERROR!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:54:07'!
+ERROR!
+!TransferNet class methodsFor: 'instance creation' stamp: 'G. B. 11/15/2020 15:54:16'!
+from: aReceptiveAccount 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeFrom: aReceptiveAccount ! !
+!TransferNet class methodsFor: 'instance creation' stamp: 'G. B. 11/15/2020 15:54:50' prior: 50943207!
+from: anAccount 
+	^self new initializeFor: anAccount. ! !
+!TransferNet methodsFor: 'nil' stamp: 'G. B. 11/15/2020 15:55:24'!
+initializeFor: anAccount! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:55:48' prior: 50943220!
+initializeFor: anAccount
+	^ self calculateTransferNetFor: anAccount.! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:55:55'!
+calculateTransferNetFor: anAccount! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:56:32' prior: 50943229!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	(anAccount transactions) do: [:transaction | currentNet _ transaction affectTransferNet: currentNet ].
+	
+	^ currentNet 
+	
+	! !
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:56:39'!
+PASSED!
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:57:35' prior: 50940332!
+test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount
+
+	|srcAccount dstAccount expectedValue |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	Transfer from: srcAccount to: dstAccount  amount: 50.
+	expectedValue := 50.
+	
+	self assert: expectedValue equals: (TransferNet from: dstAccount).
+	self assert: expectedValue negated equals: (TransferNet from: srcAccount). ! !
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:57:52' prior: 50940348!
+test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount
+
+	|account1 account2 |
+	
+	account1 := ReceptiveAccount new.
+	Deposit register: 100 on: account1 .
+	account2 := ReceptiveAccount new.
+	Transfer from: account1 to: account2  amount: 50.
+	Transfer from: account1 to: account2  amount: 20. 
+	Transfer from: account1 to: account2  amount: 30.
+	Transfer from: account2 to: account1 amount: 10.
+	
+	self assert: 90 equals: (TransferNet from: account2).
+	self assert: -90 equals: (TransferNet from: account1).
+! !
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:00' prior: 50940367!
+test04AnEmptyPorfolioHasZeroTransferNet
+
+	| portfolio |
+	
+	portfolio := Portfolio new. 
+	
+	self assert: 0 equals: (TransferNet from: portfolio).
+! !
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:12' prior: 50940375!
+test05PorfolioWithOneAccountReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount with: dstAccount . 
+	
+	self assert: 0 equals: (TransferNet from: portfolio).	
+	! !
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:22' prior: 50940389!
+test06PorfolioWithManyAccountReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount . 
+	
+	self assert: -100 equals: (TransferNet from: portfolio).	
+! !
+!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:33' prior: 50940402!
+test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet
+
+	| account1 account2 account3 simplePortfolio composedPortfolio |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	account3 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	
+	Transfer from: account1 to: account3 amount: 100.
+	Transfer from: account2 to: account3  amount: 50.
+	Transfer from: account3 to: account1 amount: 10.
+	
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+	
+	self assert: -140 equals: (TransferNet from: composedPortfolio).
+	
+		
+! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:58:36'!
+PASSED!
+
+!methodRemoval: Portfolio #transferNet stamp: 'G. B. 11/15/2020 15:58:45'!
+transferNet
+
+	^ self transactions 
+	 inject: 0
+		into: [ :currentNet :transaction | transaction affectTransferNet: currentNet ]
+!
+
+!methodRemoval: ReceptiveAccount #transferNet stamp: 'G. B. 11/15/2020 15:58:55'!
+transferNet
+	
+	|currentNet|
+	currentNet := 0. 
+	transactions do: [:transaction | currentNet _ transaction affectTransferNet: currentNet ].
+	
+	^ currentNet 
+	
+	
+	
+	!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 15:58:58'!
+PASSED!
+!Deposit methodsFor: 'value' stamp: 'G. B. 11/15/2020 16:01:53' prior: 50940851!
+affectTransferNet: aTransferNet
+	^ aTransferNet addDepositToTransferNet.
+
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:02:25' prior: 50943234!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	(anAccount transactions) do: [:transaction | currentNet _ transaction affectTransferNet: self ].
+	
+	^ currentNet 
+	
+	! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:03:09'!
+addDepositToTransferNet
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:03:17'!
+addWithdrawToTransferNet
+! !
+!Withdraw methodsFor: 'value' stamp: 'G. B. 11/15/2020 16:03:39' prior: 50941024!
+affectTransferNet: aTransferNet
+	^ aTransferNet addWithdrawToTransferNet.
+! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:04:31' prior: 50940920!
+affectTransferNet: aTransferNet
+	^ aTransferNet addTransferDepositToTransferNetWithValue: (transfer value).
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:04:51'!
+addTransferDepositToTransferNetWithValue: aValue
+	^ aValue! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:05:21' prior: 50940979!
+affectTransferNet: aTransferNet
+	^ aTransferNet addTransferWithdrawToTransferNetWithValue: (transfer value).
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:05:36'!
+addTransferWithdrawToTransferNetWithValue: aValue
+	^ aValue! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:05:40' prior: 50943777!
+addTransferWithdrawToTransferNetWithValue: aValue
+	^ aValue negated.! !
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:05:43'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:05:43'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:05:43'!
+FAILURE!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:05:43'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:05:43'!
+FAILURE!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:05:43'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:05:43'!
+FAILURE!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:05:45'!
+FAILURE!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:06:20' prior: 50943743!
+addDepositToTransferNet
+	^0! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:06:26' prior: 50943747!
+addWithdrawToTransferNet
+	^0.! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:07:19'!
+FAILURE!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:07:19'!
+FAILURE!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:07:19'!
+FAILURE!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:07:19'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:07:22'!
+FAILURE!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:07:32'!
+FAILURE!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:07:32'!
+FAILURE!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:08:51' prior: 50943734!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	(anAccount transactions) do: [:transaction | currentNet _ transaction affectTransferNet: self ].
+	
+	^ currentNet 
+	
+	! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:09:52' prior: 50944017!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	^ (anAccount transactions) sum: [:transaction | transaction affectTransferNet: self ].
+		
+	! !
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:09:55'!
+ERROR!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:09:55'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:09:56'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:09:56'!
+ERROR!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:09:56'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:09:56'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:09:56'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:09:57'!
+ERROR!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:10:36' prior: 50944027!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	^ (anAccount transactions) inject: 0 into: [:transaction | transaction affectTransferNet: self ].
+		
+	! !
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:10:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:10:38'!
+ERROR!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:10:38'!
+ERROR!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:10:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:10:38'!
+ERROR!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:10:38'!
+ERROR!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:10:38'!
+ERROR!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:10:40'!
+ERROR!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:11:08' prior: 50944068!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	(anAccount transactions) do: [:transaction | currentNet _ transaction affectTransferNet: self ].
+	
+	^ currentNet 
+	
+	! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:28:11' prior: 50943822!
+addDepositToTransferNet
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:28:15' prior: 50943827!
+addWithdrawToTransferNet
+! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:29:00' prior: 50944109!
+calculateTransferNetFor: anAccount
+	|currentNet|
+	currentNet := 0. 
+	(anAccount transactions) do: [:transaction | currentNet _ transaction affectTransferNet: self ].
+	
+	^ currentNet 
+	
+	! !
+
+!classDefinition: #TransferNet category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 16:31:27'!
+Object subclass: #TransferNet
+	instanceVariableNames: 'currentTransferNet'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:31:25' prior: 50944127!
+calculateTransferNetFor: anAccount
+
+	currentTransferNet := 0. 
+	(anAccount transactions) do: [:transaction | transaction affectTransferNet: self ].
+	
+	^ currentTransferNet 
+	
+	! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:31:58' prior: 50943764!
+addTransferDepositToTransferNetWithValue: aValue
+	currentTransferNet _ currentTransferNet + aValue! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:32:07' prior: 50943783!
+addTransferWithdrawToTransferNetWithValue: aValue
+	currentTransferNet _ currentTransferNet - aValue! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:32:11'!
+PASSED!
+
+!methodRemoval: TransferDeposit #value stamp: 'G. B. 11/15/2020 16:34:09'!
+value
+	
+	^ (transfer value)!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:34:11'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:38:14'!
+PASSED!
+
+Object subclass: #AccountTransactionReport
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #AccountTransactionReport category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 16:40:22'!
+Object subclass: #AccountTransactionReport
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+AccountTransactionReport subclass: #TransferNet
+	instanceVariableNames: 'currentTransferNet'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #TransferNet category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 16:40:47'!
+AccountTransactionReport subclass: #TransferNet
+	instanceVariableNames: 'currentTransferNet'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+AccountTransactionReport subclass: #AccountSummary
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+
+!classDefinition: #AccountSummary category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 16:40:59'!
+AccountTransactionReport subclass: #AccountSummary
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:43:15'!
+initializeFor: anAccount
+	^ self accountSummaryReportFor: anAccount.! !
+!AccountSummary class methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:43:15' prior: 50941593!
+from: anAccount 
+	^self new initializeFor: anAccount. ! !
+
+!methodRemoval: AccountSummary #initializeFrom: stamp: 'G. B. 11/15/2020 16:43:15'!
+initializeFrom: anAccount
+	^ self accountSummaryReportFor: anAccount.!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:47:27'!
+fromDeposit: aValue
+	^ 'Depósito por ', aValue asString. ! !
+!Deposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:47:27' prior: 50942673!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromDeposit: value.
+	
+! !
+
+!methodRemoval: AccountSummary #addDepositToSummaryWithValue: stamp: 'G. B. 11/15/2020 16:47:27'!
+addDepositToSummaryWithValue: aValue
+	^ 'Depósito por ', aValue asString. !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:47:49'!
+fromTransferDeposit: aValue
+	^ 'Entrada por transferencia de ', aValue asString. ! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:47:49' prior: 50942778!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromTransferDeposit: (transfer value).! !
+
+!methodRemoval: AccountSummary #addTransferDepositToSummaryWithValue: stamp: 'G. B. 11/15/2020 16:47:49'!
+addTransferDepositToSummaryWithValue: aValue
+	^ 'Entrada por transferencia de ', aValue asString. !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:48:15'!
+fromTransferWithdraw: aValue
+	^ 'Salida por transferencia de ', aValue asString. ! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:48:15' prior: 50942759!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromTransferWithdraw: (transfer value).! !
+
+!methodRemoval: AccountSummary #addTransferWithdrawToSummaryWithValue: stamp: 'G. B. 11/15/2020 16:48:15'!
+addTransferWithdrawToSummaryWithValue: aValue
+	^ 'Salida por transferencia de ', aValue asString. !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:48:29'!
+fromWithdraw: aValue
+	^ 'Extracción por ', aValue asString.! !
+!Withdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:48:29' prior: 50942730!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromWithdraw: value.! !
+
+!methodRemoval: AccountSummary #addWithdrawToSummaryWithValue: stamp: 'G. B. 11/15/2020 16:48:29'!
+addWithdrawToSummaryWithValue: aValue
+	^ 'Extracción por ', aValue asString.!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:48:34'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:48:35'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:48:35'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:48:35'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:48:35'!
+PASSED!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:49:33'!
+fromDeposit
+! !
+!Deposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:49:33' prior: 50943728!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromDeposit.
+
+! !
+
+!methodRemoval: TransferNet #addDepositToTransferNet stamp: 'G. B. 11/15/2020 16:49:33'!
+addDepositToTransferNet
+!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:49:49'!
+fromTransferDeposit: aValue
+	currentTransferNet _ currentTransferNet + aValue! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:49:49' prior: 50943757!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromTransferDeposit: (transfer value).
+! !
+
+!methodRemoval: TransferNet #addTransferDepositToTransferNetWithValue: stamp: 'G. B. 11/15/2020 16:49:49'!
+addTransferDepositToTransferNetWithValue: aValue
+	currentTransferNet _ currentTransferNet + aValue!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:50:04'!
+fromTransferWithdraw: aValue
+	currentTransferNet _ currentTransferNet - aValue! !
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:50:04' prior: 50943770!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromTransferWithdraw: (transfer value).
+! !
+
+!methodRemoval: TransferNet #addTransferWithdrawToTransferNetWithValue: stamp: 'G. B. 11/15/2020 16:50:04'!
+addTransferWithdrawToTransferNetWithValue: aValue
+	currentTransferNet _ currentTransferNet - aValue!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:50:21'!
+fromWithdraw
+! !
+!Withdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:50:21' prior: 50943751!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromWithdraw.
+! !
+
+!methodRemoval: TransferNet #addWithdrawToTransferNet stamp: 'G. B. 11/15/2020 16:50:21'!
+addWithdrawToTransferNet
+!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:50:29'!
+PASSED!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:51:49'!
+fromDeposit: aValue
+! !
+
+!methodRemoval: TransferNet #fromDeposit: stamp: 'G. B. 11/15/2020 16:52:06'!
+fromDeposit: aValue
+!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:52:21'!
+fromDeposit: aValue
+! !
+
+!methodRemoval: TransferNet #fromDeposit: stamp: 'G. B. 11/15/2020 16:52:30'!
+fromDeposit: aValue
+!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:52:52'!
+fromDeposit: aValue
+! !
+!Deposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:52:52' prior: 50944987!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromDeposit: aValue.
+
+! !
+
+!methodRemoval: TransferNet #fromDeposit stamp: 'G. B. 11/15/2020 16:52:52'!
+fromDeposit
+!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:53:06'!
+fromWithdraw: aValue
+! !
+!Withdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:53:06' prior: 50945037!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromWithdraw: aValue.
+! !
+
+!methodRemoval: TransferNet #fromWithdraw stamp: 'G. B. 11/15/2020 16:53:06'!
+fromWithdraw
+!
+!Deposit methodsFor: 'value' stamp: 'G. B. 11/15/2020 16:53:35' prior: 50945236!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromDeposit: value.
+
+! !
+!Withdraw methodsFor: 'value' stamp: 'G. B. 11/15/2020 16:53:46' prior: 50945248!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromWithdraw: value.
+! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:53:48'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:53:58'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:53:59'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:56:05'!
+PASSED!
+!Deposit methodsFor: 'balance' stamp: 'G. B. 11/15/2020 16:56:29'!
+affectReport: aReport
+	^ aReport fromDeposit: value.
+	
+! !
+
+!methodRemoval: Deposit #affectSummaryReport: stamp: 'G. B. 11/15/2020 16:56:55'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromDeposit: value.
+	
+!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:57:04' prior: 50942662!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectReport: self)].
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+
+!methodRemoval: Deposit #affectTransferNet: stamp: 'G. B. 11/15/2020 16:57:15'!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromDeposit: value.
+
+!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:57:20' prior: 50944144!
+calculateTransferNetFor: anAccount
+
+	currentTransferNet := 0. 
+	(anAccount transactions) do: [:transaction | transaction affectReport: self ].
+	
+	^ currentTransferNet 
+	
+	! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:57:41'!
+affectReport: aReport
+	^ aReport fromTransferDeposit: (transfer value).! !
+
+!methodRemoval: TransferDeposit #affectSummaryReport: stamp: 'G. B. 11/15/2020 16:57:44'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromTransferDeposit: (transfer value).!
+
+!methodRemoval: TransferDeposit #affectTransferNet: stamp: 'G. B. 11/15/2020 16:57:49'!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromTransferDeposit: (transfer value).
+!
+!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:58:04'!
+affectReport: aReport
+	^ aReport fromTransferWithdraw: (transfer value).! !
+
+!methodRemoval: TransferWithdraw #affectSummaryReport: stamp: 'G. B. 11/15/2020 16:58:09'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromTransferWithdraw: (transfer value).!
+
+!methodRemoval: TransferWithdraw #affectTransferNet: stamp: 'G. B. 11/15/2020 16:58:12'!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromTransferWithdraw: (transfer value).
+!
+!Withdraw methodsFor: 'balance' stamp: 'G. B. 11/15/2020 16:58:30'!
+affectReport: aReport
+	^ aReport fromWithdraw: value.! !
+
+!methodRemoval: Withdraw #affectSummaryReport: stamp: 'G. B. 11/15/2020 16:58:41'!
+affectSummaryReport: anAccountSummary
+	^ anAccountSummary fromWithdraw: value.!
+
+!methodRemoval: Withdraw #affectTransferNet: stamp: 'G. B. 11/15/2020 16:58:44'!
+affectTransferNet: aTransferNet
+	^ aTransferNet fromWithdraw: value.
+!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 16:58:52'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:00:41'!
+PASSED!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:04:01' prior: 50945809!
+calculateTransferNetFor: anAccount
+
+	currentTransferNet := 0.
+	
+	anAccount iterateTransactionsForReport: self.
+	
+	(anAccount transactions) do: [:transaction | transaction affectReport: self ].
+	
+	^ currentTransferNet 
+	
+	! !
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:04:14' prior: 50946211!
+calculateTransferNetFor: anAccount
+
+	currentTransferNet := 0.
+	
+	anAccount iterateTransactionsForReport: self.
+	
+	"(anAccount transactions) do: [:transaction | transaction affectReport: self ]."
+	
+	^ currentTransferNet 
+	
+	! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:05:04' prior: 50945793!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	
+	anAccount iterateTransactionsForReport: self.
+		
+	"(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectReport: self)]."
+	
+	
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:05:13' prior: 50946233!
+accountSummaryReportFor: anAccount
+	|report|
+	
+	report := OrderedCollection new.
+	
+	anAccount iterateTransactionsForReport: self.
+		
+	"(anAccount transactions) do: [:aTransaction | report add: (aTransaction affectReport: self)]."
+	
+	report add: 'Balance = ' , (anAccount balance) asString . 
+	^ report.! !
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/15/2020 17:06:58'!
+iterateTransactionsForReport: aReport
+	transactions do: [:aTransaction | aTransaction affectReport: aReport].
+	! !
+!Portfolio methodsFor: 'transactions' stamp: 'G. B. 11/15/2020 17:08:00'!
+iterateTransactionsForReport: aReport
+	self transactions do: [:aTransaction | aTransaction affectReport: aReport].
+	! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:08:02'!
+FAILURE!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:08:02'!
+PASSED!
+!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:08:31' prior: 50946222!
+calculateTransferNetFor: anAccount
+
+	currentTransferNet := 0.
+	
+	anAccount iterateTransactionsForReport: self.
+		
+	^ currentTransferNet 
+	
+	! !
+
+!classDefinition: #AccountSummary category: 'Portfolio-Solucion' stamp: 'G. B. 11/15/2020 17:09:29'!
+AccountTransactionReport subclass: #AccountSummary
+	instanceVariableNames: 'summaryReport'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Solucion'!
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:27' prior: 50946246!
+accountSummaryReportFor: anAccount
+	
+	summaryReport := OrderedCollection new.
+	anAccount iterateTransactionsForReport: self.	
+	summaryReport add: 'Balance = ' , (anAccount balance) asString . 
+
+	^ summaryReport.! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:43' prior: 50944741!
+fromDeposit: aValue
+	^summaryReport add: 'Depósito por ', aValue asString. ! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:49' prior: 50944757!
+fromTransferDeposit: aValue
+	^ summaryReport add: 'Entrada por transferencia de ', aValue asString. ! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:53' prior: 50944776!
+fromTransferWithdraw: aValue
+	^ summaryReport add: 'Salida por transferencia de ', aValue asString. ! !
+!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:10:00' prior: 50944795!
+fromWithdraw: aValue
+	^ summaryReport add: 'Extracción por ', aValue asString.! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 17:10:02'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:10:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:13:03'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:13:38'!
+PASSED!
