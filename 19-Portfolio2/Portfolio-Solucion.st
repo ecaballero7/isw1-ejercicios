@@ -5,8 +5,8 @@ TestCase subclass: #AccountSummaryTest
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:29:10'!
-test01AnEmptyAccountReturnsAEmptyReport
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:23:26'!
+test01AnEmptyAccountReturnsAnEmptyReport
 
 	| anAccount expectedReport |
 	
@@ -16,8 +16,8 @@ test01AnEmptyAccountReturnsAEmptyReport
 	
 	self assert: expectedReport equals: (AccountSummary from: anAccount).! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:41'!
-test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:26:32'!
+test02AccountWithOneDepositTransactionReturnsCorrectAccountSummary
 
 	| anAccount expectedReport |
 	
@@ -29,8 +29,8 @@ test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
 	
 	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:48'!
-test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:05'!
+test03AccountWithOneWithdrawTransactionReturnsCorrectlyAccountSummary
 
 	| anAccount expectedReport |
 	
@@ -43,8 +43,8 @@ test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport
 	
 	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:37:56'!
-test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:28'!
+test04AccountWithMoreThanOneDepositTransactionReturnsCorrectAccountSummary
 
 	| anAccount expectedReport |
 	
@@ -59,8 +59,8 @@ test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport
 	
 	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:13'!
-test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:49'!
+test05AccountWithOneTransferTransactionReturnsCorrectAccountSummary
 
 	| srcAccount dstAccount aTransfer expectedReportFromSrc expectedReportFromDst aValue|
 	
@@ -80,8 +80,8 @@ test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport
 	self assert: expectedReportFromSrc equals: (AccountSummary from: srcAccount). 
 	self assert: expectedReportFromDst equals: (AccountSummary from: dstAccount). ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:25'!
-test06SeMuestranDepositosExtraccionesYTransferencias
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:28:26'!
+test06AccountWithDepositWithdrawalAndTransfersReturnsCorrectAccountSummary
 
 	| account1 account2 expectedReportFromSrc |
 
@@ -103,8 +103,9 @@ test06SeMuestranDepositosExtraccionesYTransferencias
 	self assert: expectedReportFromSrc equals: (AccountSummary from: account1). 
 ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:34'!
-test07PortfolioEmptyHasNoAccountSummary
+
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:07'!
+test07EmptyPortfolioHasEmptyAccountSummary
 
 	| portfolio  expectedReport |
 
@@ -116,8 +117,8 @@ test07PortfolioEmptyHasNoAccountSummary
 	self assert: expectedReport equals: (AccountSummary from: portfolio). 
 ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:43'!
-test08PortfolioWhitOneAccountReturnsCorrectReport
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:22'!
+test08PortfolioWithOneAccountReturnsCorrectReport
 
 	| portfolio  anAccount expectedReport |
 	
@@ -132,8 +133,8 @@ test08PortfolioWhitOneAccountReturnsCorrectReport
 	self assert: expectedReport equals: (AccountSummary from: portfolio). 
 ! !
 
-!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 15:38:55'!
-test09ComposePortfolioWhitManyAccountsReturnsCorrectReport
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:35'!
+test09ComposedPortfolioWhitManyAccountsReturnsCorrectReport
 
 	| account1 account2 simplePortfolio composedPortfolio expectedReport |
 	
@@ -468,8 +469,8 @@ TestCase subclass: #TransferNetTest
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:53:30'!
-test01AccountWhitNoTransferReturnsTransferNetZero
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:32:50'!
+test01AccountWithNoTransferReturnsTransferNetZero
 
 	|anAccount expectedValue |
 	
@@ -478,8 +479,8 @@ test01AccountWhitNoTransferReturnsTransferNetZero
 	
 	self assert: expectedValue equals: (TransferNet from: anAccount). ! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:57:35'!
-test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:33:07'!
+test02AccountWithOneTransferReturnsCorrectTransferNetOfTheAccount
 
 	|srcAccount dstAccount expectedValue |
 	
@@ -491,8 +492,8 @@ test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount
 	self assert: expectedValue equals: (TransferNet from: dstAccount).
 	self assert: expectedValue negated equals: (TransferNet from: srcAccount). ! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:57:52'!
-test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:33:32'!
+test03AccountWithManyTransfersReturnsCorrectTransferNetOfTheAccount
 
 	|account1 account2 |
 	
@@ -508,7 +509,8 @@ test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount
 	self assert: -90 equals: (TransferNet from: account1).
 ! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:00'!
+
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 15:58:00'!
 test04AnEmptyPorfolioHasZeroTransferNet
 
 	| portfolio |
@@ -518,7 +520,7 @@ test04AnEmptyPorfolioHasZeroTransferNet
 	self assert: 0 equals: (TransferNet from: portfolio).
 ! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:12'!
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 15:58:12'!
 test05PorfolioWithOneAccountReportCorrectTransferNet
 
 	| portfolio srcAccount dstAccount |
@@ -532,8 +534,8 @@ test05PorfolioWithOneAccountReportCorrectTransferNet
 	self assert: 0 equals: (TransferNet from: portfolio).	
 	! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:22'!
-test06PorfolioWithManyAccountReportCorrectTransferNet
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:33:56'!
+test06PorfolioWithManyAccountsReportCorrectTransferNet
 
 	| portfolio srcAccount dstAccount |
 	
@@ -546,8 +548,8 @@ test06PorfolioWithManyAccountReportCorrectTransferNet
 	self assert: -100 equals: (TransferNet from: portfolio).	
 ! !
 
-!TransferNetTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:58:33'!
-test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:34:08'!
+test07ComposePortfolioWithManyAccountsReturnsCorrectTransferNet
 
 	| account1 account2 account3 simplePortfolio composedPortfolio |
 	
@@ -578,7 +580,7 @@ TestCase subclass: #TransferTest
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:20:53'!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:16:12'!
 test01AutoTransferIsNotValid
 	
 	|anAccount aTransfer|
@@ -586,15 +588,14 @@ test01AutoTransferIsNotValid
 	anAccount := ReceptiveAccount new.
 	
 	self
-	
 		should: [aTransfer := Transfer from: anAccount to: anAccount amount: 50. ]
 		raise: Error withMessageText: Transfer canNotTransferYourSelfErrorMessage. 
 
 	
 ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:12'!
-test02EmptyTransferIsNotPosible
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:34'!
+test02TransferZeroAmountIsNotPossible
 	
 	|srcAccount dstAccount aTransfer|
 	
@@ -608,8 +609,8 @@ test02EmptyTransferIsNotPosible
 	
 ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:20'!
-test03NegativeTransferIsNotValid
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:27'!
+test03TransferNegativeAmountIsNotPossible
 	
 	|srcAccount dstAccount aTransfer|
 	
@@ -623,8 +624,8 @@ test03NegativeTransferIsNotValid
 	
 ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:33'!
-test04EfectiveTransferBetweenAccounts
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:58'!
+test04TransferBetweenAccountsAffectsBalance
 	
 	|account1 account2 aTransfer|
 	
@@ -636,8 +637,8 @@ test04EfectiveTransferBetweenAccounts
 	self assert: -50 equals: account1 balance. 
 	self assert: 50 equals: account2 balance. ! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:21:38'!
-test05TransferBetweenAccountsSaveThisTransactions
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:18:17'!
+test05TransferBetweenAccountsSaveTheTransaction
 	
 	|account1 account2 aTransfer|
 	
@@ -649,8 +650,8 @@ test05TransferBetweenAccountsSaveThisTransactions
 	self assert: (account1 hasRegistered: (aTransfer originAccount )).
 	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).! !
 
-!TransferTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 15:54:09'!
-test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:18:51'!
+test06ItIsPossibleToGoFromOneTransferLegToAnother
 	
 	|account1 account2 aTransfer|
 	
@@ -764,11 +765,6 @@ addTransactionsTo: aCollectionOfTransactions
 
 	accounts do: [ :anAccount | anAccount addTransactionsTo: aCollectionOfTransactions ]! !
 
-!Portfolio methodsFor: 'transactions' stamp: 'G. B. 11/15/2020 17:08:00'!
-iterateTransactionsForReport: aReport
-	self transactions do: [:aTransaction | aTransaction affectReport: aReport].
-	! !
-
 !Portfolio methodsFor: 'transactions' stamp: 'HAW 5/25/2019 11:38:32'!
 transactions
 	
@@ -821,6 +817,12 @@ signalCanNotAddAccount
 	self error: self class canNotAddAccountErrorMessage! !
 
 
+
+!Portfolio methodsFor: 'reports' stamp: 'G. B. 11/15/2020 17:08:00'!
+iterateTransactionsForReport: aReport
+	self transactions do: [:aTransaction | aTransaction affectReport: aReport].
+	! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Portfolio class' category: 'Portfolio-Solucion'!
@@ -867,11 +869,6 @@ addTransactionsTo: aCollectionOfTransactions
 
 	aCollectionOfTransactions addAll: transactions copy! !
 
-!ReceptiveAccount methodsFor: 'transactions' stamp: 'G. B. 11/15/2020 17:06:58'!
-iterateTransactionsForReport: aReport
-	transactions do: [:aTransaction | aTransaction affectReport: aReport].
-	! !
-
 !ReceptiveAccount methodsFor: 'transactions' stamp: 'HernanWilkinson 7/13/2011 18:37'!
 register: aTransaction
 
@@ -910,6 +907,12 @@ addedTo: aPortfolio
 	! !
 
 
+
+!ReceptiveAccount methodsFor: 'reports' stamp: 'G. B. 11/15/2020 17:06:58'!
+iterateTransactionsForReport: aReport
+	transactions do: [:aTransaction | aTransaction affectReport: aReport].
+	! !
+
 
 !classDefinition: #AccountTransaction category: 'Portfolio-Solucion'!
 Object subclass: #AccountTransaction
@@ -926,6 +929,16 @@ value
 
 !AccountTransaction methodsFor: 'balance' stamp: 'HAW 5/25/2019 11:25:39'!
 affectBalance: aBalance
+
+	self subclassResponsibility ! !
+
+!AccountTransaction methodsFor: 'balance' stamp: 'G. B. 11/15/2020 18:43:40'!
+affectReport: aReport
+
+	self subclassResponsibility ! !
+
+!AccountTransaction methodsFor: 'balance' stamp: 'G. B. 11/15/2020 18:44:03'!
+initializeFor: anObject
 
 	self subclassResponsibility ! !
 
@@ -995,6 +1008,25 @@ AccountTransaction subclass: #TransferTransaction
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
+!TransferTransaction methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:41:11'!
+initializeFor: aTransfer. 
+	self subclassResponsibility.! !
+
+
+!TransferTransaction methodsFor: 'accessing' stamp: 'G. B. 11/15/2020 18:41:41'!
+associatedTransferLeg
+	self subclassResponsibility.! !
+
+
+!TransferTransaction methodsFor: 'reports' stamp: 'G. B. 11/15/2020 18:41:28'!
+affectReport: aReport
+	self subclassResponsibility.! !
+
+
+!TransferTransaction methodsFor: 'balance' stamp: 'G. B. 11/15/2020 18:41:20'!
+affectBalance: aBalance
+	self subclassResponsibility.! !
+
 
 !classDefinition: #TransferDeposit category: 'Portfolio-Solucion'!
 TransferTransaction subclass: #TransferDeposit
@@ -1003,25 +1035,28 @@ TransferTransaction subclass: #TransferDeposit
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:46:57'!
-affectBalance: aBalance
-
-	^aBalance + (transfer value)! !
-
-!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:57:41'!
-affectReport: aReport
-	^ aReport fromTransferDeposit: (transfer value).! !
-
-!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 16:00:59'!
-associatedTransferLeg
-	
-	^(transfer originAccount )! !
-
-!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:41:20'!
+!TransferDeposit methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:41:20'!
 initializeFor: aTransfer. 
 
 	transfer := aTransfer
 	! !
+
+
+!TransferDeposit methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 16:00:59'!
+associatedTransferLeg
+	
+	^(transfer originAccount )! !
+
+
+!TransferDeposit methodsFor: 'balance' stamp: 'ERMC 11/14/2020 11:46:57'!
+affectBalance: aBalance
+
+	^aBalance + (transfer value)! !
+
+
+!TransferDeposit methodsFor: 'reports' stamp: 'G. B. 11/15/2020 16:57:41'!
+affectReport: aReport
+	^ aReport fromTransferDeposit: (transfer value).! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1029,7 +1064,7 @@ initializeFor: aTransfer.
 TransferDeposit class
 	instanceVariableNames: ''!
 
-!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:41:06'!
+!TransferDeposit class methodsFor: 'instance creation' stamp: 'ERMC 11/14/2020 11:41:06'!
 for: aTransfer
 
 	^ self new initializeFor: aTransfer. ! !
@@ -1042,26 +1077,28 @@ TransferTransaction subclass: #TransferWithdraw
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:47:07'!
-affectBalance: aBalance
+!TransferWithdraw methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 16:00:42'!
+associatedTransferLeg
+	
+	^(transfer destinyAccount)! !
 
-	^aBalance - (transfer value)! !
 
-!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:58:04'!
-affectReport: aReport
-	^ aReport fromTransferWithdraw: (transfer value).! !
-
-!TransferWithdraw methodsFor: 'as yet unclassified' stamp: 'ERMC 11/14/2020 11:42:30'!
+!TransferWithdraw methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:42:30'!
 initializeFor: aTransfer. 
 
 	transfer := aTransfer
 	! !
 
 
-!TransferWithdraw methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 16:00:42'!
-associatedTransferLeg
-	
-	^(transfer destinyAccount)! !
+!TransferWithdraw methodsFor: 'reports' stamp: 'G. B. 11/15/2020 16:58:04'!
+affectReport: aReport
+	^ aReport fromTransferWithdraw: (transfer value).! !
+
+
+!TransferWithdraw methodsFor: 'balance' stamp: 'ERMC 11/14/2020 11:47:07'!
+affectBalance: aBalance
+
+	^aBalance - (transfer value)! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1122,6 +1159,27 @@ Object subclass: #AccountTransactionReport
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
+!AccountTransactionReport methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:35:34'!
+initializeFor: anAccount
+	self subclassResponsibility.! !
+
+
+!AccountTransactionReport methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:35:47'!
+fromDeposit: aValue
+	self subclassResponsibility.! !
+
+!AccountTransactionReport methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:35:55'!
+fromTransferDeposit: aValue
+	self subclassResponsibility.! !
+
+!AccountTransactionReport methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:36:04'!
+fromTransferWithdraw: aValue
+	self subclassResponsibility.! !
+
+!AccountTransactionReport methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:36:13'!
+fromWithdraw: aValue
+	self subclassResponsibility.! !
+
 
 !classDefinition: #AccountSummary category: 'Portfolio-Solucion'!
 AccountTransactionReport subclass: #AccountSummary
@@ -1130,34 +1188,35 @@ AccountTransactionReport subclass: #AccountSummary
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:27'!
+!AccountSummary methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 16:43:15'!
+initializeFor: anAccount
+	^ self accountSummaryReportFor: anAccount.! !
+
+
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:31:13'!
 accountSummaryReportFor: anAccount
 	
 	summaryReport := OrderedCollection new.
 	anAccount iterateTransactionsForReport: self.	
-	summaryReport add: 'Balance = ' , (anAccount balance) asString . 
+	summaryReport add: 'Balance = ' , (anAccount balance) asString. 
 
 	^ summaryReport.! !
 
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:43'!
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 17:09:43'!
 fromDeposit: aValue
 	^summaryReport add: 'Depósito por ', aValue asString. ! !
 
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:49'!
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 17:09:49'!
 fromTransferDeposit: aValue
 	^ summaryReport add: 'Entrada por transferencia de ', aValue asString. ! !
 
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:09:53'!
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 17:09:53'!
 fromTransferWithdraw: aValue
 	^ summaryReport add: 'Salida por transferencia de ', aValue asString. ! !
 
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:10:00'!
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 17:10:00'!
 fromWithdraw: aValue
 	^ summaryReport add: 'Extracción por ', aValue asString.! !
-
-!AccountSummary methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:43:15'!
-initializeFor: anAccount
-	^ self accountSummaryReportFor: anAccount.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1169,7 +1228,6 @@ AccountSummary class
 from: anAccount 
 	^self new initializeFor: anAccount. ! !
 
-
 
 !classDefinition: #TransferNet category: 'Portfolio-Solucion'!
 AccountTransactionReport subclass: #TransferNet
@@ -1178,7 +1236,12 @@ AccountTransactionReport subclass: #TransferNet
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 17:08:31'!
+!TransferNet methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 15:55:48'!
+initializeFor: anAccount
+	^ self calculateTransferNetFor: anAccount.! !
+
+
+!TransferNet methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 17:08:31'!
 calculateTransferNetFor: anAccount
 
 	currentTransferNet := 0.
@@ -1189,25 +1252,21 @@ calculateTransferNetFor: anAccount
 	
 	! !
 
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:52:52'!
+!TransferNet methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 16:52:52'!
 fromDeposit: aValue
 ! !
 
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:49:49'!
+!TransferNet methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 16:49:49'!
 fromTransferDeposit: aValue
 	currentTransferNet _ currentTransferNet + aValue! !
 
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:50:04'!
+!TransferNet methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 16:50:04'!
 fromTransferWithdraw: aValue
 	currentTransferNet _ currentTransferNet - aValue! !
 
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 16:53:06'!
+!TransferNet methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 16:53:06'!
 fromWithdraw: aValue
 ! !
-
-!TransferNet methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 15:55:48'!
-initializeFor: anAccount
-	^ self calculateTransferNetFor: anAccount.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1227,33 +1286,42 @@ Object subclass: #Transfer
 	poolDictionaries: ''
 	category: 'Portfolio-Solucion'!
 
-!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:51:34'!
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:21:13'!
+initializeFrom: anOriginAccount to: aDestinyAccount amount: anAmount 
+	self checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+	
+	originAccount := TransferWithdraw register: self on: anOriginAccount.
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+
+
+!Transfer methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 11:51:34'!
 destinyAccount
 	
 	^ destinyAccount
 
 	! !
 
-!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 16:08:43'!
-initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
-	
-	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
-	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
-	originAccount := TransferWithdraw register: self on: aOriginAccount.
-	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
-	value := anAmount.! !
-
-!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:51:13'!
+!Transfer methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 11:51:13'!
 originAccount
 	
 	^ originAccount
 
 	! !
 
-!Transfer methodsFor: 'initialization' stamp: 'ERMC 11/14/2020 11:50:10'!
+!Transfer methodsFor: 'accessing' stamp: 'ERMC 11/14/2020 11:50:10'!
 value
 
 	^ value! !
+
+
+!Transfer methodsFor: 'transfer - private' stamp: 'G. B. 11/15/2020 18:21:42'!
+checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+
+	(anOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	
+	! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 

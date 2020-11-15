@@ -4543,3 +4543,1388 @@ PASSED!
 
 !testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 17:13:38'!
 PASSED!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 18:13:41'!
+PASSED!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:16:12' prior: 50940438!
+test01AutoTransferIsNotValid
+	
+	|anAccount aTransfer|
+	
+	anAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: anAccount to: anAccount amount: 50. ]
+		raise: Error withMessageText: Transfer canNotTransferYourSelfErrorMessage. 
+
+	
+! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+
+!testRun: #TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 18:16:16'!
+PASSED!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:06'!
+test02TransferZeroAmountIsNotPosible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: 0. ]
+		raise: Error withMessageText: Transfer canNotMakeAnEmptyTransferErrorMessage. 
+
+	
+! !
+
+!methodRemoval: TransferTest #test02EmptyTransferIsNotPosible stamp: 'G. B. 11/15/2020 18:17:06'!
+test02EmptyTransferIsNotPosible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: 0. ]
+		raise: Error withMessageText: Transfer canNotMakeAnEmptyTransferErrorMessage. 
+
+	
+!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:27'!
+test03TransferNegativeAmountIsNotPossible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: -100. ]
+		raise: Error withMessageText: Transfer canNotMakeANegativeTransferErrorMessage. 
+
+	
+! !
+
+!methodRemoval: TransferTest #test03NegativeTransferIsNotValid stamp: 'G. B. 11/15/2020 18:17:27'!
+test03NegativeTransferIsNotValid
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: -100. ]
+		raise: Error withMessageText: Transfer canNotMakeANegativeTransferErrorMessage. 
+
+	
+!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:34'!
+test02TransferZeroAmountIsNotPossible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: 0. ]
+		raise: Error withMessageText: Transfer canNotMakeAnEmptyTransferErrorMessage. 
+
+	
+! !
+
+!methodRemoval: TransferTest #test02TransferZeroAmountIsNotPosible stamp: 'G. B. 11/15/2020 18:17:34'!
+test02TransferZeroAmountIsNotPosible
+	
+	|srcAccount dstAccount aTransfer|
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	
+	self
+		should: [aTransfer := Transfer from: srcAccount to: dstAccount amount: 0. ]
+		raise: Error withMessageText: Transfer canNotMakeAnEmptyTransferErrorMessage. 
+
+	
+!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:17:58'!
+test04TransferBetweenAccountsAffectsBalance
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: -50 equals: account1 balance. 
+	self assert: 50 equals: account2 balance. ! !
+
+!methodRemoval: TransferTest #test04EfectiveTransferBetweenAccounts stamp: 'G. B. 11/15/2020 18:17:58'!
+test04EfectiveTransferBetweenAccounts
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: -50 equals: account1 balance. 
+	self assert: 50 equals: account2 balance. !
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:18:17'!
+test05TransferBetweenAccountsSaveTheTransaction
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (account1 hasRegistered: (aTransfer originAccount )).
+	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).! !
+
+!methodRemoval: TransferTest #test05TransferBetweenAccountsSaveThisTransactions stamp: 'G. B. 11/15/2020 18:18:17'!
+test05TransferBetweenAccountsSaveThisTransactions
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (account1 hasRegistered: (aTransfer originAccount )).
+	self assert: (account2 hasRegistered: (aTransfer destinyAccount )).!
+!TransferTest methodsFor: 'tests' stamp: 'G. B. 11/15/2020 18:18:51'!
+test06ItIsPossibleToGoFromOneTransferLegToAnother
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (aTransfer originAccount  associatedTransferLeg) equals: (aTransfer destinyAccount).
+	self assert: (aTransfer destinyAccount  associatedTransferLeg) equals: (aTransfer originAccount).! !
+
+!methodRemoval: TransferTest #test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra stamp: 'G. B. 11/15/2020 18:18:51'!
+test06AlHacerUnaTransferenciaSePuedeIrDeUnaPataALaOtra
+	
+	|account1 account2 aTransfer|
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	aTransfer := Transfer from: account1 to: account2 amount: 50. 
+	
+	self assert: (aTransfer originAccount  associatedTransferLeg) equals: (aTransfer destinyAccount).
+	self assert: (aTransfer destinyAccount  associatedTransferLeg) equals: (aTransfer originAccount).!
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:20:42' prior: 50941072!
+initializeFrom: aOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(aOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	
+	self checkIsTransferValidFrom: aOriginAccount  to: aDestinyAccount amount: anAmount.
+	originAccount := TransferWithdraw register: self on: aOriginAccount.
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:20:52' prior: 50947533!
+initializeFrom: anOriginAccount to: aDestinyAccount amount: anAmount 
+	
+	(anOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	
+	self checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+	originAccount := TransferWithdraw register: self on: anOriginAccount.
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:21:12' prior: 50947553!
+initializeFrom: anOriginAccount to: aDestinyAccount amount: anAmount 
+	self checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+	originAccount := TransferWithdraw register: self on: anOriginAccount.
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:21:13' prior: 50947573!
+initializeFrom: anOriginAccount to: aDestinyAccount amount: anAmount 
+	self checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+	
+	originAccount := TransferWithdraw register: self on: anOriginAccount.
+	destinyAccount := TransferDeposit register: self on: aDestinyAccount.
+	value := anAmount.! !
+!Transfer methodsFor: 'initialization' stamp: 'G. B. 11/15/2020 18:21:42'!
+checkIsTransferValidFrom: anOriginAccount  to: aDestinyAccount amount: anAmount.
+
+	(anOriginAccount = aDestinyAccount ) ifTrue: [^ self error: self class canNotTransferYourSelfErrorMessage ].
+	(anAmount  <= 0 ) ifTrue: [^ self error: self class canNotMakeAnEmptyTransferErrorMessage].
+	
+	! !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:23:26'!
+test01AnEmptyAccountReturnsAnEmptyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	expectedReport := OrderedCollection new. 
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount).! !
+
+!methodRemoval: AccountSummaryTest #test01AnEmptyAccountReturnsAEmptyReport stamp: 'G. B. 11/15/2020 18:23:26'!
+test01AnEmptyAccountReturnsAEmptyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	expectedReport := OrderedCollection new. 
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount).!
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:26:32'!
+test02AccountWithOneDepositTransactionReturnsCorrectAccountSummary
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+
+!methodRemoval: AccountSummaryTest #test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:26:32'!
+test02AccountWhitOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:05'!
+test03AccountWithOneWithdrawTransactionReturnsCorrectlyAccountSummary
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Withdraw register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Extracción por 100'.
+	expectedReport  add: 'Balance = -100'.
+
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+
+!methodRemoval: AccountSummaryTest #test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:27:05'!
+test03AccountWhitOneWithdrawTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Withdraw register: 100 on: anAccount.
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Extracción por 100'.
+	expectedReport  add: 'Balance = -100'.
+
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:28'!
+test04AccountWithMoreThanOneDepositTransactionReturnsCorrectAccountSummary
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Deposit register: 50 on: anAccount.
+	
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Depósito por 50'.
+	expectedReport  add: 'Balance = 150'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). ! !
+
+!methodRemoval: AccountSummaryTest #test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:27:28'!
+test04AccountWhitMoreThanOneDepositTransactionsReturnsCorrectlyReport
+
+	| anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount.
+	Deposit register: 50 on: anAccount.
+	
+	expectedReport := OrderedCollection new.
+	expectedReport  add: 'Depósito por 100'.
+	expectedReport  add: 'Depósito por 50'.
+	expectedReport  add: 'Balance = 150'.
+	
+	self assert: expectedReport equals: (AccountSummary from: anAccount). !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:27:49'!
+test05AccountWithOneTransferTransactionReturnsCorrectAccountSummary
+
+	| srcAccount dstAccount aTransfer expectedReportFromSrc expectedReportFromDst aValue|
+	
+	aValue := 50.
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	aTransfer := Transfer from: srcAccount to: dstAccount amount: aValue. 
+	
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Salida por transferencia de ', aValue asString .
+	expectedReportFromSrc add: 'Balance = -', aValue asString.
+	
+	expectedReportFromDst := OrderedCollection new.
+	expectedReportFromDst add: 'Entrada por transferencia de ', aValue asString.
+	expectedReportFromDst add: 'Balance = ', aValue asString.
+
+	self assert: expectedReportFromSrc equals: (AccountSummary from: srcAccount). 
+	self assert: expectedReportFromDst equals: (AccountSummary from: dstAccount). ! !
+
+!methodRemoval: AccountSummaryTest #test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport stamp: 'G. B. 11/15/2020 18:27:49'!
+test05AccountWhitOneTransferTransactionsReturnsCorrectlyReport
+
+	| srcAccount dstAccount aTransfer expectedReportFromSrc expectedReportFromDst aValue|
+	
+	aValue := 50.
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	aTransfer := Transfer from: srcAccount to: dstAccount amount: aValue. 
+	
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Salida por transferencia de ', aValue asString .
+	expectedReportFromSrc add: 'Balance = -', aValue asString.
+	
+	expectedReportFromDst := OrderedCollection new.
+	expectedReportFromDst add: 'Entrada por transferencia de ', aValue asString.
+	expectedReportFromDst add: 'Balance = ', aValue asString.
+
+	self assert: expectedReportFromSrc equals: (AccountSummary from: srcAccount). 
+	self assert: expectedReportFromDst equals: (AccountSummary from: dstAccount). !
+!AccountSummaryTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:28:26'!
+test06AccountWithDepositWithdrawalAndTransfersReturnsCorrectAccountSummary
+
+	| account1 account2 expectedReportFromSrc |
+
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account1.
+	Transfer from: account1 to: account2 amount: 20. 
+	Transfer from: account2 to: account1 amount: 30. 
+
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Depósito por 100'.
+	expectedReportFromSrc add: 'Extracción por 50'. 
+	expectedReportFromSrc add: 'Salida por transferencia de 20'.
+	expectedReportFromSrc add: 'Entrada por transferencia de 30'.
+	expectedReportFromSrc add: 'Balance = 60'.
+	
+	self assert: expectedReportFromSrc equals: (AccountSummary from: account1). 
+! !
+
+!methodRemoval: AccountSummaryTest #test06SeMuestranDepositosExtraccionesYTransferencias stamp: 'G. B. 11/15/2020 18:28:26'!
+test06SeMuestranDepositosExtraccionesYTransferencias
+
+	| account1 account2 expectedReportFromSrc |
+
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account1.
+	Transfer from: account1 to: account2 amount: 20. 
+	Transfer from: account2 to: account1 amount: 30. 
+
+	expectedReportFromSrc := OrderedCollection new.
+	expectedReportFromSrc add: 'Depósito por 100'.
+	expectedReportFromSrc add: 'Extracción por 50'. 
+	expectedReportFromSrc add: 'Salida por transferencia de 20'.
+	expectedReportFromSrc add: 'Entrada por transferencia de 30'.
+	expectedReportFromSrc add: 'Balance = 60'.
+	
+	self assert: expectedReportFromSrc equals: (AccountSummary from: account1). 
+!
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:28:47'!
+test07EmptyPortfolioHasNoAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+! !
+
+!methodRemoval: AccountSummaryTest #test07PortfolioEmptyHasNoAccountSummary stamp: 'G. B. 11/15/2020 18:28:47'!
+test07PortfolioEmptyHasNoAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+!
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:07'!
+test07EmptyPortfolioHasEmptyAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+! !
+
+!methodRemoval: AccountSummaryTest #test07EmptyPortfolioHasNoAccountSummary stamp: 'G. B. 11/15/2020 18:29:07'!
+test07EmptyPortfolioHasNoAccountSummary
+
+	| portfolio  expectedReport |
+
+	portfolio := Portfolio new.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Balance = 0'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+!
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:22'!
+test08PortfolioWithOneAccountReturnsCorrectReport
+
+	| portfolio  anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount .
+	portfolio := Portfolio with: anAccount. 
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+! !
+
+!methodRemoval: AccountSummaryTest #test08PortfolioWhitOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:29:22'!
+test08PortfolioWhitOneAccountReturnsCorrectReport
+
+	| portfolio  anAccount expectedReport |
+	
+	anAccount := ReceptiveAccount new.
+	Deposit register: 100 on: anAccount .
+	portfolio := Portfolio with: anAccount. 
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 100'.
+	
+	self assert: expectedReport equals: (AccountSummary from: portfolio). 
+!
+!AccountSummaryTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:29:35'!
+test09ComposedPortfolioWhitManyAccountsReturnsCorrectReport
+
+	| account1 account2 simplePortfolio composedPortfolio expectedReport |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account2.
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Extracción por 50'. 
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 50'.
+	
+	self assert: expectedReport equals: (AccountSummary from: composedPortfolio).! !
+
+!methodRemoval: AccountSummaryTest #test09ComposePortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:29:35'!
+test09ComposePortfolioWhitManyAccountsReturnsCorrectReport
+
+	| account1 account2 simplePortfolio composedPortfolio expectedReport |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	Withdraw register: 50 on: account2.
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+
+	expectedReport := OrderedCollection new.
+	expectedReport add: 'Extracción por 50'. 
+	expectedReport add: 'Depósito por 100'.
+	expectedReport add: 'Balance = 50'.
+	
+	self assert: expectedReport equals: (AccountSummary from: composedPortfolio).!
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAnEmptyReport stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWithOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWithOneWithdrawTransactionReturnsCorrectlyAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWithMoreThanOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWithOneTransferTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06AccountWithDepositWithdrawalAndTransfersReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07EmptyPortfolioHasEmptyAccountSummary stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWithOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposedPortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferZeroAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test03TransferNegativeAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test04TransferBetweenAccountsAffectsBalance stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveTheTransaction stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+
+!testRun: #TransferTest #test06ItIsPossibleToGoFromOneTransferLegToAnother stamp: 'G. B. 11/15/2020 18:29:40'!
+PASSED!
+!AccountSummary methodsFor: 'report creation' stamp: 'G. B. 11/15/2020 18:31:13' prior: 50946461!
+accountSummaryReportFor: anAccount
+	
+	summaryReport := OrderedCollection new.
+	anAccount iterateTransactionsForReport: self.	
+	summaryReport add: 'Balance = ' , (anAccount balance) asString. 
+
+	^ summaryReport.! !
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:32:50'!
+test01AccountWithNoTransferReturnsTransferNetZero
+
+	|anAccount expectedValue |
+	
+	anAccount := ReceptiveAccount new.
+	expectedValue := 0.
+	
+	self assert: expectedValue equals: (TransferNet from: anAccount). ! !
+
+!methodRemoval: TransferNetTest #test01AccountWhitNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:32:50'!
+test01AccountWhitNoTransferReturnsTransferNetZero
+
+	|anAccount expectedValue |
+	
+	anAccount := ReceptiveAccount new.
+	expectedValue := 0.
+	
+	self assert: expectedValue equals: (TransferNet from: anAccount). !
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:33:07'!
+test02AccountWithOneTransferReturnsCorrectTransferNetOfTheAccount
+
+	|srcAccount dstAccount expectedValue |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	Transfer from: srcAccount to: dstAccount  amount: 50.
+	expectedValue := 50.
+	
+	self assert: expectedValue equals: (TransferNet from: dstAccount).
+	self assert: expectedValue negated equals: (TransferNet from: srcAccount). ! !
+
+!methodRemoval: TransferNetTest #test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:33:07'!
+test02AccountWhitOneTransferReturnsCorrectTransferNetOfTheAccount
+
+	|srcAccount dstAccount expectedValue |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new.
+	Transfer from: srcAccount to: dstAccount  amount: 50.
+	expectedValue := 50.
+	
+	self assert: expectedValue equals: (TransferNet from: dstAccount).
+	self assert: expectedValue negated equals: (TransferNet from: srcAccount). !
+!TransferNetTest methodsFor: 'tests - ReceptiveAccount' stamp: 'G. B. 11/15/2020 18:33:32'!
+test03AccountWithManyTransfersReturnsCorrectTransferNetOfTheAccount
+
+	|account1 account2 |
+	
+	account1 := ReceptiveAccount new.
+	Deposit register: 100 on: account1 .
+	account2 := ReceptiveAccount new.
+	Transfer from: account1 to: account2  amount: 50.
+	Transfer from: account1 to: account2  amount: 20. 
+	Transfer from: account1 to: account2  amount: 30.
+	Transfer from: account2 to: account1 amount: 10.
+	
+	self assert: 90 equals: (TransferNet from: account2).
+	self assert: -90 equals: (TransferNet from: account1).
+! !
+
+!methodRemoval: TransferNetTest #test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:33:32'!
+test03AccountWhitManyTransferReturnsCorrectTransferNetOfTheAccount
+
+	|account1 account2 |
+	
+	account1 := ReceptiveAccount new.
+	Deposit register: 100 on: account1 .
+	account2 := ReceptiveAccount new.
+	Transfer from: account1 to: account2  amount: 50.
+	Transfer from: account1 to: account2  amount: 20. 
+	Transfer from: account1 to: account2  amount: 30.
+	Transfer from: account2 to: account1 amount: 10.
+	
+	self assert: 90 equals: (TransferNet from: account2).
+	self assert: -90 equals: (TransferNet from: account1).
+!
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:33:56'!
+test06PorfolioWithManyAccountsReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount . 
+	
+	self assert: -100 equals: (TransferNet from: portfolio).	
+! !
+
+!methodRemoval: TransferNetTest #test06PorfolioWithManyAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:33:56'!
+test06PorfolioWithManyAccountReportCorrectTransferNet
+
+	| portfolio srcAccount dstAccount |
+	
+	srcAccount := ReceptiveAccount new.
+	dstAccount := ReceptiveAccount new. 
+	Transfer from: srcAccount to: dstAccount  amount: 100.
+	
+	portfolio := Portfolio with: srcAccount . 
+	
+	self assert: -100 equals: (TransferNet from: portfolio).	
+!
+!TransferNetTest methodsFor: 'tests - Portfolio' stamp: 'G. B. 11/15/2020 18:34:08'!
+test07ComposePortfolioWithManyAccountsReturnsCorrectTransferNet
+
+	| account1 account2 account3 simplePortfolio composedPortfolio |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	account3 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	
+	Transfer from: account1 to: account3 amount: 100.
+	Transfer from: account2 to: account3  amount: 50.
+	Transfer from: account3 to: account1 amount: 10.
+	
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+	
+	self assert: -140 equals: (TransferNet from: composedPortfolio).
+	
+		
+! !
+
+!methodRemoval: TransferNetTest #test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:34:08'!
+test07ComposePortfolioWhitManyAccountsReturnsCorrectTransferNet
+
+	| account1 account2 account3 simplePortfolio composedPortfolio |
+	
+	account1 := ReceptiveAccount new.
+	account2 := ReceptiveAccount new.
+	account3 := ReceptiveAccount new.
+	Deposit register: 100 on: account1.
+	
+	Transfer from: account1 to: account3 amount: 100.
+	Transfer from: account2 to: account3  amount: 50.
+	Transfer from: account3 to: account1 amount: 10.
+	
+	simplePortfolio := Portfolio new.
+	composedPortfolio := Portfolio with: simplePortfolio.
+	composedPortfolio add: account1.
+	simplePortfolio add: account2.
+	
+	self assert: -140 equals: (TransferNet from: composedPortfolio).
+	
+		
+!
+!AccountTransactionReport methodsFor: 'no messages' stamp: 'G. B. 11/15/2020 18:35:34'!
+initializeFor: anAccount
+	self subclassResponsibility.! !
+!AccountTransactionReport methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:35:47'!
+fromDeposit: aValue
+	self subclassResponsibility.! !
+!AccountTransactionReport methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:35:55'!
+fromTransferDeposit: aValue
+	self subclassResponsibility.! !
+!AccountTransactionReport methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:36:04'!
+fromTransferWithdraw: aValue
+	self subclassResponsibility.! !
+!AccountTransactionReport methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:36:13'!
+fromWithdraw: aValue
+	self subclassResponsibility.! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAnEmptyReport stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWithOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWithOneWithdrawTransactionReturnsCorrectlyAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWithMoreThanOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWithOneTransferTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06AccountWithDepositWithdrawalAndTransfersReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07EmptyPortfolioHasEmptyAccountSummary stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWithOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposedPortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWithNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWithOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWithManyTransfersReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountsReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWithManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferZeroAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test03TransferNegativeAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test04TransferBetweenAccountsAffectsBalance stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveTheTransaction stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+
+!testRun: #TransferTest #test06ItIsPossibleToGoFromOneTransferLegToAnother stamp: 'G. B. 11/15/2020 18:37:41'!
+PASSED!
+!TransferTransaction methodsFor: 'no messages' stamp: 'G. B. 11/15/2020 18:41:11'!
+initializeFor: aTransfer. 
+	self subclassResponsibility.! !
+!TransferTransaction methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:41:20' overrides: 50940813!
+affectBalance: aBalance
+	self subclassResponsibility.! !
+!TransferTransaction methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:41:28'!
+affectReport: aReport
+	self subclassResponsibility.! !
+!TransferTransaction methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:41:38'!
+associatedTransferLeg	self subclassResponsibility.! !
+!TransferTransaction methodsFor: 'as yet unclassified' stamp: 'G. B. 11/15/2020 18:41:41' prior: 50948548!
+associatedTransferLeg
+	self subclassResponsibility.! !
+!AccountTransaction methodsFor: 'balance' stamp: 'G. B. 11/15/2020 18:43:40'!
+affectReport: aReport
+
+	self subclassResponsibility ! !
+!AccountTransaction methodsFor: 'balance' stamp: 'G. B. 11/15/2020 18:44:03'!
+initializeFor: anObject
+
+	self subclassResponsibility ! !
+
+!testRun: #AccountSummaryTest #test01AnEmptyAccountReturnsAnEmptyReport stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test02AccountWithOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test03AccountWithOneWithdrawTransactionReturnsCorrectlyAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test04AccountWithMoreThanOneDepositTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test05AccountWithOneTransferTransactionReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test06AccountWithDepositWithdrawalAndTransfersReturnsCorrectAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test07EmptyPortfolioHasEmptyAccountSummary stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test08PortfolioWithOneAccountReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #AccountSummaryTest #test09ComposedPortfolioWhitManyAccountsReturnsCorrectReport stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test01BalanceOfPortfolioWithoutAccountsIsZero stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test02BalanceOfPortfolioWithOneAccountIsAccountBalance stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test03BalanceOfPortfolioIsCalculatedRecursivelyOnPortfolios stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test04PortfolioWithoutAccountsHasNoRegisteredTransaction stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test05PortfolioHasRegisteredItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test06PortfolioLooksForRegisteredTransactionsRecursively stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test07PortfolioHasNoTransactionWhenHasNoAccounts stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test08PortfolioTransactionsIncludesAllItsAccountsTransactions stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test09PortfolioTransactionsAreCalculatedRecursively stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test10PortfolioCanNotIncludeTheSameAccountMoreThanOnce stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test11PortfolioCanNotIncludeAccountOfItsPortfolios stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test12PortfolioCanNotIncludeItself stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test13ComposedPortfolioCanNotHaveParentPortfolioAccount stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test14ComposedPortfolioCanNotHaveAccountOfAnyRootParentRecursively stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #PortfolioTest #test15PortfolioCanNotIncludeAnyOfTheComposedAccountOfPortfolioToAdd stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test01AccountWithNoTransferReturnsTransferNetZero stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test02AccountWithOneTransferReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test03AccountWithManyTransfersReturnsCorrectTransferNetOfTheAccount stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test04AnEmptyPorfolioHasZeroTransferNet stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test05PorfolioWithOneAccountReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test06PorfolioWithManyAccountsReportCorrectTransferNet stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferNetTest #test07ComposePortfolioWithManyAccountsReturnsCorrectTransferNet stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test01AutoTransferIsNotValid stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test02TransferZeroAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test03TransferNegativeAmountIsNotPossible stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test04TransferBetweenAccountsAffectsBalance stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test05TransferBetweenAccountsSaveTheTransaction stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+!testRun: #TransferTest #test06ItIsPossibleToGoFromOneTransferLegToAnother stamp: 'G. B. 11/15/2020 18:44:51'!
+PASSED!
+
+----QUIT----(15 November 2020 18:45:02) CuisUniversity-4383.image priorSource: 19459408!
