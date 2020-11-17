@@ -5,20 +5,21 @@ TestCase subclass: #BooksCatalog
 	poolDictionaries: ''
 	category: 'TusLibros.com'!
 
-!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:07:39'!
+!BooksCatalog methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:13:37'!
+initialize
+
+	books := OrderedCollection with:'The Cells' with: 'Smaltalk 80' with: 'ISW1'.! !
+
+
+!BooksCatalog methodsFor: 'accessing' stamp: 'ERMC 11/17/2020 19:07:39'!
 books
 
 	^ books! !
 
-!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:09:06'!
+!BooksCatalog methodsFor: 'accessing' stamp: 'ERMC 11/17/2020 19:09:06'!
 has: aBook
 
 	^ books includes: aBook! !
-
-!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:13:37'!
-initialize
-
-	books := OrderedCollection with:'The Cells' with: 'Smaltalk 80' with: 'ISW1'.! !
 
 
 !classDefinition: #CartTest category: 'TusLibros.com'!
@@ -28,8 +29,8 @@ TestCase subclass: #CartTest
 	poolDictionaries: ''
 	category: 'TusLibros.com'!
 
-!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:23:11'!
-test01CuandoSeCreaUnCarritoSeCreaVacio
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:00:48'!
+test01CartIsCreatedWithZeroBooks
 	
 	| cart catalog |
 	catalog := BooksCatalog new. 
@@ -37,40 +38,8 @@ test01CuandoSeCreaUnCarritoSeCreaVacio
 	
 	self assert: (cart books) isEmpty ! !
 
-!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:11:24'!
-test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
-	
-	| cart aBook expectedBookList catalog |
-	
-	catalog := BooksCatalog new. 
-	cart := Cart with: catalog.
-	aBook := 'The Cells'.
-	
-	cart addBook: aBook. 
-	
-	expectedBookList := OrderedCollection with: 'The Cells'.
-	
-	self assert: expectedBookList equals: 	(cart books). ! !
-
-!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:39:01'!
-test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado
-	
-	| cart aBook catalog |
-	
-	catalog := BooksCatalog new.
-	cart := Cart with: catalog.
-	aBook := 'The Ring'.
-	
-	self
-		should: [cart addBook: aBook]
-		raise: Error 
-		withExceptionDo: [ :anError |
-		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
-	
-	! !
-
-!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:39:08'!
-test04NoSePuedeCrearUnCarritoSinUnCatalogo
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:01:25'!
+test04CannotCreateCartWithoutACatalog
 
 	| cart aBook |
 	
@@ -85,8 +54,8 @@ test04NoSePuedeCrearUnCarritoSinUnCatalogo
 	
 	! !
 
-!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:30:19'!
-test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:01:50'!
+test05CannotCreateCartWithInvalidCatalog
 
 	| catalog |
 	
@@ -97,6 +66,39 @@ test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
 		raise: Error 
 		withExceptionDo: [ :anError |
 		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	! !
+
+
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:02'!
+test02WhenABookIsAddedToACartTheBookIsSavedIntheCart
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:54'!
+test03CannotAddABookThatIsNotInTheCatalog
+	
+	| cart aBook catalog |
+	
+	catalog := BooksCatalog new.
+	cart := Cart with: catalog.
+	aBook := 'The Ring'.
+	
+	self
+		should: [cart addBook: aBook]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
 	
 	! !
 
@@ -114,14 +116,6 @@ books
 	^books! !
 
 
-!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:41:14'!
-addBook: aBook
-	
-	(booksCatalog isNil ) ifTrue: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
-	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
-	books add: aBook! !
-
-
 !Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:36:30'!
 initializeWith: aBooksCatalog 
 	
@@ -129,28 +123,37 @@ initializeWith: aBooksCatalog
 	booksCatalog := aBooksCatalog.
 	books := OrderedCollection new. ! !
 
+
+!Cart methodsFor: 'cart usage' stamp: 'G. B. 11/17/2020 23:58:02'!
+addBook: aBook
+	
+	(booksCatalog isKindOf: BooksCatalog) ifFalse: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Cart class' category: 'TusLibros.com'!
 Cart class
 	instanceVariableNames: ''!
 
-!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:03:32'!
-canNotAddABookThatIsNotInTheCatalogErrorDescription
-	
-	^ 'can Not add a book that is not in the catalog '! !
-
-!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:26:25'!
-canNotCreateCartWithAnInvalidCatalogErrorDescription
-	
-	^ 'can Not create a Cart with an invalid catalog '! !
-
-!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:21:49'!
-canNotCreateCartWithoutCatalogErrorDescription
-	
-	^ 'can Not create a Cart without a catalog '! !
-
 !Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:34:21'!
 with: aBooksCatalog 
 
 	^self new initializeWith: aBooksCatalog ! !
+
+
+!Cart class methodsFor: 'error messages' stamp: 'ERMC 11/17/2020 19:03:32'!
+canNotAddABookThatIsNotInTheCatalogErrorDescription
+	
+	^ 'can Not add a book that is not in the catalog '! !
+
+!Cart class methodsFor: 'error messages' stamp: 'ERMC 11/17/2020 19:26:25'!
+canNotCreateCartWithAnInvalidCatalogErrorDescription
+	
+	^ 'can Not create a Cart with an invalid catalog '! !
+
+!Cart class methodsFor: 'error messages' stamp: 'ERMC 11/17/2020 19:21:49'!
+canNotCreateCartWithoutCatalogErrorDescription
+	
+	^ 'can Not create a Cart without a catalog '! !

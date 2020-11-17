@@ -1,0 +1,315 @@
+
+
+----STARTUP---- (17 November 2020 23:54:04) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+----End fileIn of /home/guille/Desktop/Ingeniería 1/isw1-ejercicios/20-TusLibros/1Entrega/TusLibros.com.st----!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'G. B. 11/17/2020 23:54:43'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/17/2020 23:54:43'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'G. B. 11/17/2020 23:54:43'!
+PASSED!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'G. B. 11/17/2020 23:54:43'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'G. B. 11/17/2020 23:54:43'!
+PASSED!
+!Cart methodsFor: 'cart usage' stamp: 'G. B. 11/17/2020 23:55:56' prior: 50948863!
+addBook: aBook
+	
+	(booksCatalog isKindOf: OrderedCollection) ifFalse: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'G. B. 11/17/2020 23:55:58'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/17/2020 23:55:58'!
+ERROR!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'G. B. 11/17/2020 23:55:58'!
+FAILURE!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'G. B. 11/17/2020 23:55:58'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'G. B. 11/17/2020 23:55:58'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'G. B. 11/17/2020 23:56:16'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/17/2020 23:56:16'!
+ERROR!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'G. B. 11/17/2020 23:56:16'!
+FAILURE!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'G. B. 11/17/2020 23:56:16'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'G. B. 11/17/2020 23:56:16'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/17/2020 23:56:18'!
+ERROR!
+!Cart methodsFor: 'cart usage' stamp: 'G. B. 11/17/2020 23:56:50' prior: 50948937!
+addBook: aBook
+	
+	(books isKindOf: OrderedCollection) ifFalse: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+!Cart methodsFor: 'cart usage' stamp: 'G. B. 11/17/2020 23:58:02' prior: 50948988!
+addBook: aBook
+	
+	(booksCatalog isKindOf: BooksCatalog) ifFalse: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'G. B. 11/17/2020 23:58:03'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/17/2020 23:58:03'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'G. B. 11/17/2020 23:58:03'!
+PASSED!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'G. B. 11/17/2020 23:58:03'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'G. B. 11/17/2020 23:58:03'!
+PASSED!
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:00:48'!
+test01CartIsCreatedWithZeroBooks
+	
+	| cart catalog |
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	
+	self assert: (cart books) isEmpty ! !
+
+!methodRemoval: CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'G. B. 11/18/2020 00:00:54'!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart catalog |
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	
+	self assert: (cart books) isEmpty !
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:01:25'!
+test04CannotCreateCartWithoutACatalog
+
+	| cart aBook |
+	
+	cart _ Cart new.
+	aBook := 'The Cells'.
+		
+	self
+		should: [cart addBook: aBook.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+
+!methodRemoval: CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'G. B. 11/18/2020 00:01:25'!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	| cart aBook |
+	
+	cart _ Cart new.
+	aBook := 'The Cells'.
+		
+	self
+		should: [cart addBook: aBook.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	!
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:01:50'!
+test05CannotCreateCartWithInvalidCatalog
+
+	| catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+	
+	self
+		should: [Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	! !
+
+!methodRemoval: CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'G. B. 11/18/2020 00:01:50'!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	| catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+	
+	self
+		should: [Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	!
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:02'!
+test02WhenABookIsAddedToACartTheBookIsSavedIntheCart
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!methodRemoval: CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'G. B. 11/18/2020 00:03:02'!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books). !
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:54'!
+test03CannotAddABookThatIsNotInTheCatalog
+	
+	| cart aBook catalog |
+	
+	catalog := BooksCatalog new.
+	cart := Cart with: catalog.
+	aBook := 'The Ring'.
+	
+	self
+		should: [cart addBook: aBook]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
+	
+	! !
+
+!methodRemoval: CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'G. B. 11/18/2020 00:03:54'!
+test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado
+	
+	| cart aBook catalog |
+	
+	catalog := BooksCatalog new.
+	cart := Cart with: catalog.
+	aBook := 'The Ring'.
+	
+	self
+		should: [cart addBook: aBook]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
+	
+	!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 00:04:01'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:01'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 00:04:01'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 00:04:01'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 00:04:01'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 00:04:05'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:05'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 00:04:05'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 00:04:05'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 00:04:05'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 00:04:11'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:11'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 00:04:11'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 00:04:11'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 00:04:11'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:13'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:14'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:14'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:14'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 00:04:36'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:04:36'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 00:04:36'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 00:04:36'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 00:04:36'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 00:06:27'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 00:06:27'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 00:06:27'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 00:06:27'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 00:06:27'!
+PASSED!
+
+----QUIT----(18 November 2020 00:06:51) CuisUniversity-4383.image priorSource: 19746936!
