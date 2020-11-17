@@ -1,0 +1,984 @@
+
+----STARTUP---- (16 November 2020 17:13:50) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+Object subclass: #NameOfSubclass
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #NameOfSubclass category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 18:57:10'!
+Object subclass: #NameOfSubclass
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+Object subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #CartTest category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 18:58:16'!
+Object subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classRemoval: #NameOfSubclass stamp: 'ERMC 11/16/2020 18:58:26'!
+Object subclass: #NameOfSubclass
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #Cart category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:02:23'!
+Object subclass: #Cart
+	instanceVariableNames: 'products'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+!CartTest methodsFor: 'nil' stamp: 'ERMC 11/16/2020 19:02:41'!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+
+	
+	| cart |
+	cart := Cart new.
+	
+	self assert: cart products isEmpty. ! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:02:47' prior: 50904725!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart |
+	
+	cart := Cart new.
+	
+	self assert: cart products isEmpty. ! !
+
+TestCase subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #CartTest category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:03:11'!
+TestCase subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:03:14'!
+ERROR!
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/16/2020 19:03:23'!
+products
+	self shouldBeImplemented.
+	^products! !
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/16/2020 19:03:28' prior: 50904752!
+products
+
+	^products! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:03:29'!
+ERROR!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:04:09' prior: 50904732!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart |
+	
+	cart := Cart new.
+	
+	self assert: (cart products) isEmpty ! !
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/16/2020 19:04:30' overrides: 16896425!
+initialize
+
+	products := Set new. ! !
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/16/2020 19:04:45' prior: 50904771 overrides: 16896425!
+initialize
+
+	products := OrderedCollection new. ! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:04:50'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:05:14'!
+test02CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart |
+	
+	cart := Cart new.
+	
+	self assert: (cart books) isEmpty ! !
+
+!classDefinition: #Cart category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:05:30'!
+Object subclass: #Cart
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:05:30' prior: 50904757!
+products
+
+	^books! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:05:30' prior: 50904776 overrides: 16896425!
+initialize
+
+	books := OrderedCollection new. ! !
+
+Object subclass: #Cart
+	instanceVariableNames: 'boo'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #Cart category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:05:38'!
+Object subclass: #Cart
+	instanceVariableNames: 'boo'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+Object subclass: #Cart
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #Cart category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:05:43'!
+Object subclass: #Cart
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:10:44'!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList |
+	
+	cart := Cart new.
+	aBook := 'TheCell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: true. ! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:11:12' prior: 50904829!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList |
+	
+	cart := Cart new.
+	aBook := 'TheCell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:11:17'!
+ERROR!
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:11:27'!
+addBook: aString 
+	self shouldBeImplemented.! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:11:58' prior: 50904855!
+addBook: aBook
+	
+	books add: aBook! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:12:02'!
+ERROR!
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/16/2020 19:12:20'!
+books
+
+	^books! !
+
+!methodRemoval: Cart #products stamp: 'ERMC 11/16/2020 19:12:27'!
+products
+
+	^books!
+
+!methodRemoval: CartTest #test02CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:12:32'!
+test02CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart |
+	
+	cart := Cart new.
+	
+	self assert: (cart books) isEmpty !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:12:33'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:17:15'!
+test03CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList |
+	
+	cart := Cart new.
+	aBook := 'TheCell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+TestCase subclass: #BooksCatalog
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #BooksCatalog category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:20:02'!
+TestCase subclass: #BooksCatalog
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+TestCase subclass: #BooksCatalog
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classDefinition: #BooksCatalog category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:20:09'!
+TestCase subclass: #BooksCatalog
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+!BooksCatalog methodsFor: 'nil' stamp: 'ERMC 11/16/2020 19:21:42' overrides: 16896425!
+initialize
+
+	books := {'The Cells', 'Smaltalk 80', 'ISW1'}! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:23:04' prior: 50904764!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart catalog |
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	
+	self assert: (cart products) isEmpty ! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:23:11' prior: 50904923!
+test01CuandoSeCreaUnCarritoSeCreaVacio
+	
+	| cart catalog |
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	
+	self assert: (cart books) isEmpty ! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:23:15'!
+ERROR!
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/16/2020 19:23:26'!
+with: aBooksCatalog 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeWith: aBooksCatalog ! !
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/16/2020 19:23:34' prior: 50904943!
+with: aBooksCatalog 
+
+	^self new initializeWith: aBooksCatalog ! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:23:36'!
+ERROR!
+
+!classDefinition: #Cart category: 'TusLibros.com' stamp: 'ERMC 11/16/2020 19:23:59'!
+Object subclass: #Cart
+	instanceVariableNames: 'books booksCatalog'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/16/2020 19:23:59'!
+initializeWith: aBooksCatalog 
+	self shouldBeImplemented.
+	booksCatalog := aBooksCatalog.! !
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/16/2020 19:24:12' prior: 50904967!
+initializeWith: aBooksCatalog 
+
+	booksCatalog := aBooksCatalog.! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:24:13'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:24:13'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:24:13'!
+PASSED!
+
+!testRun: #CartTest #test03CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:24:13'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:24:57' prior: 50904840!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'TheCell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:25:02'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/16/2020 19:25:02'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:25:02'!
+PASSED!
+
+!testRun: #CartTest #test03CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:25:02'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:27:43'!
+test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new.
+	cart := Cart with: catalog.
+	aBook := 'The Ring'.
+	
+	self
+		should: [cart addBook: aBook.]
+		raise: Error messageText 
+	
+	! !
+
+!methodRemoval: CartTest #test03CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/16/2020 19:28:26'!
+test03CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList |
+	
+	cart := Cart new.
+	aBook := 'TheCell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/16/2020 19:39:01' prior: 50905019!
+test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado
+	
+	| cart aBook catalog |
+	
+	catalog := BooksCatalog new.
+	cart := Cart with: catalog.
+	aBook := 'The Ring'.
+	
+	self
+		should: [cart addBook: aBook]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
+	
+	! !
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/16/2020 19:39:15'!
+FAILURE!
+
+----QUIT----(16 November 2020 19:39:51) CuisUniversity-4384.image priorSource: 18337050!
+
+----STARTUP---- (17 November 2020 18:53:47) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+----QUIT----(17 November 2020 18:54:02) CuisUniversity-4384.image priorSource: 18349090!
+
+----STARTUP---- (17 November 2020 18:55:41) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:01:54'!
+FAILURE!
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:03:32'!
+canNotAddABookThatIsNotInTheCatalogErrorDescription
+	
+	^ 'can Not add a book that is not in the catalog '! !
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:03:39'!
+FAILURE!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:03:39'!
+FAILURE!
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:04:41' prior: 50904860!
+addBook: aBook
+	
+	books add: aBook! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:06:24' prior: 50905091!
+addBook: aBook
+	
+	(booksCatalog contents: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:07:39'!
+books
+
+	^ books! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:08:43' prior: 50905096!
+addBook: aBook
+	
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:09:06'!
+has: aBook
+
+	^ books includes: aBook! !
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:09:10'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:09:21'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:09:21'!
+ERROR!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:09:21'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:09:21'!
+ERROR!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:09:38' prior: 50904992!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cell'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:09:39'!
+ERROR!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:10:01' prior: 50905139!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'TheCell'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:10:08' prior: 50905156!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:10:10'!
+ERROR!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:11:14'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:11:24' prior: 50905169!
+test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books). ! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:12:06'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:12:08'!
+ERROR!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:12:08'!
+ERROR!
+!BooksCatalog methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:13:37' prior: 50904918 overrides: 16896425!
+initialize
+
+	books := OrderedCollection with:'The Cells' with: 'Smaltalk 80' with: 'ISW1'.! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:14:05'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:14:09'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:14:09'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:14:09'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:15:28'!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+		
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotAddABookThatIsNotInTheCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:15:48' prior: 50905235!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+		
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:15:54'!
+FAILURE!
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:16:51'!
+canNotCreateCartWithoutCatalogErrorDescription
+	
+	^ 'can Not Create a Cart without a catalog'! !
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:16:54'!
+FAILURE!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:16:54'!
+FAILURE!
+!Behavior methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:18:06' prior: 16783533!
+new
+	"Answer a new initialized instance of the receiver (which is a class) with no indexable variables. Fail if the class is indexable."
+
+	^ self canNotCreateCartWithoutCatalogErrorDescription. 
+! !
+
+----STARTUP---- (17 November 2020 19:19:59) as /home/edy/MI UNIDAD/CS_DC/IngSoft I/Smalltalk/CuisUniversity-4384.image!
+
+
+!classRemoval: #Cart stamp: 'ERMC 11/17/2020 19:20:10'!
+Object subclass: #Cart
+	instanceVariableNames: 'books booksCatalog'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classRemoval: #CartTest stamp: 'ERMC 11/17/2020 19:20:11'!
+TestCase subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+!classRemoval: #BooksCatalog stamp: 'ERMC 11/17/2020 19:20:11'!
+TestCase subclass: #BooksCatalog
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros.com'!
+
+----End fileIn of /home/edy/Escritorio/Smalltalk1/TusLibros.com.st----!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:21:26'!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:21:49'!
+canNotCreateCartWithoutCatalogErrorDescription
+	
+	^ 'can Not create a Cart without a catalog '! !
+!Cart methodsFor: 'accessing' stamp: 'ERMC 11/17/2020 19:22:33' prior: 50905390 overrides: 16896425!
+initialize
+
+	^ self error: self class canNotCreateCartWithoutCatalogErrorDescription. ! !
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:23:14' prior: 50905401!
+initializeWith: aBooksCatalog 
+
+	booksCatalog := aBooksCatalog.
+	books := OrderedCollection new. ! !
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:23:18'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:23:34'!
+test04NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:23:47'!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+
+!methodRemoval: CartTest #test04NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:23:47'!
+test04NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:25:07' prior: 50905468!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	| cart catalog |
+	
+	catalog := OrderedCollection new.
+	
+	self
+		should: [cart := Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:25:23' prior: 50905489!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	| cart catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+	
+	self
+		should: [cart := Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:25:58' prior: 50905502!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	| cart catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+	
+	self
+		should: [cart := Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	! !
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:26:25'!
+canNotCreateCartWithAnInvalidCatalogErrorDescription
+	
+	^ 'can Not create a Cart with an invalid catalog '! !
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:27:16' prior: 50905449!
+initializeWith: aBooksCatalog 
+	
+	(aBooksCatalog isKindOf: BooksCatalog ) ifFalse: [^ self error: self class canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	booksCatalog := aBooksCatalog.
+	books := OrderedCollection new. ! !
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:27:19'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:27:19'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:27:47'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:29:42'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:29:42'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:29:54'!
+FAILURE!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:30:19' prior: 50905515!
+test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido
+
+	| catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+	
+	self
+		should: [Cart with: catalog.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	! !
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:30:21'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:30:30'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:31:54'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:31:54'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:32:23'!
+FAILURE!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:32:31'!
+ERROR!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:32:31'!
+ERROR!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:32:38'!
+ERROR!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:32:38'!
+ERROR!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:32:56'!
+ERROR!
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:33:17' prior: 50905535!
+initializeWith: aBooksCatalog 
+	
+	"(aBooksCatalog isKindOf: BooksCatalog ) ifFalse: [^ self error: self class canNotCreateCartWithAnInvalidCatalogErrorDescription ]."
+	booksCatalog := aBooksCatalog.
+	books := OrderedCollection new. ! !
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:33:20'!
+ERROR!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:33:20'!
+ERROR!
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:33:58' prior: 50905419!
+with: aBooksCatalog 
+
+	^self initializeWith: aBooksCatalog ! !
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:34:03'!
+ERROR!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:34:03'!
+ERROR!
+!Cart class methodsFor: 'instance creation' stamp: 'ERMC 11/17/2020 19:34:21' prior: 50905633!
+with: aBooksCatalog 
+
+	^self new initializeWith: aBooksCatalog ! !
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:35:02'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:35:03'!
+ERROR!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:35:03'!
+ERROR!
+
+!methodRemoval: Cart #initialize stamp: 'ERMC 11/17/2020 19:36:12'!
+initialize
+
+	^ self error: self class canNotCreateCartWithoutCatalogErrorDescription. !
+
+!methodRemoval: CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:36:15'!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	self
+		should: [Cart new]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:36:18'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:36:19'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:36:21'!
+FAILURE!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:36:21'!
+FAILURE!
+!Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:36:30' prior: 50905616!
+initializeWith: aBooksCatalog 
+	
+	(aBooksCatalog isKindOf: BooksCatalog ) ifFalse: [^ self error: self class canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	booksCatalog := aBooksCatalog.
+	books := OrderedCollection new. ! !
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:36:34'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:38:38'!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	| cart aBook |
+	
+	cart _ Cart new.
+	aBook := 'The Cells'.
+		
+	self
+		should: [cart add: aBook.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithAnInvalidCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:38:57' prior: 50905706!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	| cart aBook |
+	
+	cart _ Cart new.
+	aBook := 'The Cells'.
+		
+	self
+		should: [cart add: aBook.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:39:08' prior: 50905719!
+test04NoSePuedeCrearUnCarritoSinUnCatalogo
+
+	| cart aBook |
+	
+	cart _ Cart new.
+	aBook := 'The Cells'.
+		
+	self
+		should: [cart addBook: aBook.]
+		raise: Error 
+		withExceptionDo: [ :anError |
+		self assert: anError messageText = Cart canNotCreateCartWithoutCatalogErrorDescription ].
+	
+	! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:41:14' prior: 50905394!
+addBook: aBook
+	
+	(booksCatalog isNil ) ifTrue: [^ self error: self class canNotCreateCartWithoutCatalogErrorDescription ].
+	(booksCatalog has: aBook)	 ifFalse: [^self error: self class canNotAddABookThatIsNotInTheCatalogErrorDescription].
+	books add: aBook! !
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:41:33'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:42:10'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:42:10'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:42:10'!
+PASSED!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:42:10'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:42:10'!
+PASSED!
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:44:40'!
+test06SePuedeAgregarLibrosRepetidosAlCarrito
+
+	| catalog |
+	
+	catalog := OrderedCollection with: 'The Cells'.
+
+	
+	! !
+!CartTest methodsFor: 'as yet unclassified' stamp: 'ERMC 11/17/2020 19:49:01' prior: 50905775!
+test06SePuedeAgregarLibrosRepetidosAlCarrito
+
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	cart addBook: aBook.
+	
+	expectedBookList := OrderedCollection with: 'The Cells' with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books).
+
+	
+	! !
+
+!testRun: #CartTest #test06SePuedeAgregarLibrosRepetidosAlCarrito stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test01CuandoSeCreaUnCarritoSeCreaVacio stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test02CuandoSeAgregaUnLibroAlCarritoQuedaGuardado stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test03NoSePuedeAgregarUnLibroAlCarritoQueNoEsteCatalogado stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test04NoSePuedeCrearUnCarritoSinUnCatalogo stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test05NoSePuedeCrearUnCarritoConUnCatalogoInvalido stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!testRun: #CartTest #test06SePuedeAgregarLibrosRepetidosAlCarrito stamp: 'ERMC 11/17/2020 19:49:02'!
+PASSED!
+
+!methodRemoval: CartTest #test06SePuedeAgregarLibrosRepetidosAlCarrito stamp: 'ERMC 11/17/2020 19:49:08'!
+test06SePuedeAgregarLibrosRepetidosAlCarrito
+
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	cart addBook: aBook.
+	
+	expectedBookList := OrderedCollection with: 'The Cells' with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books).
+
+	
+	!
+
+----QUIT----(17 November 2020 19:51:59) CuisUniversity-4384.image priorSource: 18349302!
