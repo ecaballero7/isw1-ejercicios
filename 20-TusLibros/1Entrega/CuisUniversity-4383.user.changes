@@ -313,3 +313,119 @@ PASSED!
 PASSED!
 
 ----QUIT----(18 November 2020 00:06:51) CuisUniversity-4383.image priorSource: 19746936!
+
+----STARTUP---- (18 November 2020 23:26:44) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:27:17'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:27:17'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 23:27:17'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 23:27:17'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 23:27:17'!
+PASSED!
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 23:37:31' prior: 50949030!
+test01CartIsCreatedWithZeroBooks
+	
+	| cart catalog |
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	
+	self assert: cart isEmpty.! !
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:37:32'!
+ERROR!
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/18/2020 23:37:42'!
+isEmpty
+	self shouldBeImplemented.! !
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/18/2020 23:37:53' prior: 50949285!
+isEmpty
+	^books isEmpty.! !
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 23:37:59'!
+PASSED!
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 23:39:28' prior: 50949095!
+test02WhenABookIsAddedToACartTheBookIsSavedIntheCart
+	
+	| cart aBook expectedBookList catalog |
+	
+	catalog := BooksCatalog new. 
+	cart := Cart with: catalog.
+	aBook := 'The Cells'.
+	
+	cart addBook: aBook. 
+	
+	expectedBookList := OrderedCollection with: 'The Cells'.
+	
+	self assert: expectedBookList equals: 	(cart books).
+	self deny: cart isEmpty.! !
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 23:39:29'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:47:27'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:47:27'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 23:47:27'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 23:47:27'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 23:47:27'!
+PASSED!
+
+!testRun: #CartTest #test01CartIsCreatedWithZeroBooks stamp: 'G. B. 11/18/2020 23:47:41'!
+PASSED!
+
+!testRun: #CartTest #test02WhenABookIsAddedToACartTheBookIsSavedIntheCart stamp: 'G. B. 11/18/2020 23:47:41'!
+PASSED!
+
+!testRun: #CartTest #test03CannotAddABookThatIsNotInTheCatalog stamp: 'G. B. 11/18/2020 23:47:41'!
+PASSED!
+
+!testRun: #CartTest #test04CannotCreateCartWithoutACatalog stamp: 'G. B. 11/18/2020 23:47:41'!
+PASSED!
+
+!testRun: #CartTest #test05CannotCreateCartWithInvalidCatalog stamp: 'G. B. 11/18/2020 23:47:41'!
+PASSED!

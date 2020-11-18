@@ -29,14 +29,14 @@ TestCase subclass: #CartTest
 	poolDictionaries: ''
 	category: 'TusLibros.com'!
 
-!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:00:48'!
+!CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 23:37:31'!
 test01CartIsCreatedWithZeroBooks
 	
 	| cart catalog |
 	catalog := BooksCatalog new. 
 	cart := Cart with: catalog.
 	
-	self assert: (cart books) isEmpty ! !
+	self assert: cart isEmpty.! !
 
 !CartTest methodsFor: 'tests - cart creation' stamp: 'G. B. 11/18/2020 00:01:25'!
 test04CannotCreateCartWithoutACatalog
@@ -70,7 +70,7 @@ test05CannotCreateCartWithInvalidCatalog
 	! !
 
 
-!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:02'!
+!CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 23:39:28'!
 test02WhenABookIsAddedToACartTheBookIsSavedIntheCart
 	
 	| cart aBook expectedBookList catalog |
@@ -83,7 +83,8 @@ test02WhenABookIsAddedToACartTheBookIsSavedIntheCart
 	
 	expectedBookList := OrderedCollection with: 'The Cells'.
 	
-	self assert: expectedBookList equals: 	(cart books). ! !
+	self assert: expectedBookList equals: 	(cart books).
+	self deny: cart isEmpty.! !
 
 !CartTest methodsFor: 'tests - cart usage' stamp: 'G. B. 11/18/2020 00:03:54'!
 test03CannotAddABookThatIsNotInTheCatalog
@@ -114,6 +115,10 @@ Object subclass: #Cart
 books
 
 	^books! !
+
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/18/2020 23:37:53'!
+isEmpty
+	^books isEmpty.! !
 
 
 !Cart methodsFor: 'initialization' stamp: 'ERMC 11/17/2020 19:36:30'!
