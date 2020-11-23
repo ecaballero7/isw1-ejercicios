@@ -1,0 +1,2882 @@
+
+
+----STARTUP---- (21 November 2020 17:51:10) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-1.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-2.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-3.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-4.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-5.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-6.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-7.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-8.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-9.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-10.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-11.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-12.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-13.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-14.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-15.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-16.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-17.st----!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-18.st----!
+
+!classRemoval: #Cart stamp: 'G. B. 11/21/2020 17:52:48'!
+Object subclass: #Cart
+	instanceVariableNames: 'catalog items'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classRemoval: #CartTest stamp: 'G. B. 11/21/2020 17:52:49'!
+TestCase subclass: #CartTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+----End fileIn of /home/guille/Desktop/Iteracion1/TusLibros-18.st----!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 17:53:06'!
+PASSED!
+
+!classRemoval: #Trailer stamp: 'G. B. 11/21/2020 19:30:45'!
+Object subclass: #Trailer
+	instanceVariableNames: 'weightCapacity heightCapacity container'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #WorkingNormal stamp: 'G. B. 11/21/2020 19:30:46'!
+RobotStatus subclass: #WorkingNormal
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #SensorsFailure stamp: 'G. B. 11/21/2020 19:30:47'!
+RobotStatus subclass: #SensorsFailure
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #OutOfOrder stamp: 'G. B. 11/21/2020 19:30:48'!
+RobotStatus subclass: #OutOfOrder
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #MechanicalFailure stamp: 'G. B. 11/21/2020 19:30:49'!
+RobotStatus subclass: #MechanicalFailure
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #RobotStatus stamp: 'G. B. 11/21/2020 19:30:50'!
+Object subclass: #RobotStatus
+	instanceVariableNames: 'robot'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #Robot stamp: 'G. B. 11/21/2020 19:30:51'!
+Object subclass: #Robot
+	instanceVariableNames: 'status trailer'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #ProductB stamp: 'G. B. 11/21/2020 19:30:52'!
+Product subclass: #ProductB
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #ProductA stamp: 'G. B. 11/21/2020 19:30:53'!
+Product subclass: #ProductA
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #Product stamp: 'G. B. 11/21/2020 19:30:54'!
+Object subclass: #Product
+	instanceVariableNames: 'weight height'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #Cashier stamp: 'G. B. 11/21/2020 19:30:55'!
+Object subclass: #Cashier
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #TrailerTest stamp: 'G. B. 11/21/2020 19:30:56'!
+TestCase subclass: #TrailerTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #RobotTest stamp: 'G. B. 11/21/2020 19:30:58'!
+TestCase subclass: #RobotTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #ProductTest stamp: 'G. B. 11/21/2020 19:30:59'!
+TestCase subclass: #ProductTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+!classRemoval: #CashierTest stamp: 'G. B. 11/21/2020 19:31:00'!
+TestCase subclass: #CashierTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-2020-1C-Parcial-Solucion'!
+
+TestCase subclass: #CashierTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #CashierTest category: 'TusLibros' stamp: 'G. B. 11/21/2020 19:49:24'!
+TestCase subclass: #CashierTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CashierTest methodsFor: 'nil' stamp: 'G. B. 11/21/2020 19:50:30'!
+test01AnEmptyCartCannotCheckOut! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:50:36' prior: 50952210!
+test01AnEmptyCartCannotCheckOut
+! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:51:25'!
+createCart
+	
+	^Cart acceptingItemsOf: self defaultCatalog! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:51:31'!
+defaultCatalog
+	
+	^ Array with: self itemSellByTheStore! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:51:39'!
+itemSellByTheStore
+	
+	^ 'validBook'! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:52:19' prior: 50952215!
+test01AnEmptyCartCannotCheckOut
+	|cart|
+	cart _ self createCart.
+	! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:52:49' prior: 50952234!
+test01AnEmptyCartCannotCheckOut
+	|cart|
+	cart _ self createCart.
+	! !
+
+!classDefinition: #Cashier category: 'TusLibros' stamp: 'G. B. 11/21/2020 19:56:41'!
+Object subclass: #Cashier
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:56:24' prior: 50952240!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier |
+	cart _ self createCart.
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = cashier canNotCheckOutAnEmptyCart
+			.]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:56:53' prior: 50952252!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier |
+	cart _ self createCart.
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = cashier canNotCheckOutAnEmptyCart.]! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 19:56:55'!
+ERROR!
+!Cashier methodsFor: 'check out' stamp: 'G. B. 11/21/2020 19:57:19'!
+checkOut: aCart 
+	self shouldBeImplemented.! !
+!Cashier methodsFor: 'check out' stamp: 'G. B. 11/21/2020 19:57:41' prior: 50952280!
+checkOut: aCart 
+	^self canNotCheckoutAnEmptyCart.! !
+!Cashier methodsFor: 'check out' stamp: 'G. B. 11/21/2020 19:58:06' prior: 50952285!
+checkOut: aCart 
+	^self error: self class canNotCheckoutAnEmptyCartErrorDescription.! !
+!Cashier class methodsFor: 'nil' stamp: 'G. B. 11/21/2020 19:58:33'!
+canNotCheckoutAnEmptyCartErrorDescription
+	^'Cannot check out and empty car!!'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 19:58:49' prior: 50952265!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier |
+	cart _ self createCart.
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutAnEmptyCartErrorDescription.]! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 19:58:50'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 19:58:50'!
+PASSED!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:04:21' prior: 50952224!
+defaultCatalog
+	
+	^ Array with: self itemSellByTheStore.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:07:24' prior: 50952301!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier |
+	cart _ self createCart.
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutAnEmptyCartErrorDescription.]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:08:27'!
+test02CashierCanCheckOutACartWith1Product
+	|cart cashier |
+	cart _ self createCart.
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutAnEmptyCartErrorDescription.]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:13:35' prior: 50952338!
+test02CashierCanCheckOutACartWith1Product
+	|cart cashier creditCard validCreditCard |
+	cart _ self createCart.
+	cart add: 1 of: self itemSellByTheStore.
+	
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	cashier checkOut: cart with: validCreditCard.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:16:15' prior: 50952351!
+test02CashierCanCheckOutACartWith1Product
+	|cart cashier creditCard validCreditCard |
+	cart _ self createCart.
+	cart add: 1 of: self itemSellByTheStore.
+	
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: validCreditCard).! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:16:48' prior: 50952363!
+test02CashierCanCheckOutACartWith1Product
+	|cart cashier creditCard validCreditCard |
+	cart _ self createCart.
+	cart add: 1 of: self itemSellByTheStore.
+	
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: validCreditCard).
+	self assert: cart isEmpty.! !
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:18:25'!
+Object subclass: #CreditCard
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:23:46'!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 9999) owner: 'Alan Kay'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:25:05' prior: 50952397!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (Date nextDay: Date today) owner: 'Alan Kay'.! !
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:25:54'!
+ERROR!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:26:26' prior: 50952405!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 9999) owner: 'Alan Kay'.! !
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:26:29'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:26:29'!
+ERROR!
+!CreditCard class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:26:47'!
+withNumber: aSmallInteger expiration: aDate owner: aString 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeWithNumber: aSmallInteger expiration: aDate owner: aString ! !
+!CreditCard class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:27:29' prior: 50952430!
+withNumber: aCreditCardNumber expiration: aDate owner: anOwnerName 
+
+	^self new initializeWithNumber: aCreditCardNumber expiration: aDate owner: anOwnerName. ! !
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:27:32'!
+ERROR!
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:27:47'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'creditCardNumber'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:27:47'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'creditCardNumber date'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:27:48'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'creditCardNumber date ownerName'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:27:48'!
+initializeWithNumber: aCreditCardNumber expiration: aDate owner: anOwnerName 
+	self shouldBeImplemented.
+	creditCardNumber := aCreditCardNumber.
+	date := aDate.
+	ownerName := anOwnerName.! !
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:28:08'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'creditCardNumber date ownerName number'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:28:10'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'creditCardNumber date ownerName number owner'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:28:05' prior: 50952475!
+initializeWithNumber: aCreditCardNumber expiration: aDate owner: anOwnerName 
+	number := aCreditCardNumber.
+	date := aDate.
+	owner := anOwnerName.! !
+
+Object subclass: #CreditCard
+	instanceVariableNames: 'date number owner'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #CreditCard category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:28:29'!
+Object subclass: #CreditCard
+	instanceVariableNames: 'date number owner'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:28:32'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:28:32'!
+ERROR!
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:32:16' prior: 50952051!
+itemNotSellByTheStore
+	
+	^'invalidBook'! !
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:33:06'!
+PASSED!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:33:10'!
+PASSED!
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:34:29' prior: 50952526!
+itemNotSellByTheStore
+	
+	^{'invalidBook', 31434}! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:34:33'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:34:33'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:34:33'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:34:36'!
+ERROR!
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:35:44' prior: 50952560!
+itemNotSellByTheStore
+	
+	^'invalidBook'.! !
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:36:18' prior: 50952060!
+defaultCatalog
+	
+	^ Catalog with: self itemSellByTheStore.! !
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:36:58' prior: 50952598!
+defaultCatalog
+	
+	^ Catalog with: self itemSellByTheStore withPrice: 500.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:37:23'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:37:24'!
+ERROR!
+!Catalog class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:37:33'!
+with: aString withPrice: aSmallInteger 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeWith: aString withPrice: aSmallInteger ! !
+!Catalog class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:39:41' prior: 50952638!
+with: aBookToAdd withPrice: aPrice 
+	^self new initializeWith: aBookToAdd withPrice: aPrice. ! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:39:48'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:39:50'!
+ERROR!
+
+!classDefinition: #Catalog category: 'Tools-Finder-Model' stamp: 'G. B. 11/21/2020 20:40:11'!
+Object subclass: #Catalog
+	instanceVariableNames: 'bookToAdd'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Tools-Finder-Model'!
+
+!classDefinition: #Catalog category: 'Tools-Finder-Model' stamp: 'G. B. 11/21/2020 20:40:13'!
+Object subclass: #Catalog
+	instanceVariableNames: 'bookToAdd price'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Tools-Finder-Model'!
+!Catalog methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:40:13'!
+initializeWith: aBookToAdd withPrice: aPrice 
+	self shouldBeImplemented.
+	bookToAdd := aBookToAdd.
+	price := aPrice.! !
+!Catalog methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:40:21' prior: 50952698!
+initializeWith: aBookToAdd withPrice: aPrice 
+	bookToAdd := aBookToAdd.
+	price := aPrice.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:40:26'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:40:26'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:40:26'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:40:26'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:40:26'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:40:26'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:40:26'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:40:26'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:40:28'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:41:09'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:41:09'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:41:09'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:41:09'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:41:09'!
+ERROR!
+
+!methodRemoval: Catalog class #with:withPrice: stamp: 'G. B. 11/21/2020 20:41:45'!
+with: aBookToAdd withPrice: aPrice 
+	^self new initializeWith: aBookToAdd withPrice: aPrice. !
+
+!methodRemoval: Catalog #initializeWith:withPrice: stamp: 'G. B. 11/21/2020 20:41:56'!
+initializeWith: aBookToAdd withPrice: aPrice 
+	bookToAdd := aBookToAdd.
+	price := aPrice.!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:42:02'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:42:02'!
+ERROR!
+
+!classDefinition: #TusLibrosCatalog category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:42:31'!
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!CartTest methodsFor: 'support' stamp: 'G. B. 11/21/2020 20:42:19' prior: 50952603!
+defaultCatalog
+	
+	^ TusLibrosCatalog with: self itemSellByTheStore withPrice: 500.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:42:35'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:42:37'!
+ERROR!
+!TusLibrosCatalog class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:42:45'!
+with: aString withPrice: aSmallInteger 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeWith: aString withPrice: aSmallInteger ! !
+!TusLibrosCatalog class methodsFor: 'instance creation' stamp: 'G. B. 11/21/2020 20:43:24' prior: 50952859!
+with: aBookToAdd withPrice: aBookPrice 
+	^self new initializeWith: aBookToAdd withPrice: aBookPrice. ! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:43:29'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:43:31'!
+ERROR!
+
+!classDefinition: #TusLibrosCatalog category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:43:43'!
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: 'bookToAdd'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #TusLibrosCatalog category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:43:44'!
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: 'bookToAdd bookPrice'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!TusLibrosCatalog methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:43:44'!
+initializeWith: aBookToAdd withPrice: aBookPrice 
+	self shouldBeImplemented.
+	bookToAdd := aBookToAdd.
+	bookPrice := aBookPrice.! !
+
+!classDefinition: #TusLibrosCatalog category: 'TusLibros' stamp: 'G. B. 11/21/2020 20:45:49'!
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: 'bookToAdd bookPrice books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!TusLibrosCatalog methodsFor: 'initialization' stamp: 'G. B. 11/21/2020 20:45:45' prior: 50952919!
+initializeWith: aBookToAdd withPrice: aBookPrice 
+	books := Dictionary new.
+	books add: aBookToAdd -> aBookPrice.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:45:52'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:45:53'!
+ERROR!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:45:53'!
+ERROR!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:45:53'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:45:53'!
+ERROR!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:45:53'!
+ERROR!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:45:53'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:45:53'!
+ERROR!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:45:55'!
+ERROR!
+!TusLibrosCatalog methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:46:05'!
+includes: aString 
+	self shouldBeImplemented.! !
+!TusLibrosCatalog methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:46:40' prior: 50952971!
+includes: aBook 
+	books includesKey: aBook.! !
+!TusLibrosCatalog methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:46:46' prior: 50952976!
+includes: aBook 
+	^books includesKey: aBook.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 20:46:49'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:48:32'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:48:32'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:48:32'!
+ERROR!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:48:44'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:48:44'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:48:44'!
+ERROR!
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:48:52'!
+itemsPrice
+	self shouldBeImplemented.! !
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:49:03' prior: 50953031!
+itemsPrice
+	^23.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 20:49:41' prior: 50952320!
+defaultCatalog
+	
+	^ TusLibrosCatalog with: self itemSellByTheStore withPrice: 234.! !
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:49:55' prior: 50953035!
+itemsPrice
+	^234.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:50:08'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:50:08'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:50:08'!
+ERROR!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/21/2020 20:50:26'!
+checkOut: aCart with: anUndefinedObject 
+	self shouldBeImplemented.! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/21/2020 20:50:34' prior: 50953058!
+checkOut: aCart with: anUndefinedObject 
+	^234.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:50:44'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:50:44'!
+FAILURE!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:50:44'!
+FAILURE!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/21/2020 20:52:35' prior: 50953063!
+checkOut: aCart with: anUndefinedObject 
+
+	
+	^234.! !
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 20:53:01'!
+items
+	^items.! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/21/2020 20:59:49' prior: 50953078!
+checkOut: aCart with: anUndefinedObject 
+
+	|price|
+	price _ aCart itemsPrice.
+	aCart deleteItems.
+	
+	^price! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 20:59:59'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:59:59'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 20:59:59'!
+ERROR!
+!Cart methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:00:18'!
+deleteItems
+	self shouldBeImplemented.! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:00:24' prior: 50953102!
+deleteItems
+! !
+!Cart methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:00:46' prior: 50953107!
+deleteItems
+	items _ OrderedCollection new.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:00:51'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:00:51'!
+PASSED!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:02:20'!
+test03CashierCanCheckOutACartWithManyProducts
+	|cart cashier creditCard validCreditCard |
+	cart _ self createCart.
+	cart add: 1 of: self itemSellByTheStore.
+	
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: validCreditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:03:14' prior: 50953122!
+test03CashierCanCheckOutACartWithManyProducts
+	|cart cashier creditCard validCreditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+	cart add: 2 of: self anotherItemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: validCreditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:03:33' prior: 50952376!
+test02CashierCanCheckOutACartWith1Product
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 1 of: self itemSellByTheStore.
+	
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:03:41' prior: 50953136!
+test03CashierCanCheckOutACartWithManyProducts
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+	cart add: 2 of: self anotherItemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:03:55'!
+anotherItemSellByTheStore
+	
+	^ 'validBook2'! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:04:28' prior: 50953039!
+defaultCatalog
+	
+	| catalog |
+	catalog _ TusLibrosCatalog with: self itemSellByTheStore withPrice: 234.
+	catalog add: self anotherItemSellByTheStore withPrice: 120.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:04:39' prior: 50953186!
+defaultCatalog
+	
+	| catalog |
+	catalog _ TusLibrosCatalog with: self itemSellByTheStore withPrice: 234.
+	catalog add: self anotherItemSellByTheStore withPrice: 120.
+	
+	^ catalog.! !
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:06:40'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:06:40'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 21:07:26'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:07:26'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:07:26'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:07:26'!
+ERROR!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 21:07:46'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:07:46'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:07:46'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:07:46'!
+ERROR!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:07:48'!
+ERROR!
+!TusLibrosCatalog methodsFor: 'adding' stamp: 'G. B. 11/21/2020 21:08:03'!
+add: aString withPrice: aSmallInteger 
+	self shouldBeImplemented.! !
+
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #TusLibrosCatalog category: 'TusLibros' stamp: 'G. B. 11/21/2020 21:08:23'!
+Object subclass: #TusLibrosCatalog
+	instanceVariableNames: 'books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!TusLibrosCatalog methodsFor: 'adding' stamp: 'G. B. 11/21/2020 21:08:40' prior: 50953287!
+add: aBookToAdd withPrice: aBookPrice 
+	books add: aBookToAdd -> aBookPrice.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 21:08:44'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:08:46'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:08:46'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:08:46'!
+PASSED!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/21/2020 21:09:01' prior: 50953166!
+test03CashierCanCheckOutACartWithManyProducts
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+	cart add: 3 of: self anotherItemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:09:06'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:09:06'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:09:06'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:09:06'!
+PASSED!
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 21:15:01' prior: 50953045!
+itemsPrice
+	^items sum: [:aCartItem | catalog value: aCartItem ]
+	! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 21:15:03'!
+PASSED!
+!CartTest methodsFor: 'tests' stamp: 'G. B. 11/21/2020 21:16:07'!
+test09CartSumsItemsCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 2 of: self itemSellByTheStore.
+	self assert: (cart occurrencesOf: self itemSellByTheStore) = 2! !
+!CartTest methodsFor: 'tests' stamp: 'G. B. 11/21/2020 21:16:17'!
+test09CartSumsItemsPriceCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 2 of: self itemSellByTheStore.
+	self assert: (cart occurrencesOf: self itemSellByTheStore) = 2! !
+
+!methodRemoval: CartTest #test09CartSumsItemsCorrectly stamp: 'G. B. 11/21/2020 21:16:17'!
+test09CartSumsItemsCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 2 of: self itemSellByTheStore.
+	self assert: (cart occurrencesOf: self itemSellByTheStore) = 2!
+!CartTest methodsFor: 'tests' stamp: 'G. B. 11/21/2020 21:16:23' prior: 50953415!
+test09CartSumsItemsPriceCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 7 of: self itemSellByTheStore.
+	self assert: (cart occurrencesOf: self itemSellByTheStore) = 2! !
+!CartTest methodsFor: 'tests' stamp: 'G. B. 11/21/2020 21:16:42' prior: 50953432!
+test09CartSumsItemsPriceCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 7 of: self itemSellByTheStore.
+	self assert: cart itemsPrice equals: 234.! !
+!CartTest methodsFor: 'tests' stamp: 'G. B. 11/21/2020 21:17:05' prior: 50953441!
+test09CartSumsItemsPriceCorrectly
+
+	| cart |
+	
+	cart := self createCart.
+	
+	cart add: 7 of: self itemSellByTheStore.
+	self assert: cart itemsPrice equals: 500*7.! !
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/21/2020 21:17:08'!
+ERROR!
+!Cart methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 21:17:51' prior: 50953376!
+itemsPrice
+	^items sum: [:aCartItem | catalog priceOf: aCartItem ]
+	! !
+!TusLibrosCatalog methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 21:18:10'!
+priceOf: aBook 
+	^books! !
+!TusLibrosCatalog methodsFor: 'accessing' stamp: 'G. B. 11/21/2020 21:18:50' prior: 50953465!
+priceOf: aBook 
+	^books at: aBook.! !
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/21/2020 21:18:55'!
+PASSED!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/21/2020 21:19:21'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/21/2020 21:19:21'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/21/2020 21:19:21'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/21/2020 21:19:22'!
+PASSED!
+
+----QUIT----(22 November 2020 07:20:15) CuisUniversity-4383.image priorSource: 19768217!
+
+----STARTUP---- (23 November 2020 22:11:29) as /mnt/6750e462-c385-4872-92cc-c2b6e5c52075/Documents/UBA/1er cuatri 2020/Ingeniería 1/VM CUIS/CuisUniversity-4383.image!
+
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:11:45'!
+PASSED!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:13:54' prior: 50953086!
+checkOut: aCart with: anUndefinedObject 
+
+	|price|
+	price _ aCart itemsPrice.
+	
+	aCart deleteItems.
+	
+	^price! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:15:06'!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+	cart add: 3 of: self anotherItemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:15:20' prior: 50953571!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:15:53' prior: 50953586!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 1999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:16:10' prior: 50953600!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 1999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self assert: (cart itemsPrice) equals: (cashier checkOut: cart with: creditCard).
+	self assert: cart isEmpty.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:16:46' prior: 50953616!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 1999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCard.]! !
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:16:55'!
+FAILURE!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:17:08' prior: 50953564!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+	price _ aCart itemsPrice.
+	
+	aCart deleteItems.
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:17:40' prior: 50953655!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+
+
+	self assertIsAValidCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	aCart deleteItems.
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:17:52' prior: 50953661!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	aCart deleteItems.
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:18:16'!
+assertIsAValidCreditCard: aCreditCard
+! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:18:35' prior: 50953676!
+assertIsAValidCreditCard: aCreditCard
+	^self error: self class canNotCheckoutWithAnInvalidCreditCard.! !
+!Cashier class methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:19:06'!
+canNotCheckoutWithAnInvalidCreditCard
+	^ 'Cannot check out with an invalid credit card'.! !
+!Cashier class methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:19:18'!
+canNotCheckoutWithAnInvalidCreditCardErrorDescription
+	^ 'Cannot check out with an invalid credit card'.! !
+
+!methodRemoval: Cashier class #canNotCheckoutWithAnInvalidCreditCard stamp: 'G. B. 11/23/2020 22:19:24'!
+canNotCheckoutWithAnInvalidCreditCard
+	^ 'Cannot check out with an invalid credit card'.!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:19:34' prior: 50953680!
+assertIsAValidCreditCard: aCreditCard
+	^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription .! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:19:41' prior: 50953632!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 1999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:19:42'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:19:42'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:19:42'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:19:42'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:19:42'!
+PASSED!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:20:59' prior: 50953705!
+assertIsAValidCreditCard: aCreditCard
+
+	(aCreditCard isExpired) ifTrue: [^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription].! !
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 22:23:12'!
+isExpired
+	^date < Date today.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:23:29'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:23:29'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:23:29'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:23:29'!
+PASSED!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:29:00' prior: 50953669!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:33:28'!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 1999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:33:45' prior: 50953783!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 9999) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:33:52'!
+FAILURE!
+
+!classDefinition: #MerchantProcessor category: 'TusLibros' stamp: 'G. B. 11/23/2020 22:36:19'!
+Object subclass: #MerchantProcessor
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:36:10' prior: 50953775!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	MerchantProcessor checkoutCart: price with: aCreditCard
+	.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:36:27' prior: 50953833!
+checkOut: aCart with: aCreditCard 
+
+	|price|
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	MerchantProcessor checkoutCart: price with: aCreditCard.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:36:30'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:36:30'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:36:30'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:36:30'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:36:30'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:36:33'!
+ERROR!
+!MerchantProcessor class methodsFor: 'instance creation' stamp: 'G. B. 11/23/2020 22:36:44'!
+checkoutCart: aSmallInteger with: aCreditCard 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeCheckoutCart: aSmallInteger with: aCreditCard ! !
+!MerchantProcessor class methodsFor: 'instance creation' stamp: 'G. B. 11/23/2020 22:37:00' prior: 50953874!
+checkoutCart: aPrice with: aCreditCard 
+
+	^self new initializeCheckoutCart: aPrice with: aCreditCard ! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:37:05'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:37:05'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:37:05'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:37:05'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:37:05'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:37:07'!
+ERROR!
+
+!classDefinition: #MerchantProcessor category: 'TusLibros' stamp: 'G. B. 11/23/2020 22:37:26'!
+Object subclass: #MerchantProcessor
+	instanceVariableNames: 'price'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #MerchantProcessor category: 'TusLibros' stamp: 'G. B. 11/23/2020 22:37:26'!
+Object subclass: #MerchantProcessor
+	instanceVariableNames: 'price creditCard'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!MerchantProcessor methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 22:37:26'!
+initializeCheckoutCart: aPrice with: aCreditCard 
+	self shouldBeImplemented.
+	price := aPrice.
+	creditCard := aCreditCard.! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:38:41' prior: 50953843!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!methodRemoval: MerchantProcessor #initializeCheckoutCart:with: stamp: 'G. B. 11/23/2020 22:38:56'!
+initializeCheckoutCart: aPrice with: aCreditCard 
+	self shouldBeImplemented.
+	price := aPrice.
+	creditCard := aCreditCard.!
+
+!methodRemoval: MerchantProcessor class #checkoutCart:with: stamp: 'G. B. 11/23/2020 22:39:00'!
+checkoutCart: aPrice with: aCreditCard 
+
+	^self new initializeCheckoutCart: aPrice with: aCreditCard !
+
+Object subclass: #MerchantProcessor
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+
+!classDefinition: #MerchantProcessor category: 'TusLibros' stamp: 'G. B. 11/23/2020 22:39:48'!
+Object subclass: #MerchantProcessor
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!MerchantProcessor methodsFor: 'nil' stamp: 'G. B. 11/23/2020 22:39:51'!
+checkoutCartPrice: price with: aCreditCard
+! !
+!MerchantProcessor methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:42:01' prior: 50953971!
+checkoutCartPrice: price with: aCreditCard
+
+	(aCreditCard owner = 'Alan Kay') ifTrue: [^ 234234234].! !
+!MerchantProcessor methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:42:42' prior: 50953976!
+checkoutCartPrice: price with: aCreditCard
+
+	(aCreditCard owner = 'Alan Kay') ifTrue: [^ 234234234].
+! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:43:05'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:43:05'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:43:05'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:43:05'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:43:07'!
+ERROR!
+!CreditCard methodsFor: 'accessing' stamp: 'G. B. 11/23/2020 22:43:17'!
+owner
+	self shouldBeImplemented.
+	^owner! !
+!CreditCard methodsFor: 'accessing' stamp: 'G. B. 11/23/2020 22:43:24' prior: 50954039!
+owner
+	^owner! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:43:31'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:43:31'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:43:31'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:43:31'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:43:31'!
+FAILURE!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:43:31'!
+FAILURE!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:52:34' prior: 50953934!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:53:50' prior: 50954069!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard. ]
+		on: Error do:[^ 'sdfasdf'		 		].
+	
+	
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:54:18' prior: 50954080!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard. ]
+		on: Error do:[^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription	].
+	
+	
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:54:23'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:54:23'!
+FAILURE!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:54:23'!
+FAILURE!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:55:07' prior: 50953803!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (Date newDay: 12 month: #July year: 9999) owner: 'Hernan Wilkinson'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+!MerchantProcessor methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:55:53' prior: 50953983!
+checkoutCartPrice: price with: aCreditCard
+
+	(aCreditCard owner = 'Hernan Wilkinson') ifTrue: [^ self error: self class invalidCreditCardErrorDescription].
+! !
+!MerchantProcessor methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:55:57' prior: 50954181!
+checkoutCartPrice: price with: aCreditCard
+
+	(aCreditCard owner = 'Hernan Wilkinson') ifTrue: [^ self error: self class invalidCreditCardErrorDescription].! !
+!MerchantProcessor class methodsFor: 'nil' stamp: 'G. B. 11/23/2020 22:56:30'!
+invalidCreditCardErrorDescription
+	^'can not check out with an invalid credit card!!'.! !
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:56:36'!
+PASSED!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:58:22' prior: 50952325!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier creditCard |
+	cart _ self createCart.
+	creditCard _ self createValidCreditCard.
+
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutAnEmptyCartErrorDescription.]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 22:58:48' prior: 50954208!
+test01AnEmptyCartCannotCheckOut
+	|cart cashier creditCard |
+	cart _ self createCart.
+	creditCard _ self createValidCreditCard.
+
+	cashier _ Cashier new.
+	
+		self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutAnEmptyCartErrorDescription.]! !
+
+!methodRemoval: Cashier #checkOut: stamp: 'G. B. 11/23/2020 22:59:04'!
+checkOut: aCart 
+	^self error: self class canNotCheckoutAnEmptyCartErrorDescription.!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:59:42' prior: 50954094!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard. ]
+		on: Error do:[^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription	].
+	
+	
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 22:59:46'!
+PASSED!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:09:14' prior: 50953757!
+isExpired
+	^date < GregorianMonthOfYear today.! !
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:10:53' prior: 50954309!
+isExpired
+	^date < Date today.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:22:06' prior: 50952416!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear month: #July year: 9999) owner: 'Alan Kay'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:22:43' prior: 50953712!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ self createValidCreditCard.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:23:05' prior: 50954161!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear month: #July year: 9999) owner: 'Hernan Wilkinson'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:23:14' prior: 50954314!
+isExpired
+	^date < GregorianMonthOfYear today.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:23:25'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:23:25'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:23:25'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:23:25'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:23:25'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:23:25'!
+ERROR!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:23:27'!
+ERROR!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:24:32' prior: 50954319!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear year: 9999 month: #July) owner: 'Alan Kay'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:24:51' prior: 50954345!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear year: 9999 month: #July) owner: 'Hernan Wilkinson'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:25:08'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:25:08'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:25:08'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:25:08'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:25:08'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:25:10'!
+ERROR!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:25:29' prior: 50954365!
+isExpired
+	^date < GregorianMonthOfYear current.! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:25:34'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:25:34'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:25:34'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:25:34'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:25:34'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:25:36'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:25:44'!
+ERROR!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:25:58' prior: 50954498!
+isExpired
+	^date < (GregorianMonthOfYear current).! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:26:06'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:26:06'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:26:06'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:26:06'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:26:06'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:26:07'!
+ERROR!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:30:03' prior: 50954557!
+isExpired
+	|currentMonthOfYear|
+	currentMonthOfYear _ GregorianMonthOfYear current .
+	^date < currentMonthOfYear.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:30:05'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:30:05'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:30:05'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:30:05'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:30:05'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:30:10'!
+ERROR!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:31:05' prior: 50954420!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear year: 9999 month: July) owner: 'Alan Kay'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:31:19' prior: 50954428!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear year: 9999 month: July) owner: 'Hernan Wilkinson'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:31:23'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:31:23'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:31:23'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:31:23'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:31:24'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:31:24'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:31:24'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:31:24'!
+ERROR!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:31:24'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:31:27'!
+ERROR!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:33:24' prior: 50954640!
+createValidCreditCard
+	
+	^CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear yearNumber: 9999 monthNumber: 7) owner: 'Alan Kay'.! !
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:33:38' prior: 50954648!
+test05ACartCannotCheckOutWithAStolenCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear yearNumber: 9999 monthNumber: 7) owner: 'Hernan Wilkinson'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:33:45'!
+FAILURE!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:33:45'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:33:45'!
+FAILURE!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:34:09'!
+FAILURE!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:34:09'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:34:09'!
+FAILURE!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:34:47'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:34:50'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:34:53'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:34:56'!
+FAILURE!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:34:56'!
+FAILURE!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:35:10'!
+PASSED!
+!CashierTest methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:35:36' prior: 50954327!
+test04ACartCannotCheckOutWithAnExpiredCreditCard
+	|cart cashier creditCard |
+	cart _ self createCart.
+	cart add: 2 of: self itemSellByTheStore.
+
+	creditCard _ CreditCard withNumber: 423423423 expiration: (GregorianMonthOfYear yearNumber: 1999 monthNumber: 7) owner: 'Alan Kay'.
+	cashier _ Cashier new.
+	
+	
+	self 
+		should: [cashier checkOut: cart with: creditCard.]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError | self assert: anError messageText = Cashier canNotCheckoutWithAnInvalidCreditCardErrorDescription .]! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:35:41'!
+PASSED!
+!CreditCard methodsFor: 'initialization' stamp: 'G. B. 11/23/2020 23:36:10' prior: 50954612!
+isExpired
+	^date < GregorianMonthOfYear current.! !
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:36:12'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:36:12'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:36:12'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:36:12'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:36:12'!
+PASSED!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:36:15'!
+PASSED!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 23:43:42' prior: 50954243!
+checkOut: aCart with: aCreditCard 
+
+	|price |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	self debit: price from: aCreditCard.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 23:46:31' prior: 50953749!
+assertIsAValidCreditCard: aCreditCard
+
+	(aCreditCard isExpired) ifTrue: [^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription].! !
+
+!classDefinition: #APIProxy category: 'TusLibros' stamp: 'G. B. 11/23/2020 23:48:04'!
+Object subclass: #APIProxy
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 23:47:52' prior: 50955006!
+checkOut: aCart with: aCreditCard 
+
+	|price |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	APIProxy debit: price from: aCreditCard.
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:48:21'!
+ERROR!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/23/2020 23:48:21'!
+ERROR!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/23/2020 23:48:21'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/23/2020 23:48:21'!
+ERROR!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/23/2020 23:48:23'!
+ERROR!
+!APIProxy class methodsFor: 'instance creation' stamp: 'G. B. 11/23/2020 23:48:32'!
+debit: aSmallInteger from: aCreditCard 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeDebit: aSmallInteger from: aCreditCard ! !
+!APIProxy methodsFor: 'nil' stamp: 'G. B. 11/23/2020 23:48:57'!
+debit: aSmallInteger from: aCreditCard 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeDebit: aSmallInteger from: aCreditCard ! !
+!APIProxy methodsFor: 'as yet unclassified' stamp: 'G. B. 11/23/2020 23:49:08' prior: 50955105!
+debit: aPrice from: aCreditCard 
+! !
+
+!methodRemoval: APIProxy class #debit:from: stamp: 'G. B. 11/23/2020 23:49:16'!
+debit: aSmallInteger from: aCreditCard 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeDebit: aSmallInteger from: aCreditCard !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/23/2020 22:59:42' prior: 50955033!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard. ]
+		on: Error do:[^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription	].
+	
+	
+	
+	aCart deleteItems.
+	
+	
+	^price! !
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/24/2020 00:19:43' prior: 50955128!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator checkoutCartPrice: price with: aCreditCard. ]
+		on: Error do:[^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription	].
+	
+		
+	aCart deleteItems.
+	
+	
+	^price! !
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/24/2020 00:19:48'!
+PASSED!
+
+!classRemoval: #APIProxy stamp: 'G. B. 11/24/2020 00:19:56'!
+Object subclass: #APIProxy
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TusLibros'!
+!Cashier methodsFor: 'checkout' stamp: 'G. B. 11/24/2020 00:20:11' prior: 50955147!
+checkOut: aCart with: aCreditCard 
+
+	|price merchantProcessorSimulator |
+
+	(aCart isEmpty) ifTrue: [^self error: self class canNotCheckoutAnEmptyCartErrorDescription].
+	
+	self assertIsAValidCreditCard: aCreditCard.
+
+	price _ aCart itemsPrice.
+	
+	merchantProcessorSimulator _ MerchantProcessor new.
+	
+	[ merchantProcessorSimulator debit: price from: aCreditCard. ]
+		on: Error do:[^self error: self class canNotCheckoutWithAnInvalidCreditCardErrorDescription	].
+	
+		
+	aCart deleteItems.
+	
+	
+	^price! !
+!MerchantProcessor methodsFor: 'as yet unclassified' stamp: 'G. B. 11/24/2020 00:20:42'!
+debit: price from: aCreditCard
+
+	(aCreditCard owner = 'Hernan Wilkinson') ifTrue: [^ self error: self class invalidCreditCardErrorDescription].! !
+
+!methodRemoval: MerchantProcessor #checkoutCartPrice:with: stamp: 'G. B. 11/24/2020 00:20:46'!
+checkoutCartPrice: price with: aCreditCard
+
+	(aCreditCard owner = 'Hernan Wilkinson') ifTrue: [^ self error: self class invalidCreditCardErrorDescription].!
+
+!testRun: #CartTest #test01NewCartsAreCreatedEmpty stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test02CanNotAddItemsThatDoNotBelongToStore stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test03AfterAddingAnItemTheCartIsNotEmptyAnymore stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test04CanNotAddNonPositiveNumberOfItems stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test05CanNotAddMoreThanOneItemNotSellByTheStore stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test06CartRemembersAddedItems stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test07CartDoesNotHoldNotAddedItems stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test08CartRemembersTheNumberOfAddedItems stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CartTest #test09CartSumsItemsPriceCorrectly stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CashierTest #test01AnEmptyCartCannotCheckOut stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CashierTest #test02CashierCanCheckOutACartWith1Product stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CashierTest #test03CashierCanCheckOutACartWithManyProducts stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CashierTest #test04ACartCannotCheckOutWithAnExpiredCreditCard stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+!testRun: #CashierTest #test05ACartCannotCheckOutWithAStolenCreditCard stamp: 'G. B. 11/24/2020 00:20:53'!
+PASSED!
+
+----QUIT----(24 November 2020 00:22:06) CuisUniversity-4383.image priorSource: 19899679!
